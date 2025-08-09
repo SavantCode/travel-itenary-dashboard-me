@@ -1,0 +1,69 @@
+{
+  "agents": [
+    {
+      "id": 1,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "role": "rashmi singh",
+      "team": "Sales",
+      "status": "Unassigned",
+      "avatar": "PP",
+      "performance": 85,
+      "totalSales": 125000,
+      "activeClients": 23
+    },
+    {
+      "id": 2,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "role": "rashmi singh",
+      "team": "Marketing",
+      "status": "Assigned",
+      "avatar": "PP",
+      "performance": 92,
+      "totalSales": 156000,
+      "activeClients": 31
+    },
+    {
+      "id": 3,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "role": "rashmi singh",
+      "team": "Operations",
+      "status": "Unassigned",
+      "avatar": "PP",
+      "performance": 78,
+      "totalSales": 98000,
+      "activeClients": 18
+    },
+    {
+      "id": 4,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "role": "rashmi singh",
+      "team": "Customer Service",
+      "status": "Assigned",
+      "avatar": "PP",
+      "performance": 88,
+      "totalSales": 134000,
+      "activeClients": 27
+    },
+    {
+      "id": 5,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "role": "rashmi singh",
+      "team": "Sales",
+      "status": "Unassigned",
+      "avatar": "PP",
+      "performance": 95,
+      "totalSales": 187000,
+      "activeClients": 35
+    }
+  ]
+}

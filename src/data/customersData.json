@@ -1,0 +1,69 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "address": "abcdabcd",
+      "owner": "rashmi singh",
+      "status": "Active",
+      "totalBookings": 5,
+      "totalSpent": 45000,
+      "lastBooking": "2024-01-15",
+      "preferredDestination": "Europe"
+    },
+    {
+      "id": 2,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "address": "abcdabcd",
+      "owner": "rashmi singh",
+      "status": "Inactive",
+      "totalBookings": 2,
+      "totalSpent": 18000,
+      "lastBooking": "2023-11-20",
+      "preferredDestination": "Asia"
+    },
+    {
+      "id": 3,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "address": "abcdabcd",
+      "owner": "rashmi singh",
+      "status": "Active",
+      "totalBookings": 8,
+      "totalSpent": 72000,
+      "lastBooking": "2024-02-10",
+      "preferredDestination": "Americas"
+    },
+    {
+      "id": 4,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "address": "abcdabcd",
+      "owner": "rashmi singh",
+      "status": "Pending",
+      "totalBookings": 1,
+      "totalSpent": 12000,
+      "lastBooking": "2024-01-05",
+      "preferredDestination": "Africa"
+    },
+    {
+      "id": 5,
+      "name": "Priya Patel",
+      "email": "Priya.patel@example.com",
+      "phone": "+1 (555) 012-3456",
+      "address": "abcdabcd",
+      "owner": "rashmi singh",
+      "status": "Active",
+      "totalBookings": 12,
+      "totalSpent": 95000,
+      "lastBooking": "2024-02-28",
+      "preferredDestination": "Europe"
+    }
+  ]
+}
