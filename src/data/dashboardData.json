@@ -1,66 +1,91 @@
 {
   "kpiCards": [
-    {
-      "id": 1,
-      "title": "Total Customers",
-      "value": "2,143",
-      "subtitle": "Engaged users",
-      "growth": "+20%",
-      "icon": "users",
-      "color": "bg-blue-100",
-      "iconColor": "text-blue-600"
-    },
-    {
-      "id": 2,
-      "title": "Revenue",
-      "value": "₹8.4L",
-      "subtitle": "Revenue generated",
-      "growth": "+20%",
-      "icon": "dollar",
-      "color": "bg-purple-100",
-      "iconColor": "text-purple-600"
-    },
-    {
-      "id": 3,
-      "title": "Total Leads",
-      "value": "2,143",
-      "subtitle": "Hot prospects",
-      "growth": "+20%",
-      "icon": "trending",
-      "color": "bg-green-100",
-      "iconColor": "text-green-600"
-    },
-    {
-      "id": 4,
-      "title": "Total Tours",
-      "value": "567",
-      "subtitle": "Trips booked",
-      "growth": "+20%",
-      "icon": "map",
-      "color": "bg-pink-100",
-      "iconColor": "text-pink-600"
-    }
-  ],
+  {
+    "id": 1,
+    "title": "Total Customers",
+    "value": "2,143",
+    "subtitle": "Engaged users",
+    "growth": "+20%",
+    "icon": "users",
+    "color": "bg-blue-100",
+    "iconColor": "text-blue-600"
+  },
+  {
+    "id": 2,
+    "title": "Revenue",
+    "value": "₹8.4L",
+    "subtitle": "Revenue generated",
+    "growth": "+20%",
+    "icon": "dollar",
+    "color": "bg-purple-100",
+    "iconColor": "text-purple-600"
+  },
+  {
+    "id": 3,
+    "title": "Total Leads",
+    "value": "2,143",
+    "subtitle": "Hot prospects",
+    "growth": "+20%",
+    "icon": "trending",
+    "color": "bg-green-100",
+    "iconColor": "text-green-600"
+  },
+  {
+    "id": 4,
+    "title": "Total Tours",
+    "value": "567",
+    "subtitle": "Trips booked",
+    "growth": "+20%",
+    "icon": "map",
+    "color": "bg-pink-100",
+    "iconColor": "text-pink-600"
+  }
+],
   "revenueData": [
     { "month": "Jan", "revenue": 1.2 },
-    { "month": "Feb", "revenue": 1.4 },
-    { "month": "Mar", "revenue": 1.1 },
-    { "month": "Apr", "revenue": 0.9 },
-    { "month": "May", "revenue": 1.6 },
-    { "month": "Jun", "revenue": 1.3 },
-    { "month": "Jul", "revenue": 1.0 },
-    { "month": "Aug", "revenue": 1.7 },
-    { "month": "Sep", "revenue": 1.5 },
-    { "month": "Oct", "revenue": 1.2 },
-    { "month": "Nov", "revenue": 0.8 },
-    { "month": "Dec", "revenue": 1.1 }
+  { "month": "Feb", "revenue": 1.4 },
+  { "month": "Mar", "revenue": 1.1 },
+  { "month": "Apr", "revenue": 0.9 },
+  { "month": "May", "revenue": 1.6 },
+  { "month": "Jun", "revenue": 1.3 },
+  { "month": "Jul", "revenue": 1.0 },
+  { "month": "Aug", "revenue": 1.7 },
+  { "month": "Sep", "revenue": 1.5 },
+  { "month": "Oct", "revenue": 1.2 },
+  { "month": "Nov", "revenue": 0.8 },
+  { "month": "Dec", "revenue": 1.1 }
   ],
+
   "tourCategories": [
-    { "name": "Weekend Getaways", "value": 40, "color": "#60A5FA" },
-    { "name": "Luxury Tours", "value": 30, "color": "#34D399" },
-    { "name": "Eco Tours", "value": 20, "color": "#F87171" },
-    { "name": "Heritage Trips", "value": 10, "color": "#A78BFA" }
-  ],
+  {
+     "name": "Adventure Tours",
+      "value": 35,
+      "percentage": 0,
+      "customers": 500,
+      "color": "#A2D2FF"
+  },
+  {
+    "name": "Cultural Tours",
+      "value": 28,
+      "percentage": 0,
+      "customers": 1500,
+      "color": "#00B8A9"
+  },
+  {
+      "name": "Luxury Tours",
+      "value": 22,
+      "percentage": 0,
+      "customers": 400,
+      "color": "#FFB3C6"
+  },
+  {
+    "name": "Eco Tours",
+      "value": 15,
+      "percentage": 0,
+      "customers": 2200,
+      "color": "#CDB4DB"
+  }
+],
   "customersByCountry": [
     { "country": "India", "percentage": 40, "customers": 857, "color": "#34D399" },
     { "country": "USA", "percentage": 30, "customers": 643, "color": "#60A5FA" },
