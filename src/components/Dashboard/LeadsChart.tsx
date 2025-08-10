@@ -1,3 +1,4 @@
+// Line Chart
 import React from "react";
 import {
   LineChart,
@@ -32,7 +33,7 @@ const TotalLeadsChart: React.FC<TotalLeadsChartProps> = ({ data }) => {
     >
       <h2 style={{ margin: 0 }}>Total Leads</h2>
       <p style={{ color: "#888", margin: "4px 0 20px" }}>
-        Weekly overview of lead generation trends
+        Weekly overview of lead generation trends- Line Chart
       </p>
       <div style={{ height: 240 }}>
         <ResponsiveContainer width="100%" height="100%">

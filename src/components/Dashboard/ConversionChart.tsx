@@ -29,7 +29,7 @@ const ConversionChart: React.FC<ConversionChartProps> = ({ data }) => {
           <h2 className="text-2xl font-semibold text-gray-900">
             Monthly Conversion
           </h2>
-          <p className="text-sm text-gray-500">Track Growth, One Month at a Time.</p>
+          <p className="text-sm text-gray-500">Track Growth, One Month at a Time- BLUE green</p>
         </div>
 
         <button className="px-4 py-1 text-sm border border-gray-400 rounded-full text-gray-700 hover:bg-gray-100">

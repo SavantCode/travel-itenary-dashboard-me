@@ -1,3 +1,4 @@
+// Dohnout Shape
 import React from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
@@ -19,7 +20,7 @@ const CustomersByCountryChart: React.FC<CustomersByCountryChartProps> = ({ data 
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-lg font-semibold text-gray-900">Total Customers</h3>
-          <p className="text-sm text-gray-500">Customer Distribution by Country</p>
+          <p className="text-sm text-gray-500">Customer Distribution by Country- Dohnout Shape</p>
         </div>
         <select className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
           <option>Last Week</option>
