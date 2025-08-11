@@ -27,14 +27,26 @@ const TotalLeadsChart: React.FC<TotalLeadsChartProps> = ({ data }) => {
         background: "#fff",
         borderRadius: "20px",
         padding: "20px",
+        width: "592px",
+        height: "365px",
         border: "1px solid #ddd",
         boxShadow: "0 2px 6px rgba(0,0,0,0.05)"
       }}
     >
-      <h2 style={{ margin: 0 }}>Total Leads</h2>
-      <p style={{ color: "#888", margin: "4px 0 20px" }}>
-        Weekly overview of lead generation trends- Line Chart
-      </p>
+     {/* Header */}
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <h2 className="text-lg font-semibold text-gray-900">Total Leads</h2>
+          <p className="text-[12px] text-[#8C8B8B] mt-[6px] leading-[24px]">Weekly overview of lead generation trends</p>
+        </div>
+        <select className="px-3 py-1.5 border-2 text-xs rounded-full font-medium text-[#626262] border-gray-600  hover:border-[#00B8A9] hover:bg-gray-100 focus:outline-none font-inter"
+        style={{ WebkitAppearance: 'none', MozAppearance: 'none', appearance: 'none' }}>
+          <option>Last Week</option>
+          <option>Last Month</option>
+          <option>Last Year</option>
+        </select>
+      </div>
+      {/* Chart + Legend */}
       <div style={{ height: 240 }}>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart

@@ -5,7 +5,7 @@ const MonthlyConversionCard: React.FC = () => {
   return (
     <div
       className={`
-    w-[386px]  /* Set fixed width */
+    w-[447px]  /* Set fixed width */
     h-[255px]  /* Keep the height if needed */
     box-border
     bg-[#FDEEE1]

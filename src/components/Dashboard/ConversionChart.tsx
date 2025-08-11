@@ -26,13 +26,13 @@ const ConversionChart: React.FC<ConversionChartProps> = ({ data }) => {
     <div className="bg-white rounded-2xl border border-gray-300 p-6 shadow-sm w-full h-full flex flex-col">
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h2 className="text-2xl font-semibold text-gray-900">
+          <h2 className="text-lg font-semibold text-gray-900">
             Monthly Conversion
           </h2>
-          <p className="text-sm text-gray-500">Track Growth, One Month at a Time- BLUE green</p>
+          <p  className="text-[13px] text-[#8C8B8B] mt-[6px] leading-[24px]">Track Growth, One Month at a Time</p>
         </div>
 
-        <button className="px-4 py-1 text-sm border border-gray-400 rounded-full text-gray-700 hover:bg-gray-100">
+        <button className="px-3 py-1.5 border-2 text-xs rounded-full font-medium text-[#626262] border-gray-600  hover:border-[#00B8A9] hover:bg-gray-100 focus:outline-none font-inter">
           Last 6 Months
         </button>
       </div>

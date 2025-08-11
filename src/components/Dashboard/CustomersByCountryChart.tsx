@@ -19,10 +19,11 @@ const CustomersByCountryChart: React.FC<CustomersByCountryChartProps> = ({ data 
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h3 className="text-lg font-semibold text-gray-900">Total Customers</h3>
-          <p className="text-sm text-gray-500">Customer Distribution by Country- Dohnout Shape</p>
+          <h2 className="text-lg font-semibold text-gray-900">Total Leads</h2>
+          <p className="text-[13px] text-[#8C8B8B] mt-[6px] leading-[24px]">Weekly overview of lead generation trends</p>
         </div>
-        <select className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+        <select className="px-3 py-1.5 border-2 text-xs rounded-full font-medium text-[#626262] border-gray-600  hover:border-[#00B8A9] hover:bg-gray-100 focus:outline-none font-inter"
+        style={{ WebkitAppearance: 'none', MozAppearance: 'none', appearance: 'none' }}>
           <option>Last Week</option>
           <option>Last Month</option>
           <option>Last Year</option>

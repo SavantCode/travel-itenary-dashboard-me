@@ -75,16 +75,17 @@ const ConcentricTourGraph: React.FC<ConcentricTourGraphProps> = ({ data }) => {
       {/* Header */}
       <div className="flex items-start justify-between mb-6">
         <div>
-          <h3 className="text-lg font-semibold text-gray-900 font-roboto">Total Tours</h3>
-          <p className="text-sm text-gray-500 font-roboto">
-            Explore the most popular types of tours
+          <h2 className="text-lg font-semibold text-gray-900 font-roboto">Total Tours</h2>
+          <p  className="text-[13px] text-[#8C8B8B] mt-[6px] leading-[24px] font-roboto">
+            Explore the most popular types of tours booked
           </p>
         </div>
-        <select
+        <select 
           value={filter}
           onChange={(e) => setFilter(e.target.value as any)}
-          className="px-3 py-1.5 border border-gray-400 text-xs rounded-[10px] font-medium text-[#626262] hover:border-[#00B8A9] focus:outline-none font-inter"
-        >
+          className="px-3 py-1.5 border-2 text-xs rounded-full font-medium text-[#626262] border-gray-600  hover:border-[#00B8A9] hover:bg-gray-100 focus:outline-none font-inter"
+          style={{ WebkitAppearance: 'none', MozAppearance: 'none', appearance: 'none' }}
+          >
           <option>Last Week</option>
           <option>Last Month</option>
           <option>All Time</option>
@@ -184,6 +185,7 @@ const ConcentricTourGraph: React.FC<ConcentricTourGraphProps> = ({ data }) => {
               boxShadow: '0 0 10px rgba(0, 184, 169, 0.5)',
             }}
           />
+          
         </div>
       </div>
     </div>

@@ -46,7 +46,7 @@ const KPICard: React.FC<KPICardProps> = ({
     >
       <div className="flex justify-between items-start">
         {/* Dark background container for icon */}
-        <div className="w-[65px] h-[45px] rounded-[10px] flex items-center justify-center bg-gray-900">
+        <div className="w-[65px] h-[45px] rounded-[10px] flex items-center justify-center ">
           <IconComponent className={`${iconColor} w-5 h-5`} />
         </div>
         <div className="flex items-center bg-[#17C653] text-white text-xs font-medium px-2 py-[2px] rounded-[10px]">

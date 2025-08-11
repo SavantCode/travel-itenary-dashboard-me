@@ -52,10 +52,9 @@ const Dashboard: React.FC = () => {
             flex items-center justify-center space-x-2
             px-[20px] py-[6px]
             w-[201px] h-[30px]
-            bg-[#4681CB]
+            bg-teal-500 hover:bg-teal-600
             rounded-full
             text-[14px] font-raleway font-medium leading-[100%] text-white
-            hover:bg-blue-700
             transition-colors
           "
           >
@@ -99,6 +98,19 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
 
+      {/* Charts Row 2 */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6" style={{ width: "1512px" }}>
+
+
+        <div className="w-full">
+          <RevenueChart data={dashboardData.revenueData} />
+        </div>
+        <div className="w-full">
+          {/* lead generation pink box */}
+          <MonthlyConversionChart />
+        </div>
+      </div>
+
         {/* Second 2: two charts side-by-side on lg, stacked on small */}
         <div className="flex flex-col lg:flex-row lg:space-x-6 space-y-6 lg:space-y-0">
           <div className="flex-1 flex flex-col">
@@ -115,22 +127,6 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
       </div>
-
-
-      {/* Charts Row 2 */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6" style={{ width: "1512px" }}>
-
-
-        <div className="w-full">
-          <RevenueChart data={dashboardData.revenueData} />
-        </div>
-        <div className="w-full">
-          {/* lead generation pink box */}
-          <MonthlyConversionChart />
-        </div>
-      </div>
-
-
     </div>
   );
 };

@@ -29,19 +29,22 @@ const RevenueChart: React.FC<RevenueChartProps> = ({ data }) => {
     >
       {/* Title and description */}
       <div className="absolute top-[20px] left-[20px]">
-        <h3 className="text-[18px] font-normal text-black leading-[24px]">
+        <h2 className="text-lg font-semibold text-gray-900">
           Total Revenue
-        </h3>
-        <p className="text-[12px] text-[#8C8B8B] mt-[6px] leading-[24px]">
+        </h2>
+        <p className="text-[13px] text-[#8C8B8B] mt-[6px] leading-[24px]">
           {/* Track your monthly revenue growth and performance. */}
-          reeeeeeeeeeeeeveeeeeeeeeeeeeeenueeeeeeeeee
+          Track your monthly revenue growth and performance
         </p>
       </div>
-
-      {/* "Last Year" badge */}
-      <div className="absolute top-[16px] right-[20px] bg-white border border-[#626262] text-[#626262] text-[10px] font-medium rounded-[10px] px-3 py-[2px] leading-[12px] whitespace-nowrap">
-        Last Year
-      </div>
+  
+ <select className="absolute top-[16px] right-[20px] px-3 py-1.5 border-2 text-xs rounded-full font-medium text-[#626262] border-gray-600  hover:border-[#00B8A9] hover:bg-gray-100 focus:outline-none font-inter"
+        style={{ WebkitAppearance: 'none', MozAppearance: 'none', appearance: 'none' }}>
+          <option>Last Week</option>
+          <option>Last Month</option>
+          <option>Last Year</option>
+        </select>
+      
 
       {/* Y-axis labels aligned with ticks and grid lines */}
       <div
