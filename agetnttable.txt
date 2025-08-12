@@ -1,0 +1,589 @@
+import React, { useState, useMemo } from 'react';
+import { Search, Bell, Grid, MapPin, FileText, UserCheck, UserPlus, ChevronDown, Eye, Edit2, Trash2, MoreVertical, Volume2 } from 'lucide-react';
+
+// Mock data for demonstration
+const agentsData = {
+  agents: [
+    { id: 1, name: "Priya Patel", email: "priya.patel@example.com", phone: "+1 (555) 012-3456", role: "Senior Agent", team: "Sales Team", status: "Unassigned", avatar: "PP" },
+    { id: 2, name: "Rahul Sharma", email: "rahul.sharma@example.com", phone: "+1 (555) 012-3457", role: "Junior Agent", team: "Support Team", status: "Assigned", avatar: "RS" },
+    { id: 3, name: "Anita Kumar", email: "anita.kumar@example.com", phone: "+1 (555) 012-3458", role: "Team Lead", team: "Sales Team", status: "Unassigned", avatar: "AK" },
+    { id: 4, name: "Vikram Singh", email: "vikram.singh@example.com", phone: "+1 (555) 012-3459", role: "Senior Agent", team: "Marketing Team", status: "Assigned", avatar: "VS" },
+    { id: 5, name: "Deepika Joshi", email: "deepika.joshi@example.com", phone: "+1 (555) 012-3460", role: "Agent", team: "Support Team", status: "Unassigned", avatar: "DJ" }
+  ]
+};
+
+const ITEMS_PER_PAGE = 5;
+
+const AgentTable: React.FC = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [statusFilter, setStatusFilter] = useState<'all' | 'assigned' | 'unassigned'>('all');
+  const [agents, setAgents] = useState(agentsData.agents);
+  const [selectedAgents, setSelectedAgents] = useState<number[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeSidebar, setActiveSidebar] = useState('agent-table');
+
+  // Filtering logic
+  const filteredAgents = useMemo(() => {
+    return agents.filter(agent => {
+      const matchesSearch = [agent.name, agent.email, agent.phone, agent.role, agent.team]
+        .some(field => field.toLowerCase().includes(searchTerm.toLowerCase()));
+      const matchesStatus = statusFilter === 'all' || agent.status.toLowerCase() === statusFilter;
+      return matchesSearch && matchesStatus;
+    });
+  }, [agents, searchTerm, statusFilter]);
+
+  const totalPages = Math.ceil(filteredAgents.length / ITEMS_PER_PAGE);
+  const paginatedAgents = useMemo(() => {
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredAgents.slice(start, start + ITEMS_PER_PAGE);
+  }, [filteredAgents, currentPage]);
+
+  const handleSelectAgent = (agentId: number) => {
+    setSelectedAgents(prev =>
+      prev.includes(agentId) ? prev.filter(id => id !== agentId) : [...prev, agentId]
+    );
+  };
+
+  const handleSelectAllOnPage = () => {
+    const idsOnPage = paginatedAgents.map(a => a.id);
+    const allSelected = idsOnPage.every(id => selectedAgents.includes(id));
+    setSelectedAgents(prev =>
+      allSelected ? prev.filter(id => !idsOnPage.includes(id)) : [...new Set([...prev, ...idsOnPage])]
+    );
+  };
+
+  const handleDeleteAgent = (agentId: number) => {
+    setAgents(prev => prev.filter(agent => agent.id !== agentId));
+    setSelectedAgents(prev => prev.filter(id => id !== agentId));
+  };
+
+  const handleAddAgent = (newAgent: Omit<typeof agents[0], 'id'>) => {
+    const newId = agents.length ? Math.max(...agents.map(a => a.id)) + 1 : 1;
+    setAgents(prev => [...prev, { id: newId, ...newAgent }]);
+    setIsModalOpen(false);
+  };
+
+  const toggleDropdown = (dropdown: string) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  };
+
+  return (
+    <div className="w-full h-screen bg-gray-50" style={{ backgroundColor: '#F6F6FA' }}>
+      {/* Header */}
+      <div className="flex bg-white border-b border-gray-200">
+        {/* Logo Section */}
+        <div className="w-72 h-20 flex items-center justify-center bg-white border-r border-gray-200">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
+              <div className="w-6 h-6 bg-white rounded-full"></div>
+            </div>
+            <span className="text-xl font-semibold text-teal-600" style={{ fontFamily: 'Raleway', color: '#10A4B0' }}>
+              Global Vacations
+            </span>
+          </div>
+        </div>
+
+        {/* Main Header */}
+        <div className="flex-1 h-20 bg-gray-50 border-b border-gray-200 flex items-center justify-between px-6" style={{ backgroundColor: '#FEFEFE' }}>
+          <div className="flex items-center space-x-3">
+            <div className="flex space-x-1">
+              <div className="w-4 h-1 bg-gray-400 rounded"></div>
+              <div className="w-4 h-1 bg-gray-400 rounded"></div>
+              <div className="w-6 h-1 bg-gray-400 rounded"></div>
+            </div>
+            <span className="text-lg font-semibold text-gray-800" style={{ fontFamily: 'Raleway', fontSize: '20px' }}>
+              Hello Aditya
+            </span>
+          </div>
+
+          <div className="flex items-center space-x-4">
+            <Bell className="w-6 h-6 text-gray-500" />
+            <div className="flex items-center space-x-2">
+              <div className="w-7 h-7 bg-gray-300 rounded-full"></div>
+              <div>
+                <div className="text-xs font-medium text-gray-800" style={{ fontFamily: 'Inter' }}>Aditya Soni</div>
+                <div className="flex items-center space-x-1">
+                  <div className="w-1 h-1 bg-green-500 rounded-full"></div>
+                  <span className="text-xs text-gray-500" style={{ fontSize: '8px' }}>Online</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex h-full">
+        {/* Sidebar */}
+        <div className="w-72 bg-white border-r border-gray-200" style={{ height: 'calc(100vh - 80px)' }}>
+          <div className="p-4 space-y-1">
+            {[
+              { id: 'dashboard', icon: Grid, label: 'Dashboard', active: false },
+              { id: 'itinerary', icon: MapPin, label: 'My Itinerary', active: false },
+              { id: 'agent-table', icon: UserPlus, label: 'Agent Table', active: true },
+              { id: 'reports', icon: FileText, label: 'Reports', active: false },
+              { id: 'crm', icon: UserCheck, label: 'CRM', active: false },
+              { id: 'leads', icon: ChevronDown, label: 'My Leads', active: false, hasDropdown: true },
+              { id: 'follow-ups', icon: ChevronDown, label: 'Follow Ups', active: false, hasDropdown: true },
+              { id: 'customer-table', icon: ChevronDown, label: 'Customer Table', active: false, hasDropdown: true }
+            ].map(item => (
+              <div
+                key={item.id}
+                onClick={() => setActiveSidebar(item.id)}
+                className={`flex items-center space-x-3 px-4 py-3 rounded-lg cursor-pointer transition-colors ${
+                  item.active 
+                    ? 'bg-teal-600 text-white' 
+                    : 'text-gray-700 hover:bg-gray-100'
+                }`}
+                style={{
+                  backgroundColor: item.active ? '#10A4B0' : 'transparent',
+                  color: item.active ? '#FFFFFF' : '#1E1E1E',
+                  fontFamily: 'Inter',
+                  fontSize: '16px'
+                }}
+              >
+                <item.icon className="w-6 h-6" />
+                <span className="font-medium">{item.label}</span>
+                {item.hasDropdown && (
+                  <ChevronDown className="w-4 h-4 ml-auto transform rotate-180" />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className="flex-1 p-6">
+          {/* Page Title */}
+          <h1 className="text-xl font-semibold text-teal-600 mb-6" style={{ 
+            fontFamily: 'Raleway', 
+            fontSize: '20px', 
+            color: '#10A4B0',
+            fontWeight: '600'
+          }}>
+            Agent Table
+          </h1>
+
+          {/* Controls Bar */}
+          <div className="flex items-center justify-between mb-6 space-x-4">
+            {/* Search */}
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search Here..."
+                value={searchTerm}
+                onChange={e => setSearchTerm(e.target.value)}
+                className="w-44 h-8 pl-4 pr-10 bg-white border border-gray-300 rounded-full text-xs focus:outline-none focus:ring-1 focus:ring-gray-300"
+                style={{
+                  borderColor: 'rgba(113, 113, 130, 0.4)',
+                  fontSize: '10px',
+                  fontFamily: 'Inter',
+                  color: '#727171'
+                }}
+              />
+              <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+            </div>
+
+            <div className="flex items-center space-x-3">
+              {/* Action Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={() => toggleDropdown('action')}
+                  className="flex items-center px-4 py-2 bg-white border border-gray-400 rounded-full text-sm text-gray-500 hover:bg-gray-50"
+                  style={{
+                    height: '30px',
+                    fontFamily: 'Raleway',
+                    fontSize: '14px',
+                    color: '#727171'
+                  }}
+                >
+                  Action
+                  <ChevronDown className="w-4 h-4 ml-3 transform rotate-180" />
+                </button>
+                {activeDropdown === 'action' && (
+                  <div className="absolute top-full mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+                    <div className="py-1">
+                      <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100">Edit Selected</button>
+                      <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100">Delete Selected</button>
+                      <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100">Export</button>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Create Column Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={() => toggleDropdown('create')}
+                  className="flex items-center px-4 py-2 bg-white border border-gray-400 rounded-full text-sm text-gray-500 hover:bg-gray-50"
+                  style={{
+                    height: '30px',
+                    fontFamily: 'Raleway',
+                    fontSize: '14px',
+                    color: '#727171'
+                  }}
+                >
+                  Create Column
+                  <ChevronDown className="w-4 h-4 ml-3 transform rotate-180" />
+                </button>
+                {activeDropdown === 'create' && (
+                  <div className="absolute top-full mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+                    <div className="py-1">
+                      <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100">Text Column</button>
+                      <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100">Number Column</button>
+                      <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100">Date Column</button>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Filter Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={() => toggleDropdown('filter')}
+                  className="flex items-center px-4 py-2 bg-white border border-gray-400 rounded-full text-sm text-gray-500 hover:bg-gray-50"
+                  style={{
+                    height: '30px',
+                    fontFamily: 'Raleway',
+                    fontSize: '14px',
+                    color: '#727171'
+                  }}
+                >
+                  Filter
+                  <ChevronDown className="w-4 h-4 ml-3 transform rotate-180" />
+                </button>
+                {activeDropdown === 'filter' && (
+                  <div className="absolute top-full mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+                    <div className="py-1">
+                      <button
+                        onClick={() => { setStatusFilter('all'); setActiveDropdown(null); }}
+                        className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
+                      >
+                        All Status
+                      </button>
+                      <button
+                        onClick={() => { setStatusFilter('assigned'); setActiveDropdown(null); }}
+                        className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
+                      >
+                        Assigned Only
+                      </button>
+                      <button
+                        onClick={() => { setStatusFilter('unassigned'); setActiveDropdown(null); }}
+                        className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
+                      >
+                        Unassigned Only
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Agent Table Button */}
+              <button
+                className="flex items-center px-4 py-2 bg-teal-600 text-white rounded-full text-sm font-medium"
+                style={{
+                  height: '30px',
+                  backgroundColor: '#10A4B0',
+                  fontFamily: 'Raleway',
+                  fontSize: '14px'
+                }}
+              >
+                Agent Table
+                <ChevronDown className="w-4 h-4 ml-2 transform rotate-180" />
+              </button>
+            </div>
+          </div>
+
+          {/* Table Container */}
+          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+            {/* Table Header */}
+            <div className="bg-gray-50 border-b border-gray-200 flex" style={{ backgroundColor: '#F6F6FA' }}>
+              <div className="w-10 h-12 flex items-center justify-center border-r border-gray-200">
+                <input
+                  type="checkbox"
+                  checked={paginatedAgents.length > 0 && paginatedAgents.every(a => selectedAgents.includes(a.id))}
+                  onChange={handleSelectAllOnPage}
+                  className="w-4 h-4 rounded border border-black"
+                  style={{ accentColor: '#000000' }}
+                />
+              </div>
+              <div className="flex-1 flex">
+                <div className="w-50 h-12 flex items-center px-4 border-r border-gray-200" style={{ backgroundColor: '#F6F6FA' }}>
+                  <span className="text-base text-gray-600" style={{ fontFamily: 'Roboto', color: '#495057' }}>
+                    Agent Name
+                  </span>
+                </div>
+                <div className="w-50 h-12 flex items-center px-4 border-r border-gray-200" style={{ backgroundColor: '#F6F6FA' }}>
+                  <span className="text-base text-gray-600" style={{ fontFamily: 'Roboto', color: '#495057' }}>
+                    Email
+                  </span>
+                </div>
+                <div className="w-50 h-12 flex items-center px-4 border-r border-gray-200" style={{ backgroundColor: '#F6F6FA' }}>
+                  <span className="text-base text-gray-600" style={{ fontFamily: 'Roboto', color: '#495057' }}>
+                    Phone
+                  </span>
+                </div>
+                <div className="w-50 h-12 flex items-center px-4 border-r border-gray-200" style={{ backgroundColor: '#F6F6FA' }}>
+                  <span className="text-base text-gray-600" style={{ fontFamily: 'Roboto', color: '#495057' }}>
+                    Role
+                  </span>
+                </div>
+                <div className="w-50 h-12 flex items-center px-4 border-r border-gray-200" style={{ backgroundColor: '#F6F6FA' }}>
+                  <span className="text-base text-gray-600" style={{ fontFamily: 'Roboto', color: '#495057' }}>
+                    Team
+                  </span>
+                </div>
+                <div className="w-50 h-12 flex items-center px-4 border-r border-gray-200" style={{ backgroundColor: '#F6F6FA' }}>
+                  <span className="text-base text-gray-600" style={{ fontFamily: 'Roboto', color: '#495057' }}>
+                    Audio
+                  </span>
+                </div>
+                <div className="w-50 h-12 flex items-center px-4" style={{ backgroundColor: '#F6F6FA' }}>
+                  <span className="text-base text-gray-600" style={{ fontFamily: 'Roboto', color: '#495057' }}>
+                    Action
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Table Body */}
+            <div className="divide-y divide-gray-200">
+              {paginatedAgents.map((agent) => (
+                <div key={agent.id} className="flex hover:bg-gray-50">
+                  <div className="w-10 h-20 flex items-center justify-center border-r border-gray-200">
+                    <input
+                      type="checkbox"
+                      checked={selectedAgents.includes(agent.id)}
+                      onChange={() => handleSelectAgent(agent.id)}
+                      className="w-4 h-4 rounded border border-black"
+                      style={{ accentColor: '#000000' }}
+                    />
+                  </div>
+                  <div className="flex-1 flex">
+                    <div className="w-50 h-20 flex items-center px-4 border-r border-gray-200">
+                      <span className="text-base text-gray-600" style={{ 
+                        fontFamily: 'Roboto', 
+                        color: '#717182',
+                        fontSize: '16px'
+                      }}>
+                        {agent.name}
+                      </span>
+                    </div>
+                    <div className="w-50 h-20 flex items-center px-4 border-r border-gray-200">
+                      <span className="text-sm text-gray-600" style={{ 
+                        fontFamily: 'Roboto', 
+                        color: '#717182',
+                        fontSize: '14px'
+                      }}>
+                        {agent.email}
+                      </span>
+                    </div>
+                    <div className="w-50 h-20 flex items-center px-4 border-r border-gray-200">
+                      <span className="text-sm text-gray-600" style={{ 
+                        fontFamily: 'Roboto', 
+                        color: '#717182',
+                        fontSize: '14px'
+                      }}>
+                        {agent.phone}
+                      </span>
+                    </div>
+                    <div className="w-50 h-20 flex items-center px-4 border-r border-gray-200">
+                      <span className="text-sm text-gray-600" style={{ 
+                        fontFamily: 'Roboto', 
+                        color: '#717182',
+                        fontSize: '14px'
+                      }}>
+                        {agent.role}
+                      </span>
+                    </div>
+                    <div className="w-50 h-20 flex items-center px-4 border-r border-gray-200">
+                      <div className={`px-10 py-2 rounded-full text-sm font-medium ${
+                        agent.status === 'Assigned' 
+                          ? 'bg-green-500 text-white' 
+                          : 'bg-red-500 text-white'
+                      }`} style={{
+                        backgroundColor: agent.status === 'Assigned' ? '#34B53A' : '#FF3A29',
+                        fontFamily: 'Roboto',
+                        fontSize: '14px'
+                      }}>
+                        {agent.status}
+                      </div>
+                    </div>
+                    <div className="w-50 h-20 flex items-center px-4 border-r border-gray-200">
+                      <button
+                        className="flex items-center px-4 py-2 bg-blue-500 text-white rounded-full text-sm font-medium hover:bg-blue-600"
+                        style={{
+                          backgroundColor: '#0088FE',
+                          fontFamily: 'Raleway',
+                          fontSize: '14px'
+                        }}
+                      >
+                        <Volume2 className="w-4 h-4 mr-2" />
+                        Listen
+                      </button>
+                    </div>
+                    <div className="w-50 h-20 flex items-center px-4">
+                      <div className="flex items-center space-x-2">
+                        <button className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center hover:bg-purple-200"
+                                style={{ backgroundColor: '#F0EFFF' }}>
+                          <Eye className="w-5 h-5 text-purple-600" style={{ color: '#6C5FFC' }} />
+                        </button>
+                        <button className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center hover:bg-green-200"
+                                style={{ backgroundColor: '#E8F8F5' }}>
+                          <Edit2 className="w-5 h-5 text-green-600" style={{ color: '#63BF9C' }} />
+                        </button>
+                        <button 
+                          onClick={() => handleDeleteAgent(agent.id)}
+                          className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center hover:bg-red-200"
+                          style={{ backgroundColor: '#FFE2DF' }}
+                        >
+                          <Trash2 className="w-5 h-5 text-red-600" style={{ color: '#FF3A29' }} />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Pagination */}
+          <div className="flex items-center justify-between mt-6">
+            {/* Navigation Arrows */}
+            <button
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+              className="w-5 h-5 flex items-center justify-center text-gray-500 hover:text-gray-700 disabled:opacity-50"
+            >
+              <div className="w-0 h-0 border-r-4 border-t-2 border-b-2 border-transparent border-r-gray-500"></div>
+            </button>
+
+            {/* Progress Bar */}
+            <div className="flex-1 mx-6">
+              <div className="w-full h-3 bg-gray-300 rounded-full overflow-hidden">
+                <div 
+                  className="h-full bg-gray-500 rounded-full transition-all duration-300"
+                  style={{ 
+                    width: `${(currentPage / totalPages) * 100}%`,
+                    backgroundColor: '#939393'
+                  }}
+                ></div>
+              </div>
+            </div>
+
+            <button
+              disabled={currentPage === totalPages}
+              onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+              className="w-5 h-5 flex items-center justify-center text-gray-500 hover:text-gray-700 disabled:opacity-50"
+            >
+              <div className="w-0 h-0 border-l-4 border-t-2 border-b-2 border-transparent border-l-gray-500"></div>
+            </button>
+          </div>
+
+          {/* Results Info */}
+          <div className="text-center mt-4 text-sm text-gray-600">
+            Showing {filteredAgents.length === 0
+              ? '0 agents'
+              : `${(currentPage - 1) * ITEMS_PER_PAGE + 1}–${Math.min(currentPage * ITEMS_PER_PAGE, filteredAgents.length)} of ${filteredAgents.length}`}
+          </div>
+        </div>
+      </div>
+
+      {/* Add Agent Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 w-96 max-w-md">
+            <h2 className="text-xl font-semibold mb-4">Add New Agent</h2>
+            <form onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.target as HTMLFormElement);
+              handleAddAgent({
+                name: formData.get('name') as string,
+                email: formData.get('email') as string,
+                phone: formData.get('phone') as string,
+                role: formData.get('role') as string,
+                team: formData.get('team') as string,
+                status: formData.get('status') as string,
+                avatar: (formData.get('name') as string).split(' ').map(n => n[0]).join('').toUpperCase()
+              });
+            }}>
+              <div className="space-y-4">
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Agent Name"
+                  required
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300"
+                />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300"
+                />
+                <input
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone"
+                  required
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300"
+                />
+                <input
+                  name="role"
+                  type="text"
+                  placeholder="Role"
+                  required
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300"
+                />
+                <input
+                  name="team"
+                  type="text"
+                  placeholder="Team"
+                  required
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300"
+                />
+                <select
+                  name="status"
+                  required
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-teal-300"
+                >
+                  <option value="">Select Status</option>
+                  <option value="Assigned">Assigned</option>
+                  <option value="Unassigned">Unassigned</option>
+                </select>
+              </div>
+              <div className="flex justify-end space-x-3 mt-6">
+                <button
+                  type="button"
+                  onClick={() => setIsModalOpen(false)}
+                  className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700"
+                  style={{ backgroundColor: '#10A4B0' }}
+                >
+                  Add Agent
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Click outside to close dropdowns */}
+      {activeDropdown && (
+        <div 
+          className="fixed inset-0 z-5"
+          onClick={() => setActiveDropdown(null)}
+        ></div>
+      )}
+    </div>
+  );
+};
+
+export default AgentTable;
