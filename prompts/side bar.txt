@@ -1,0 +1,2885 @@
+analyse and see how sidebar looks fro mths figam design
+
+/* Travel Basic */
+
+position: relative;
+width: 1440px;
+height: 803px;
+left: 200px;
+top: 2904px;
+
+background: #F6F6FA;
+
+
+/* Rectangle 42289 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 286px;
+height: 78px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+
+
+/* Group 1171277237 */
+
+position: absolute;
+width: 1154px;
+height: 78px;
+left: 286px;
+top: 0px;
+
+
+
+/* Rectangle 42291 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1154px;
+height: 78px;
+left: 286px;
+top: 0px;
+
+background: #FEFEFE;
+
+
+/* Group 1171277235 */
+
+position: absolute;
+width: 148px;
+height: 24px;
+left: 306px;
+top: 27px;
+
+
+
+/* Hello Aditya */
+
+position: absolute;
+width: 116px;
+height: 23px;
+left: 338px;
+top: 27.23px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+color: #1E1E1E;
+
+
+
+/* Frame */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 306px;
+top: 27px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 37.5%;
+top: 50%;
+bottom: 50%;
+
+border: 2px solid #717182;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 29.17%;
+top: 75%;
+bottom: 25%;
+
+border: 2px solid #717182;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 75%;
+
+border: 2px solid #717182;
+
+
+/* Bell
+
+Keywords: alarm, notification, sound
+*/
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 1267px;
+top: 27px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.35%;
+
+border: 1.5px solid #727171;
+
+
+/* Group 1171277234 */
+
+position: absolute;
+width: 105px;
+height: 28px;
+left: 1315px;
+top: 25px;
+
+
+
+/* Ellipse 240 */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: 1315px;
+top: 25px;
+
+background: #D9D9D9;
+
+
+/* Group 1171277233 */
+
+position: absolute;
+width: 72px;
+height: 28px;
+left: 1348px;
+top: 25px;
+
+
+
+/* Aditya Soni */
+
+position: absolute;
+left: 93.61%;
+right: 1.39%;
+top: 3.11%;
+bottom: 95.02%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Online */
+
+position: absolute;
+left: 94.03%;
+right: 4.1%;
+top: 5.35%;
+bottom: 93.4%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 10px;
+/* identical to box height */
+
+color: #727171;
+
+
+
+/* Ellipse 241 */
+
+position: absolute;
+width: 4px;
+height: 4px;
+left: 1348px;
+top: 46px;
+
+background: #01B613;
+
+
+/* Rectangle 42290 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 286px;
+height: 725px;
+left: 0px;
+top: 78px;
+
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+
+
+/* Group 1171277118 */
+
+position: absolute;
+width: 229.31px;
+height: 32.24px;
+left: 28px;
+top: 23px;
+
+
+
+/* Group 1171276596 */
+
+position: absolute;
+width: 32.63px;
+height: 32px;
+left: 28px;
+top: 23px;
+
+
+
+/* Ellipse 239 */
+
+position: absolute;
+width: 26.04px;
+height: 26.04px;
+left: 31.3px;
+top: 25.98px;
+
+background: #FFFFFF;
+
+
+/* image 37 */
+
+position: absolute;
+width: 32.63px;
+height: 32px;
+left: 28px;
+top: 23px;
+
+background: url(image [Background removed]);
+filter: drop-shadow(0px 7px 12px rgba(0, 0, 0, 0.16));
+
+
+/* Global Vacations */
+
+position: absolute;
+width: 190px;
+height: 28px;
+left: 67.31px;
+top: 27.23px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+color: #10A4B0;
+
+
+
+/* Group 1171277147 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 92px;
+
+
+
+/* Group 1171276997 */
+
+position: absolute;
+height: 40px;
+left: 1.39%;
+right: 82.01%;
+top: 92px;
+
+
+
+/* Rectangle 42221 */
+
+position: absolute;
+left: 1.39%;
+right: 82.01%;
+top: 11.46%;
+bottom: 83.56%;
+
+background: #10A4B0;
+border-radius: 5px;
+
+
+/* Group 1171277146 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 100px;
+
+
+
+/* Ellipse 297 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 100px;
+
+background: #FFFFFF;
+
+
+/* 1 */
+
+position: absolute;
+width: 7px;
+height: 17px;
+left: 45px;
+top: 104px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #99A1B7;
+
+
+
+/* Travel Basic */
+
+position: absolute;
+width: 136.77px;
+height: 19px;
+left: 78px;
+top: 103px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+
+
+/* Group 1171277148 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 148px;
+
+
+
+/* Group 1171276992 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 148px;
+
+
+
+/* Rectangle 42225 */
+
+position: absolute;
+left: 1.39%;
+right: 82.01%;
+top: 18.43%;
+bottom: 76.59%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Group 1171277003 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 156px;
+
+
+
+/* Ellipse 297 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 156px;
+
+background: #FFFFFF;
+
+
+/* 2 */
+
+position: absolute;
+width: 9px;
+height: 17px;
+left: 45px;
+top: 160px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Arrival & Departure */
+
+position: absolute;
+width: 150px;
+height: 19px;
+left: 78px;
+top: 159px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
+
+
+
+/* Group 1171277149 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 204px;
+
+
+
+/* Rectangle 42225 */
+
+position: absolute;
+left: 1.39%;
+right: 82.01%;
+top: 25.4%;
+bottom: 69.61%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Group 1171277003 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 212px;
+
+
+
+/* Ellipse 297 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 212px;
+
+background: #FFFFFF;
+
+
+/* 3 */
+
+position: absolute;
+width: 10px;
+height: 17px;
+left: 45px;
+top: 216px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Accommodation */
+
+position: absolute;
+width: 136.77px;
+height: 19px;
+left: 78px;
+top: 215px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
+
+
+
+/* Group 1171277181 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 260px;
+
+
+
+/* Group 1171277120 */
+
+position: absolute;
+height: 40px;
+left: 1.39%;
+right: 82.01%;
+top: 260px;
+
+
+
+/* Rectangle 42225 */
+
+position: absolute;
+left: 1.39%;
+right: 82.01%;
+top: 32.38%;
+bottom: 62.64%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Group 1171277003 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 268px;
+
+
+
+/* Ellipse 297 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 268px;
+
+background: #FFFFFF;
+
+
+/* 4 */
+
+position: absolute;
+width: 10px;
+height: 17px;
+left: 45px;
+top: 272px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Vehicle */
+
+position: absolute;
+width: 136.77px;
+height: 19px;
+left: 78px;
+top: 271px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
+
+
+
+/* Group 1171277182 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 316px;
+
+
+
+/* Group 1171276998 */
+
+position: absolute;
+height: 40px;
+left: 1.39%;
+right: 82.01%;
+top: 316px;
+
+
+
+/* Rectangle 42225 */
+
+position: absolute;
+left: 1.39%;
+right: 82.01%;
+top: 39.35%;
+bottom: 55.67%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Group 1171277003 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 324px;
+
+
+
+/* Ellipse 297 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 324px;
+
+background: #FFFFFF;
+
+
+/* 5 */
+
+position: absolute;
+width: 9px;
+height: 17px;
+left: 45px;
+top: 328px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Day Wise Itinerary */
+
+position: absolute;
+width: 154px;
+height: 19px;
+left: 78px;
+top: 327px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
+
+
+
+/* Group 1171277183 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 372px;
+
+
+
+/* Group 1171277113 */
+
+position: absolute;
+height: 40px;
+left: 1.39%;
+right: 82.01%;
+top: 372px;
+
+
+
+/* Group 1171277116 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 372px;
+
+
+
+/* Rectangle 42225 */
+
+position: absolute;
+left: 1.39%;
+right: 82.01%;
+top: 46.33%;
+bottom: 48.69%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Group 1171277003 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 380px;
+
+
+
+/* Ellipse 297 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 380px;
+
+background: #FFFFFF;
+
+
+/* 6 */
+
+position: absolute;
+width: 10px;
+height: 17px;
+left: 45px;
+top: 384px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Pricing */
+
+position: absolute;
+width: 136.77px;
+height: 19px;
+left: 78px;
+top: 383px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
+
+
+
+/* Group 1171277184 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 428px;
+
+
+
+/* Group 1171277113 */
+
+position: absolute;
+height: 40px;
+left: 1.39%;
+right: 82.01%;
+top: 428px;
+
+
+
+/* Group 1171277116 */
+
+position: absolute;
+width: 239px;
+height: 40px;
+left: 20px;
+top: 428px;
+
+
+
+/* Rectangle 42225 */
+
+position: absolute;
+left: 1.39%;
+right: 82.01%;
+top: 53.3%;
+bottom: 41.72%;
+
+background: #FFFFFF;
+border-radius: 5px;
+
+
+/* Group 1171277003 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 436px;
+
+
+
+/* Ellipse 297 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 36px;
+top: 436px;
+
+background: #FFFFFF;
+
+
+/* 7 */
+
+position: absolute;
+width: 9px;
+height: 17px;
+left: 45px;
+top: 440px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Trip Information */
+
+position: absolute;
+width: 136.77px;
+height: 19px;
+left: 78px;
+top: 439px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
+
+
+
+/* Travel Basic* */
+
+position: absolute;
+width: 120px;
+height: 23px;
+left: 306px;
+top: 104px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+
+color: #10A4B0;
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 637px;
+height: 0px;
+left: 306px;
+top: 142px;
+
+
+
+/* Line 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: -nan%;
+bottom: -nan%;
+
+border: 0.5px solid #717070;
+
+
+/* Rectangle 42299 */
+
+position: absolute;
+width: 788px;
+height: 312px;
+left: -447px;
+top: 998px;
+
+background: #D9D9D9;
+
+
+/* Frame 1618869013 */
+
+position: absolute;
+width: 637px;
+height: 618px;
+left: 306px;
+top: 160px;
+overflow-y: scroll;
+
+border-radius: 10px;
+
+
+/* Frame 1618868987 */
+
+position: absolute;
+width: 637px;
+height: 887px;
+left: 0px;
+top: 0px;
+
+
+
+/* Group 1171277187 */
+
+position: absolute;
+width: 637px;
+height: 887px;
+left: 0px;
+top: 0px;
+
+
+
+/* Group 1171277186 */
+
+position: absolute;
+width: 637px;
+height: 887px;
+left: 0px;
+top: 0px;
+
+
+
+/* Rectangle 42292 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 637px;
+height: 887px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 10px;
+
+
+/* Group 1171277155 */
+
+position: absolute;
+width: 230px;
+height: 53px;
+left: 16px;
+top: 221px;
+
+
+
+/* Client Name */
+
+position: absolute;
+width: 71px;
+height: 15px;
+left: 16px;
+top: 221px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Group 1171276841 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 16px;
+top: 244px;
+
+
+
+/* Rectangle 42229 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 16px;
+top: 244px;
+
+background: #F6F6FA;
+border-radius: 5px;
+
+
+/* Type here */
+
+position: absolute;
+width: 57.5px;
+height: 15px;
+left: 20.96px;
+top: 251.88px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #737373;
+
+
+
+/* Group 1171277157 */
+
+position: absolute;
+width: 230px;
+height: 53px;
+left: 16px;
+top: 298px;
+
+
+
+/* Phone Number */
+
+position: absolute;
+width: 86px;
+height: 15px;
+left: 16px;
+top: 298px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Group 1171276843 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 16px;
+top: 321px;
+
+
+
+/* Rectangle 42229 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 16px;
+top: 321px;
+
+background: #F6F6FA;
+border-radius: 5px;
+
+
+/* Type here */
+
+position: absolute;
+width: 57.5px;
+height: 15px;
+left: 20.96px;
+top: 328.88px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #737373;
+
+
+
+/* Trip Overview */
+
+position: absolute;
+width: 80px;
+height: 15px;
+left: 16px;
+top: 529px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Frame 1618869016 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 230px;
+height: 53px;
+left: 16px;
+top: 452px;
+
+
+
+/* Total Travelers */
+
+width: 230px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group 1171276857 */
+
+width: 230px;
+height: 30px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 42229 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 0px;
+top: 23px;
+
+background: #F6F6FA;
+border-radius: 5px;
+
+
+/* 1 */
+
+position: absolute;
+width: 56.35px;
+height: 15px;
+left: 7.25px;
+top: 30.88px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #737373;
+
+
+
+/* Polygon 9 */
+
+position: absolute;
+width: 9.59px;
+height: 7.19px;
+left: 209.75px;
+top: 37.76px;
+
+background: #737373;
+transform: rotate(180deg);
+
+
+/* Polygon 10 */
+
+position: absolute;
+width: 9.59px;
+height: 7.19px;
+left: 209.75px;
+top: 31.76px;
+
+background: #737373;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Group 1171277159 */
+
+position: absolute;
+width: 230px;
+height: 53px;
+left: 16px;
+top: 375px;
+
+
+
+/* Start Date */
+
+position: absolute;
+width: 59px;
+height: 15px;
+left: 16px;
+top: 375px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Group 1171276845 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 16px;
+top: 398px;
+
+
+
+/* Rectangle 42229 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 16px;
+top: 398px;
+
+background: #F6F6FA;
+border-radius: 5px;
+
+
+/* Select a City */
+
+position: absolute;
+width: 88.14px;
+height: 15px;
+left: 22.89px;
+top: 406px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #737373;
+
+
+
+/* Calendar
+
+Keywords: date
+*/
+
+position: absolute;
+width: 18.78px;
+height: 18.78px;
+left: 221.95px;
+top: 403.61px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #717182;
+
+
+/* Group 1171277162 */
+
+position: absolute;
+width: 230px;
+height: 53px;
+left: 373px;
+top: 452px;
+
+
+
+/* Total Days */
+
+position: absolute;
+width: 61px;
+height: 15px;
+left: 373px;
+top: 452px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Group 1171276858 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 373px;
+top: 475px;
+
+
+
+/* Rectangle 42229 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 373px;
+top: 475px;
+
+background: #F6F6FA;
+border-radius: 5px;
+
+
+/* 1 */
+
+position: absolute;
+width: 56.35px;
+height: 15px;
+left: 380.25px;
+top: 482.88px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #737373;
+
+
+
+/* Polygon 9 */
+
+position: absolute;
+width: 9.59px;
+height: 7.19px;
+left: 582.75px;
+top: 489.76px;
+
+background: #737373;
+transform: rotate(180deg);
+
+
+/* Polygon 10 */
+
+position: absolute;
+width: 9.59px;
+height: 7.19px;
+left: 582.75px;
+top: 483.76px;
+
+background: #737373;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Group 1171277160 */
+
+position: absolute;
+width: 230px;
+height: 53px;
+left: 373px;
+top: 375px;
+
+
+
+/* End Date */
+
+position: absolute;
+width: 53px;
+height: 15px;
+left: 373px;
+top: 375px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Group 1171276845 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 373px;
+top: 398px;
+
+
+
+/* Rectangle 42229 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 373px;
+top: 398px;
+
+background: #F6F6FA;
+border-radius: 5px;
+
+
+/* Select a City */
+
+position: absolute;
+width: 88.14px;
+height: 15px;
+left: 379.89px;
+top: 406px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #737373;
+
+
+
+/* Calendar
+
+Keywords: date
+*/
+
+position: absolute;
+width: 18.78px;
+height: 18.78px;
+left: 578.95px;
+top: 403.61px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #717182;
+
+
+/* Group 1171277156 */
+
+position: absolute;
+width: 230px;
+height: 53px;
+left: 373px;
+top: 221px;
+
+
+
+/* Email Address */
+
+position: absolute;
+width: 82px;
+height: 15px;
+left: 373px;
+top: 221px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Group 1171276842 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 373px;
+top: 244px;
+
+
+
+/* Rectangle 42229 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 373px;
+top: 244px;
+
+background: #F6F6FA;
+border-radius: 5px;
+
+
+/* Type here */
+
+position: absolute;
+width: 56.35px;
+height: 15px;
+left: 380.25px;
+top: 251.88px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #737373;
+
+
+
+/* Group 1171277158 */
+
+position: absolute;
+width: 230px;
+height: 53px;
+left: 373px;
+top: 298px;
+
+
+
+/* Nationality */
+
+position: absolute;
+width: 62px;
+height: 15px;
+left: 373px;
+top: 298px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Group 1171276844 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 373px;
+top: 321px;
+
+
+
+/* Rectangle 42229 */
+
+position: absolute;
+width: 230px;
+height: 30px;
+left: 373px;
+top: 321px;
+
+background: #F6F6FA;
+border-radius: 5px;
+
+
+/* Type here */
+
+position: absolute;
+width: 56.35px;
+height: 15px;
+left: 380.25px;
+top: 328.88px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #737373;
+
+
+
+/* Polygon 9 */
+
+position: absolute;
+width: 9.59px;
+height: 7.19px;
+left: 585.05px;
+top: 332.45px;
+
+background: #737373;
+transform: rotate(180deg);
+
+
+/* Line 2 */
+
+position: absolute;
+width: 601px;
+height: 0px;
+left: 16px;
+top: 206px;
+
+
+
+/* Line 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: -nan%;
+bottom: -nan%;
+
+border: 0.5px solid #E0E0E0;
+
+
+/* Group 1171277178 */
+
+position: absolute;
+left: 42.7%;
+right: 42.7%;
+top: 87.03%;
+bottom: 10.26%;
+
+
+
+/* Frame 1618868981 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #10A4B0;
+border-radius: 5px;
+
+
+/* Submit */
+
+position: absolute;
+width: 34px;
+height: 12px;
+left: 30px;
+top: 6px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Line 3 */
+
+position: absolute;
+width: 601px;
+height: 0px;
+left: 16px;
+top: 811px;
+
+
+
+/* Line 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: -nan%;
+bottom: -nan%;
+
+border: 0.5px solid #E0E0E0;
+
+
+/* Rectangle 42299 */
+
+position: absolute;
+width: 605px;
+height: 177px;
+left: 16px;
+top: 16px;
+
+background: url(417add19f04c9e40efad41d5485c3e01.jpg);
+
+
+/* Trash
+
+Keywords: garbage, delete, remove, bin
+*/
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 583px;
+top: 530px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #717182;
+
+
+/* Rectangle 42275 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 587px;
+height: 162px;
+left: 16px;
+top: 594px;
+
+background: #FFFFFF;
+border: 1px solid #DDDDDD;
+border-radius: 5px;
+
+
+/* Rectangle 42277 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 587px;
+height: 30px;
+left: 16px;
+top: 552px;
+
+background: #FFFFFF;
+border: 1px solid #DDDDDD;
+border-radius: 5px;
+
+
+/* Rectangle 42276 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 587px;
+height: 54px;
+left: 16px;
+top: 594px;
+
+background: #F8F8F8;
+border: 1px solid #DDDDDD;
+border-radius: 5px 5px 0px 0px;
+
+
+/* Frame 1618868853 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 111.4px;
+height: 26px;
+left: 33.14px;
+top: 606px;
+
+
+
+/* Frame 1618868849 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+width: 26px;
+height: 26px;
+
+border: 1px solid #7F7F7F;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Bold */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Icon */
+
+position: absolute;
+left: 25%;
+right: 20.83%;
+top: 16.67%;
+bottom: 16.67%;
+
+border: 1px solid #1E1E1E;
+
+
+/* Frame 1618868850 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+width: 26px;
+height: 26px;
+
+border: 1px solid #7F7F7F;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Italic */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Icon */
+
+position: absolute;
+left: 20.83%;
+right: 20.84%;
+top: 16.67%;
+bottom: 16.67%;
+
+border: 1px solid #1E1E1E;
+
+
+/* Frame 1618868851 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+width: 26px;
+height: 26px;
+
+border: 1px solid #7F7F7F;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Link
+
+Keywords: chain, url
+*/
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Icon */
+
+position: absolute;
+left: 8.57%;
+right: 8.57%;
+top: 8.61%;
+bottom: 8.61%;
+
+border: 1px solid #1E1E1E;
+
+
+/* Frame 1618868851 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+width: 26px;
+height: 26px;
+
+border: 1px solid #7F7F7F;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Image
+
+Keywords: picture
+*/
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1px solid #1E1E1E;
+
+
+/* Enter a short overview */
+
+position: absolute;
+width: 175.67px;
+height: 15px;
+left: 33.14px;
+top: 656px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #787878;
+
+
+
+/* Enter Paragraph Title (e.g Food ) */
+
+position: absolute;
+width: 205.66px;
+height: 15px;
+left: 33.14px;
+top: 560px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #787878;
+
+
+
+/* Frame 1618868983 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 2px 10px;
+gap: 10px;
+
+position: absolute;
+width: 98px;
+height: 20px;
+left: 1322px;
+top: 114px;
+
+background: #10A4B0;
+border-radius: 50px;
+
+
+/* Eye */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Icon */
+
+position: absolute;
+left: 4.17%;
+right: 4.16%;
+top: 16.67%;
+bottom: 16.67%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Preview */
+
+width: 72px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Group 1171277180 */
+
+position: absolute;
+width: 445px;
+height: 618px;
+left: 975px;
+top: 160px;
+
+
+
+/* Rectangle 42303 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 445px;
+height: 618px;
+left: 975px;
+top: 160px;
+
+background: #F6F6FA;
+border: 1px solid #E0E0E0;
+border-radius: 10px;
+
+
+/* Rectangle 42304 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 445px;
+height: 52px;
+left: 975px;
+top: 160px;
+
+background: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 10px 10px 0px 0px;
+
+
+/* Save Details */
+
+position: absolute;
+width: 116px;
+height: 23px;
+left: 989px;
+top: 174px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+
+color: #717182;
+
+
+
+/* Group 1171277178 */
+
+position: absolute;
+width: 417px;
+height: 251px;
+left: 989px;
+top: 230px;
+
+
+
+/* Rectangle 42301 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 417px;
+height: 251px;
+left: 989px;
+top: 230px;
+
+background: #F6F6FA;
+border: 1px solid #E0E0E0;
+border-radius: 10px;
+
+
+/* Group 1171277191 */
+
+position: absolute;
+width: 417px;
+height: 46px;
+left: 989px;
+top: 230px;
+
+
+
+/* Rectangle 42303 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 417px;
+height: 46px;
+left: 989px;
+top: 230px;
+
+background: #10A4B0;
+border: 1px solid #E0E0E0;
+border-radius: 10px 10px 0px 0px;
+
+
+/* Travel Basic */
+
+position: absolute;
+width: 112px;
+height: 23px;
+left: 1001px;
+top: 241px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+
+
+
+/* More horizontal
+
+Keywords: ellipsis
+*/
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 1374px;
+top: 241px;
+
+border-radius: 10px 10px 0px 0px;
+
+
+/* Icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+border: 4px solid #FFFFFF;
+
+
+/* Clint Name */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1005px;
+top: 293px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* - */
+
+position: absolute;
+width: 6px;
+height: 14px;
+left: 1106px;
+top: 293px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* - */
+
+position: absolute;
+width: 6px;
+height: 14px;
+left: 1106px;
+top: 317px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* - */
+
+position: absolute;
+width: 6px;
+height: 14px;
+left: 1106px;
+top: 341px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* - */
+
+position: absolute;
+width: 6px;
+height: 14px;
+left: 1106px;
+top: 365px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* - */
+
+position: absolute;
+width: 6px;
+height: 14px;
+left: 1106px;
+top: 389px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* - */
+
+position: absolute;
+width: 6px;
+height: 14px;
+left: 1106px;
+top: 413px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* - */
+
+position: absolute;
+width: 6px;
+height: 14px;
+left: 1106px;
+top: 437px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Name */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1126px;
+top: 293px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Email */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1005px;
+top: 317px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Email */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1126px;
+top: 317px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Phone Number */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1005px;
+top: 341px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* 987546213 */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1126px;
+top: 341px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Nationality */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1005px;
+top: 365px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Indian */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1126px;
+top: 365px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Start Date */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1005px;
+top: 389px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* End Date */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1126px;
+top: 389px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Total Travelers */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1005px;
+top: 413px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* 5 */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1126px;
+top: 413px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Total Days */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1005px;
+top: 437px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* 8 */
+
+position: absolute;
+width: 89px;
+height: 14px;
+left: 1126px;
+top: 437px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #1E1E1E;
+
+
+
+/* Line 5 */
+
+position: absolute;
+width: 393px;
+height: 0px;
+left: 1001px;
+top: 465px;
+
+
+
+/* Line 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: -nan%;
+bottom: -nan%;
+
+border: 2px dashed #717070;
+
+
+/* Line 6 */
+
+position: absolute;
+width: 445px;
+height: 0px;
+left: 975px;
+top: 142px;
+
+
+
+/* Line 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: -nan%;
+bottom: -nan%;
+
+border: 0.5px solid #717070;
+
+
+/* Frame 1618868889 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 182px;
+height: 30px;
+left: 761px;
+top: 107px;
+
+border-radius: 5px;
+
+
+/* Frame */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 62.5%;
+top: 66.67%;
+bottom: 8.33%;
+
+border: 1px solid #717182;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 20.83%;
+bottom: 20.83%;
+
+border: 1px solid #717182;
+
+
+/* Vector */
+
+position: absolute;
+left: 62.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 66.67%;
+
+border: 1px solid #717182;
+
+
+/* Define Your route */
+
+width: 97px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #727171;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
