@@ -1,0 +1,1649 @@
+first understand how my current ui flow is got it
+
+
+
+import React from 'react';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Layout from './components/Layout/Layout';
+
+import Dashboard from './pages/Dashboard';
+
+import AgentTable from './pages/AgentTable';
+
+import Reports from './pages/Reports';
+
+import MyItinerary from './pages/MyItinerary';
+
+import CRM from './pages/CRM';
+
+import MyLeads from './pages/MyLeads';
+
+import FollowUps from './pages/FollowUps';
+
+import CustomerTable from './pages/CustomerTable';
+
+import CreateItinerary from './pages/CreateItinerary';
+
+
+
+import TravelBasic from './pages/itinerarySteps/TravelBasic';
+
+import ArrivalDeparture from './pages/itinerarySteps/ArrivalDeparture';
+
+import Accommodation from './pages/itinerarySteps/Accommodation';
+
+import Vehicle from './pages/itinerarySteps/Vehicle';
+
+import DayWiseItinerary from './pages/itinerarySteps/DayWiseItinerary';
+
+import Pricing from './pages/itinerarySteps/Pricing';
+
+import TripInformation from './pages/itinerarySteps/TripInformation';
+
+
+
+import { SidebarProvider } from "./context/SidebarContext";
+
+
+
+function App() {
+
+  return (
+
+    <Router>
+
+      <SidebarProvider>
+
+        <Layout>
+
+          <Routes>
+
+            {/* Existing Routes */}
+
+            <Route path="/" element={<Dashboard />} />
+
+            <Route path="/dashboard" element={<Dashboard />} />
+
+            <Route path="/my-itinerary" element={<MyItinerary />} />
+
+            <Route path="/my-itinerary/create" element={<CreateItinerary />} />
+
+            <Route path="/agent-table" element={<AgentTable />} />
+
+            <Route path="/reports" element={<Reports />} />
+
+            <Route path="/crm" element={<CRM />} />
+
+            <Route path="/my-leads" element={<MyLeads />} />
+
+            <Route path="/follow-ups" element={<FollowUps />} />
+
+            <Route path="/customer-table" element={<CustomerTable />} />
+
+
+
+            {/* NEW: Itinerary Step Routes */}
+
+            <Route path="/my-itinerary/create/travel-basic" element={<TravelBasic />} />
+
+            <Route path="/my-itinerary/create/arrival-departure" element={<ArrivalDeparture />} />
+
+            <Route path="/my-itinerary/create/accommodation" element={<Accommodation />} />
+
+            <Route path="/my-itinerary/create/vehicle" element={<Vehicle />} />
+
+            <Route path="/my-itinerary/create/day-wise-itinerary" element={<DayWiseItinerary />} />
+
+            <Route path="/my-itinerary/create/pricing" element={<Pricing />} />
+
+            <Route path="/my-itinerary/create/trip-information" element={<TripInformation />} />
+
+          </Routes>
+
+        </Layout>
+
+      </SidebarProvider>
+
+    </Router>
+
+  );
+
+}
+
+
+
+export default App;
+
+
+
+// components/ItinerarySidebar.tsx
+
+
+
+import React from 'react';
+
+import { useNavigate } from 'react-router-dom';
+
+import { ArrowLeft } from 'lucide-react';
+
+
+
+interface ItinerarySidebarProps {
+
+  currentStep: number;
+
+  onStepClick: (step: number) => void;
+
+  onBackToItinerary: () => void;
+
+}
+
+
+
+const ItinerarySidebar: React.FC<ItinerarySidebarProps> = ({
+
+  currentStep,
+
+  onStepClick,
+
+  onBackToItinerary
+
+}) => {
+
+  const navigate = useNavigate();
+
+
+
+  const steps = [
+
+    { id: 1, label: 'Travel Basic', path: '/my-itinerary/create/travel-basic' },
+
+    { id: 2, label: 'Arrival & Departure', path: '/my-itinerary/create/arrival-departure' },
+
+    { id: 3, label: 'Accommodation', path: '/my-itinerary/create/accommodation' },
+
+    { id: 4, label: 'Vehicle', path: '/my-itinerary/create/vehicle' },
+
+    { id: 5, label: 'Day Wise Itinerary', path: '/my-itinerary/create/day-wise-itinerary' },
+
+    { id: 6, label: 'Pricing', path: '/my-itinerary/create/pricing' },
+
+    { id: 7, label: 'Trip Information', path: '/my-itinerary/create/trip-information' },
+
+  ];
+
+
+
+  return (
+
+    <div className="bg-white w-[286px] flex flex-col border-r border-gray-200">
+
+      <div className="px-7 py-6 border-b border-gray-200">
+
+        <button
+
+          onClick={onBackToItinerary}
+
+          className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 mb-4"
+
+        >
+
+          <ArrowLeft className="w-4 h-4" />
+
+          <span className="text-sm">Back to Itinerary</span>
+
+        </button>
+
+
+
+        <div className="flex items-center space-x-3">
+
+          <div className="relative">
+
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 shadow-md"></div>
+
+            <div className="absolute inset-0 w-6 h-6 bg-white rounded-full m-1"></div>
+
+          </div>
+
+          <span className="text-xl font-semibold text-teal-600 font-raleway">Global Vacations</span>
+
+        </div>
+
+      </div>
+
+
+
+      <nav className="flex-1 py-6 px-5 space-y-2">
+
+        {steps.map((step) => {
+
+          const completed = currentStep > step.id;
+
+          const active = currentStep === step.id;
+
+
+
+          return (
+
+            <button
+
+              key={step.id}
+
+              onClick={() => {
+
+                onStepClick(step.id);
+
+                navigate(step.path);
+
+              }}
+
+              className={`w-full flex items-center space-x-3 p-3 rounded-md transition-all ${
+
+                active
+
+                  ? 'bg-teal-600 text-white shadow-sm'
+
+                  : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+
+              }`}
+
+            >
+
+              <div
+
+                className={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold ${
+
+                  active
+
+                    ? 'bg-white text-teal-600'
+
+                    : completed
+
+                    ? 'bg-teal-100 text-teal-600'
+
+                    : 'bg-gray-100 text-gray-600'
+
+                }`}
+
+              >
+
+                {completed ? '✓' : step.id}
+
+              </div>
+
+              <span className={`${active ? 'text-white' : 'text-gray-700'} font-medium`}>
+
+                {step.label}
+
+              </span>
+
+            </button>
+
+          );
+
+        })}
+
+      </nav>
+
+
+
+      <div className="px-5 py-4 border-t border-gray-200">
+
+        <div className="flex items-center justify-between text-sm text-gray-600 mb-2">
+
+          <span>Progress</span>
+
+          <span>{currentStep}/7</span>
+
+        </div>
+
+        <div className="w-full bg-gray-200 rounded-full h-2">
+
+          <div
+
+            className="bg-teal-600 h-2 rounded-full transition-all duration-300"
+
+            style={{ width: `${(currentStep / 7) * 100}%` }}
+
+          ></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  );
+
+};
+
+
+
+export default ItinerarySidebar;
+
+
+
+below is myitenrayrpage..when I cick on create new iteanry....inteanry sideabr renders with new url or routes
+
+
+
+import React, { useState } from "react";
+
+import { MapPin, Calendar, Edit, MoreHorizontal } from "lucide-react";
+
+import { useSidebar } from "../context/SidebarContext"; // Adjust the import path as necessary
+
+
+
+const tripData = [
+
+  {
+
+    id: 1,
+
+    image: "https://i.pinimg.com/736x/a0/b6/6d/a0b66deb616586c844dd785978773c46.jpg",
+
+    location: "Thailand Trip Plan",
+
+    createdOn: "March 14, 2025"
+
+  },
+
+  {
+
+    id: 2,
+
+    image: "https://images.pexels.com/photos/1446624/pexels-photo-1446624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+
+    location: "Paris Getaway",
+
+    createdOn: "February 20, 2025"
+
+  },
+
+  {
+
+    id: 3,
+
+    image: "https://travelbird-images.imgix.net/95/28/9528449f8ede7c002cecb00c7af115c0?auto=compress%2Cformat&crop=faces%2Cedges%2Ccenter&fit=crop&h=414&w=736",
+
+    location: "Bali Escape",
+
+    createdOn: "January 5, 2025"
+
+  },
+
+  {
+
+    id: 4,
+
+    image: "https://i.pinimg.com/736x/a0/b6/6d/a0b66deb616586c844dd785978773c46.jpg",
+
+    location: "Swiss Alps Adventure",
+
+    createdOn: "December 15, 2024"
+
+  }
+
+  // Add more if needed
+
+];
+
+
+
+const ItineraryContainer = () => {
+
+  const { sidebar, setSidebar } = useSidebar();
+
+  const [currentStep, setCurrentStep] = useState(1);
+
+
+
+  const handleCreateNewClick = () => {
+
+    setSidebar("itinerary");
+
+  };
+
+
+
+  return (
+
+    <div className="flex space-x-6 p-6 pt-2 bg-gray-50 min-h-screen">
+
+      {/* Left: Main Content */}
+
+      <div className="flex-1 overflow-y-auto max-h-[calc(100vh-3rem)]">
+
+        {/* Header */}
+
+        <div className="flex justify-between items-center mb-4 sticky top-0 bg-gray-50 z-10 py-2">
+
+          <h2 className="text-2xl font-bold">My Itinerary</h2>
+
+          <button
+
+            onClick={handleCreateNewClick}
+
+            className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded"
+
+          >
+
+            Create New Itinerary
+
+          </button>
+
+        </div>
+
+
+
+        {/* Trips Grid */}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          {tripData.map((trip) => (
+
+            <div
+
+              key={trip.id}
+
+              className="bg-white rounded-md shadow-sm overflow-hidden relative text-sm"
+
+            >
+
+              <img
+
+                src={trip.image}
+
+                alt={trip.location}
+
+                className="w-full h-28 object-cover"
+
+              />
+
+              <div className="bg-blue-600 text-white p-2 flex flex-col space-y-1 relative">
+
+                <div className="flex items-center space-x-1 text-xs">
+
+                  <MapPin className="w-3 h-3" />
+
+                  <span className="font-semibold">{trip.location}</span>
+
+                </div>
+
+                <div className="flex items-center space-x-1 text-[11px] opacity-90">
+
+                  <Calendar className="w-3 h-3" />
+
+                  <span>Created on {trip.createdOn}</span>
+
+                </div>
+
+                <div className="absolute top-0 right-0 bg-white text-blue-600 rounded-bl-2xl px-2 py-1 shadow cursor-pointer flex items-center space-x-1">
+
+                  <Edit className="w-3 h-3" />
+
+                  <span className="text-[10px] font-medium">Edit</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+
+
+      {/* Right: Notes (Only show when not in Itinerary mode) */}
+
+      {sidebar !== "itinerary" && (
+
+        <div className="w-80 flex-shrink-0">
+
+          <h2 className="text-xl font-bold mb-2">NOTE</h2>
+
+          <hr className="border-gray-300 mb-4" />
+
+          <div className="border border-gray-300 rounded-lg overflow-hidden">
+
+            <div className="bg-blue-600 text-white flex items-center justify-between px-4 py-2">
+
+              <span className="font-semibold">Sightseeing</span>
+
+              <MoreHorizontal className="w-5 h-5 cursor-pointer" />
+
+            </div>
+
+            <div className="p-4 text-sm text-gray-700 space-y-2">
+
+              <ul className="list-disc pl-5 space-y-1">
+
+                <li>Use this itinerary as a template for planning your own trip.</li>
+
+                <li>Update destinations based on your travel goals.</li>
+
+                <li>Adjust the travel dates to match your schedule.</li>
+
+                <li>Customize activities for each day (sightseeing, leisure, meals, etc.).</li>
+
+                <li>Edit accommodations to reflect your hotel or stay preferences.</li>
+
+                <li>Helps you stay organized and plan each day efficiently.</li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      )}
+
+    </div>
+
+  );
+
+};
+
+
+
+export default ItineraryContainer;
+
+
+
+travel basic in travel basic tab
+
+
+
+// src/pages/itinerarySteps/TravelBasic.tsx
+
+
+
+import { useState, ChangeEvent, FC, FormEvent } from 'react';
+
+import {
+
+  Eye,
+
+  MapPin,
+
+  Calendar,
+
+  ChevronDown,
+
+  Bold,
+
+  Italic,
+
+  Link,
+
+  Image as ImageIcon,
+
+  MoreHorizontal,
+
+} from 'lucide-react';
+
+
+
+interface FormData {
+
+  clientName: string;
+
+  email: string;
+
+  phone: string;
+
+  nationality: string;
+
+  startDate: string;
+
+  endDate: string;
+
+  totalTravelers: number;
+
+  totalDays: number;
+
+  tripOverviewTitle: string;
+
+  tripOverviewDetails: string;
+
+}
+
+
+
+interface InputFieldProps {
+
+  label: string;
+
+  name: keyof FormData;
+
+  value: string | number;
+
+  onChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => void;
+
+  placeholder?: string;
+
+  type?: 'text' | 'email' | 'tel' | 'date' | 'number' | 'select';
+
+}
+
+
+
+interface SummaryRowProps {
+
+  label: string;
+
+  value: string | number;
+
+}
+
+
+
+// Reusable InputField Component
+
+const InputField: FC<InputFieldProps> = ({
+
+  label,
+
+  name,
+
+  value,
+
+  onChange,
+
+  placeholder,
+
+  type = 'text',
+
+}) => {
+
+  const commonInputClasses =
+
+    'w-full bg-gray-100 border border-gray-200 rounded-[5px] h-[30px] px-2 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#10A4B0]';
+
+
+
+  const renderInput = () => {
+
+    switch (type) {
+
+      case 'select':
+
+        return (
+
+          <div className="relative">
+
+            <select name={name} value={value} onChange={onChange} className={`${commonInputClasses} appearance-none`}>
+
+              <option>Indian</option>
+
+              <option>American</option>
+
+              <option>British</option>
+
+            </select>
+
+            <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+
+          </div>
+
+        );
+
+      case 'date':
+
+        return (
+
+          <div className="relative">
+
+            <input
+
+              type="date"
+
+              name={name}
+
+              value={value}
+
+              onChange={onChange}
+
+              className={`${commonInputClasses} pr-8`}
+
+            />
+
+            <Calendar className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+
+          </div>
+
+        );
+
+      default:
+
+        return (
+
+          <input
+
+            type={type}
+
+            name={name}
+
+            value={value}
+
+            onChange={onChange}
+
+            placeholder={placeholder}
+
+            className={commonInputClasses}
+
+          />
+
+        );
+
+    }
+
+  };
+
+
+
+  return (
+
+    <div>
+
+      <label className="block text-xs font-medium text-[#1E1E1E] mb-2 font-inter">{label}</label>
+
+      {renderInput()}
+
+    </div>
+
+  );
+
+};
+
+
+
+// Reusable SummaryRow Component
+
+const SummaryRow: FC<SummaryRowProps> = ({ label, value }) => (
+
+  <div className="flex justify-between items-center text-xs font-raleway">
+
+    <span className="font-semibold text-[#1E1E1E] w-1/3">{label}</span>
+
+    <span className="text-gray-500">-</span>
+
+    <span className="font-medium text-[#1E1E1E] w-2/3 text-right truncate">{value || '...'}</span>
+
+  </div>
+
+);
+
+
+
+// Main Page Component
+
+const TravelBasicPage: FC = () => {
+
+  const [formData, setFormData] = useState<FormData>({
+
+    clientName: '',
+
+    email: '',
+
+    phone: '',
+
+    nationality: 'Indian',
+
+    startDate: '',
+
+    endDate: '',
+
+    totalTravelers: 1,
+
+    totalDays: 1,
+
+    tripOverviewTitle: '',
+
+    tripOverviewDetails: '',
+
+  });
+
+
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+
+    const { name, value, type } = e.target;
+
+    const isNumber = type === 'number';
+
+    setFormData((prevState) => ({
+
+      ...prevState,
+
+      [name]: isNumber ? (Number(value) < 1 ? 1 : Number(value)) : value,
+
+    }));
+
+  };
+
+
+
+  const handleSubmit = (e: FormEvent) => {
+
+    e.preventDefault();
+
+    alert('Form Submitted!\n' + JSON.stringify(formData, null, 2));
+
+  };
+
+
+
+  return (
+
+    <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-8 font-sans">
+
+      {/* Header Section */}
+
+      <header className="flex justify-between items-center mb-4">
+
+        <div>
+
+          <h1 className="text-xl font-semibold text-[#1E1E1E] font-raleway">Travel Basic</h1>
+
+          <div className="h-[1.5px] bg-black mt-1"></div>
+
+        </div>
+
+        <div className="flex items-center space-x-8">
+
+          <div className="hidden md:flex items-center space-x-2 text-xs text-[#727171] cursor-pointer">
+
+            <MapPin className="w-4 h-4" />
+
+            <span className="font-raleway font-medium">Define Your route</span>
+
+          </div>
+
+          <button className="flex items-center space-x-2 bg-[#10A4B0] text-white px-3 py-1 rounded-full text-xs font-inter font-medium">
+
+            <Eye className="w-4 h-4" />
+
+            <span>Preview</span>
+
+          </button>
+
+        </div>
+
+      </header>
+
+
+
+      <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+
+        {/* Left Form Section */}
+
+        <div className="lg:col-span-2 bg-white p-4 rounded-lg border border-[#E0E0E0] space-y-6">
+
+          <img
+
+            src="https://plus.unsplash.com/premium_photo-1661964003610-2422de390fec?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+            alt="Tokyo cityscape"
+
+            className="w-full h-44 object-cover rounded-md"
+
+          />
+
+
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+
+            <InputField label="Client Name" name="clientName" value={formData.clientName} onChange={handleChange} placeholder="Type here" />
+
+            <InputField label="Email Address" name="email" value={formData.email} onChange={handleChange} placeholder="Type here" type="email" />
+
+            <InputField label="Phone Number" name="phone" value={formData.phone} onChange={handleChange} placeholder="Type here" type="tel" />
+
+            <InputField label="Nationality" name="nationality" value={formData.nationality} onChange={handleChange} type="select" />
+
+            <InputField label="Start Date" name="startDate" value={formData.startDate} onChange={handleChange} type="date" />
+
+            <InputField label="End Date" name="endDate" value={formData.endDate} onChange={handleChange} type="date" />
+
+            <InputField label="Total Travelers" name="totalTravelers" value={formData.totalTravelers} onChange={handleChange} type="number" />
+
+            <InputField label="Total Days" name="totalDays" value={formData.totalDays} onChange={handleChange} type="number" />
+
+          </div>
+
+
+
+          <div className="border-t border-[#E0E0E0] pt-6 space-y-2">
+
+            <InputField label="Trip Overview" name="tripOverviewTitle" value={formData.tripOverviewTitle} onChange={handleChange} placeholder="Enter Paragraph Title (e.g Food)" />
+
+            <div className="bg-white border border-[#DDDDDD] rounded-md">
+
+              <div className="flex items-center p-2 space-x-1 bg-[#F8F8F8] border-b border-[#DDDDDD] rounded-t-md">
+
+                <button type="button" className="p-1.5 border border-[#7F7F7F] rounded"><Bold className="w-4 h-4" /></button>
+
+                <button type="button" className="p-1.5 border border-[#7F7F7F] rounded"><Italic className="w-4 h-4" /></button>
+
+                <button type="button" className="p-1.5 border border-[#7F7F7F] rounded"><Link className="w-4 h-4" /></button>
+
+                <button type="button" className="p-1.5 border border-[#7F7F7F] rounded"><ImageIcon className="w-4 h-4" /></button>
+
+              </div>
+
+              <textarea
+
+                name="tripOverviewDetails"
+
+                value={formData.tripOverviewDetails}
+
+                onChange={handleChange}
+
+                placeholder="Enter a short overview"
+
+                className="w-full h-24 p-2 text-sm focus:outline-none rounded-b-md"
+
+              />
+
+            </div>
+
+          </div>
+
+
+
+          <div className="flex justify-center pt-4">
+
+            <button type="submit" className="bg-[#10A4B0] text-white font-raleway font-medium text-sm px-10 py-2 rounded-md hover:bg-opacity-90 transition-colors">
+
+              Submit
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        {/* Right Summary Section */}
+
+        <div className="lg:col-span-1 sticky top-8">
+
+          <div className="bg-white p-4 rounded-lg border border-[#E0E0E0]">
+
+            <h2 className="text-xl font-semibold text-[#717182] font-raleway mb-4">Save Details</h2>
+
+            <div className="border border-[#E0E0E0] rounded-lg">
+
+              <div className="bg-[#10A4B0] text-white flex justify-between items-center px-3 py-3 rounded-t-lg">
+
+                <h3 className="font-raleway font-medium text-lg">Travel Basic</h3>
+
+                <MoreHorizontal className="w-6 h-6" />
+
+              </div>
+
+              <div className="p-4 space-y-3">
+
+                <SummaryRow label="Client Name" value={formData.clientName} />
+
+                <SummaryRow label="Email" value={formData.email} />
+
+                <SummaryRow label="Phone Number" value={formData.phone} />
+
+                <SummaryRow label="Nationality" value={formData.nationality} />
+
+                <SummaryRow label="Start Date" value={formData.startDate} />
+
+                <SummaryRow label="End Date" value={formData.endDate} />
+
+                <SummaryRow label="Total Travelers" value={formData.totalTravelers} />
+
+                <SummaryRow label="Total Days" value={formData.totalDays} />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  );
+
+};
+
+
+
+export default TravelBasicPage;
+
+now after travel basic page, travel and accomodation page appearts with its own form
+
+
+
+import React, { useState, ChangeEvent, FC, FormEvent } from 'react';
+
+import { Eye, Plus, Calendar, ChevronDown, MoreHorizontal, Trash2, X, Plane, Train, Bus, Car } from 'lucide-react';
+
+
+
+// SECTION: Type Definitions for props and state
+
+// =================================================================
+
+
+
+// --- UPDATED: Interface to handle different travel modes ---
+
+interface JourneyLeg {
+
+  id: number;
+
+  modeOfTravel: 'Flight' | 'Train' | 'Bus' | 'Car';
+
+  // Common fields
+
+  fromCity: string;
+
+  date: string;
+
+  time: string;
+
+  // Flight specific
+
+  airline?: string;
+
+  flightNo?: string;
+
+  airport?: string;
+
+  // Train specific
+
+  trainName?: string;
+
+  trainNo?: string;
+
+  station?: string;
+
+  // Bus specific
+
+  busService?: string;
+
+  busNo?: string;
+
+  // Car specific
+
+  carType?: string;
+
+  driverDetails?: string;
+
+}
+
+
+
+// ... other prop types remain the same
+
+interface InputFieldProps {
+
+  label: string;
+
+  // name: keyof Omit<JourneyLeg, 'id' | 'modeOfTravel'>;
+
+  name: keyof Omit<JourneyLeg, 'id'>;  // FIXED: allow 'modeOfTravel' too
+
+
+
+  value: string;
+
+  onChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
+
+  placeholder?: string;
+
+  type?: 'text' | 'date' | 'time' | 'select';
+
+  options?: string[];
+
+  containerClassName?: string;
+
+  labelClassName?: string;
+
+}
+
+
+
+interface SummaryRowProps {
+
+    label: string;
+
+    value?: string;
+
+}
+
+
+
+
+
+// SECTION: Reusable Sub-Components
+
+// =================================================================
+
+
+
+const InputField: FC<InputFieldProps> = ({ label, name, value, onChange, placeholder, type = 'text', options, containerClassName = '', labelClassName = '' }) => {
+
+  const commonInputClasses = "w-full bg-gray-100 border border-gray-200 rounded-[5px] h-[30px] px-2 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#10A4B0]";
+
+  const renderInput = () => { /* ... unchanged from previous version ... */ 
+
+    switch (type) {
+
+      case 'select':
+
+        return (
+
+          <div className="relative">
+
+            <select name={name} value={value} onChange={onChange} className={`${commonInputClasses} appearance-none`}>
+
+              {options?.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+
+            </select>
+
+            <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+
+          </div>
+
+        );
+
+      case 'date':
+
+      case 'time':
+
+        return (
+
+          <div className="relative">
+
+            <input type={type} name={name} value={value} onChange={onChange} className={`${commonInputClasses} pr-8`} />
+
+            {type === 'date' && <Calendar className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />}
+
+          </div>
+
+        );
+
+      default:
+
+        return <input type={type} name={name} value={value} onChange={onChange} placeholder={placeholder} className={commonInputClasses} />;
+
+    }
+
+  };
+
+  return (
+
+    <div className={containerClassName}>
+
+      <label className={`block text-xs font-medium text-[#1E1E1E] mb-2 font-inter ${labelClassName}`}>{label}</label>
+
+      {renderInput()}
+
+    </div>
+
+  );
+
+};
+
+const SummaryRow: FC<SummaryRowProps> = ({ label, value }) => ( /* ... unchanged ... */ 
+
+    <div className="flex justify-between items-center text-xs font-raleway">
+
+        <span className="font-semibold text-[#1E1E1E]">{label}</span>
+
+        <div className="flex items-center gap-4">
+
+            <span className="text-gray-500">-</span>
+
+            <span className="font-medium text-[#1E1E1E] text-right truncate">{value || '...'}</span>
+
+        </div>
+
+    </div>
+
+);
+
+
+
+// --- NEW: Preview Modal Component ---
+
+const PreviewModal: FC<{ legs: JourneyLeg[]; onClose: () => void }> = ({ legs, onClose }) => {
+
+    const travelModeIcons = {
+
+        Flight: <Plane className="w-5 h-5 text-[#10A4B0]" />,
+
+        Train: <Train className="w-5 h-5 text-[#10A4B0]" />,
+
+        Bus: <Bus className="w-5 h-5 text-[#10A4B0]" />,
+
+        Car: <Car className="w-5 h-5 text-[#10A4B0]" />,
+
+    };
+
+
+
+    return (
+
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+
+            <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] flex flex-col">
+
+                <header className="flex justify-between items-center p-4 border-b">
+
+                    <h2 className="text-lg font-raleway font-semibold">Journey Preview</h2>
+
+                    <button onClick={onClose} className="p-1 rounded-full hover:bg-gray-200">
+
+                        <X className="w-5 h-5" />
+
+                    </button>
+
+                </header>
+
+                <main className="overflow-y-auto p-6 space-y-4">
+
+                    {legs.map((leg, index) => (
+
+                        <div key={leg.id} className="border rounded-lg p-4">
+
+                            <div className="flex justify-between items-center mb-3">
+
+                                <div className="flex items-center gap-3">
+
+                                    {travelModeIcons[leg.modeOfTravel]}
+
+                                    <h3 className="font-raleway font-bold text-md">{leg.modeOfTravel} Details (Leg {index + 1})</h3>
+
+                                </div>
+
+                                <span className="text-sm font-medium text-gray-600">{leg.date}</span>
+
+                            </div>
+
+                            <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+
+                                <SummaryRow label="From" value={leg.fromCity} />
+
+                                <SummaryRow label="Time" value={leg.time} />
+
+                                {leg.modeOfTravel === 'Flight' && <>
+
+                                    <SummaryRow label="Airline" value={leg.airline} />
+
+                                    <SummaryRow label="Flight No." value={leg.flightNo} />
+
+                                    <SummaryRow label="Airport" value={leg.airport} />
+
+                                </>}
+
+                                {leg.modeOfTravel === 'Train' && <>
+
+                                    <SummaryRow label="Train Name" value={leg.trainName} />
+
+                                    <SummaryRow label="Train No." value={leg.trainNo} />
+
+                                    <SummaryRow label="Station" value={leg.station} />
+
+                                </>}
+
+                                {leg.modeOfTravel === 'Bus' && <>
+
+                                    <SummaryRow label="Bus Service" value={leg.busService} />
+
+                                    <SummaryRow label="Bus No." value={leg.busNo} />
+
+                                </>}
+
+                                {leg.modeOfTravel === 'Car' && <>
+
+                                    <SummaryRow label="Car Type" value={leg.carType} />
+
+                                    <SummaryRow label="Driver" value={leg.driverDetails} />
+
+                                </>}
+
+                            </div>
+
+                        </div>
+
+                    ))}
+
+                </main>
+
+            </div>
+
+        </div>
+
+    );
+
+};
+
+
+
+
+
+// SECTION: Main Page Component
+
+// =================================================================
+
+
+
+const ArrivalDeparturePage: FC = () => {
+
+  const [journeyLegs, setJourneyLegs] = useState<JourneyLeg[]>([
+
+    {
+
+      id: 1, modeOfTravel: 'Flight',
+
+      airline: 'Emirates', flightNo: 'EK-201', fromCity: 'Dubai (United Arab Emirates)', date: '', time: '', airport: 'Dubai International (DXB)',
+
+    }
+
+  ]);
+
+  // --- NEW: State to control modal visibility ---
+
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+
+
+
+  const handleLegChange = (id: number, e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+
+    const { name, value } = e.target;
+
+    setJourneyLegs(prevLegs =>
+
+      prevLegs.map(leg => leg.id === id ? { ...leg, [name]: value } : leg)
+
+    );
+
+  };
+
+
+
+  const addLeg = () => {
+
+    setJourneyLegs([...journeyLegs, {
+
+      id: Date.now(), modeOfTravel: 'Flight', airline: '', flightNo: '', fromCity: '', date: '', time: '', airport: ''
+
+    }]);
+
+  };
+
+
+
+  const removeLeg = (id: number) => {
+
+    setJourneyLegs(journeyLegs.filter(leg => leg.id !== id));
+
+  };
+
+
+
+  const handleSubmit = (e: FormEvent) => {
+
+    e.preventDefault();
+
+    alert("Form Submitted!\n" + JSON.stringify(journeyLegs, null, 2));
+
+  };
+
+
+
+  return (
+
+    <>
+
+      {/* --- NEW: Render the modal when isPreviewOpen is true --- */}
+
+      {isPreviewOpen && <PreviewModal legs={journeyLegs} onClose={() => setIsPreviewOpen(false)} />}
+
+    
+
+      <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-8 font-sans">
+
+        <header className="flex justify-between items-center mb-4">
+
+          <h1 className="text-xl font-semibold text-[#10A4B0] font-raleway">Arrival & Departure*</h1>
+
+          <div className="flex items-center space-x-4">
+
+              <button onClick={addLeg} className="flex items-center space-x-2 text-xs text-[#727171] cursor-pointer hover:text-[#10A4B0]">
+
+                  <Plus className="w-4 h-4"/>
+
+                  <span className="font-raleway font-medium">Add more destination</span>
+
+              </button>
+
+              {/* --- UPDATED: Button now opens the modal --- */}
+
+              <button type="button" onClick={() => setIsPreviewOpen(true)} className="flex items-center space-x-2 bg-[#10A4B0] text-white px-3 py-1 rounded-full text-xs font-inter font-medium">
+
+                  <Eye className="w-4 h-4" />
+
+                  <span>Preview</span>
+
+              </button>
+
+          </div>
+
+        </header>
+
+        
+
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+
+          <div className="lg:col-span-2 bg-white p-4 rounded-lg border border-[#E0E0E0] space-y-6">
+
+            <img src="https://images.unsplash.com/photo-1523833082115-1e8e294bd14e?q=80&w=1295&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Airplane on runway" className="w-full h-44 object-cover rounded-md shadow-md" />
+
+
+
+            {journeyLegs.map((leg, index) => (
+
+              <div key={leg.id} className="p-4 border border-gray-200 rounded-lg space-y-4 relative pt-6">
+
+                {journeyLegs.length > 1 && (
+
+                    <button type="button" onClick={() => removeLeg(leg.id)} className="absolute top-2 right-2 p-1 text-gray-400 hover:text-red-500 transition-colors">
+
+                        <Trash2 className="w-4 h-4"/>
+
+                    </button>
+
+                )}
+
+
+
+                <InputField
+
+                  label={`Mode of Travel (Leg ${index + 1})`} name="modeOfTravel" value={leg.modeOfTravel}
+
+                  onChange={(e) => handleLegChange(leg.id, e)} type="select"
+
+                  options={['Flight', 'Train', 'Bus', 'Car']} containerClassName="w-full"
+
+                />
+
+                
+
+                {/* --- NEW: Conditional Rendering based on Mode of Travel --- */}
+
+                {leg.modeOfTravel === 'Flight' && (
+
+                  <div className="space-y-4 animation-fade-in">
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                      <InputField label="Airline" name="airline" value={leg.airline || ''} onChange={(e) => handleLegChange(leg.id, e)} type="select" options={['Select Airline', 'Emirates', 'Qatar Airways', 'Singapore Airlines']} />
+
+                      <InputField label="Flight No." name="flightNo" value={leg.flightNo || ''} onChange={(e) => handleLegChange(leg.id, e)} placeholder="Enter Flight No." />
+
+                    </div>
+
+                  </div>
+
+                )}
+
+                {leg.modeOfTravel === 'Train' && (
+
+                  <div className="space-y-4 animation-fade-in">
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                      <InputField label="Train Name" name="trainName" value={leg.trainName || ''} onChange={(e) => handleLegChange(leg.id, e)} placeholder="e.g., Express One" />
+
+                      <InputField label="Train No." name="trainNo" value={leg.trainNo || ''} onChange={(e) => handleLegChange(leg.id, e)} placeholder="e.g., T-12345" />
+
+                    </div>
+
+                  </div>
+
+                )}
+
+                {leg.modeOfTravel === 'Bus' && (
+
+                  <div className="space-y-4 animation-fade-in">
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                      <InputField label="Bus Service" name="busService" value={leg.busService || ''} onChange={(e) => handleLegChange(leg.id, e)} placeholder="e.g., National Express" />
+
+                      <InputField label="Bus No." name="busNo" value={leg.busNo || ''} onChange={(e) => handleLegChange(leg.id, e)} placeholder="e.g., B-99" />
+
+                    </div>
+
+                  </div>
+
+                )}
+
+                {leg.modeOfTravel === 'Car' && (
+
+                   <div className="space-y-4 animation-fade-in">
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                      <InputField label="Car Type" name="carType" value={leg.carType || ''} onChange={(e) => handleLegChange(leg.id, e)} placeholder="e.g., Sedan, SUV" />
+
+                      <InputField label="Driver Details" name="driverDetails" value={leg.driverDetails || ''} onChange={(e) => handleLegChange(leg.id, e)} placeholder="e.g., John Doe - 555-1234" />
+
+                    </div>
+
+                  </div>
+
+                )}
+
+                
+
+                <hr className="border-gray-200"/>
+
+
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                   <InputField label="From" name="fromCity" value={leg.fromCity} onChange={(e) => handleLegChange(leg.id, e)} type="select" options={['Select a City', 'Dubai (UAE)', 'Singapore (SG)', 'New York (USA)', 'London (UK)']} />
+
+                   <InputField label="Date" name="date" value={leg.date} onChange={(e) => handleLegChange(leg.id, e)} type="date" />
+
+                   <InputField label="Time" name="time" value={leg.time} onChange={(e) => handleLegChange(leg.id, e)} type="time" labelClassName="font-medium text-gray-700 after:content-['(Optional)'] after:font-normal after:text-gray-400 after:ml-1" />
+
+                </div>
+
+                 <InputField label="Airport / Station" name="airport" value={leg.airport || ''} onChange={(e) => handleLegChange(leg.id, e)} type="select" options={['Select Here', 'Dubai (DXB)', 'Changi (SIN)', 'JFK Airport (JFK)', 'Heathrow (LHR)']} containerClassName="w-full" labelClassName="font-medium text-gray-700 after:content-['(Optional)'] after:font-normal after:text-gray-400 after:ml-1" />
+
+              </div>
+
+            ))}
+
+            <div className="flex justify-center pt-4">
+
+              <button type="submit" className="bg-[#10A4B0] text-white font-raleway font-medium text-sm px-10 py-2 rounded-md hover:bg-opacity-90 transition-colors">
+
+                Submit
+
+              </button>
+
+            </div>
+
+          </div>
+
+
+
+          <div className="lg:col-span-1 sticky top-8">
+
+              <div className="bg-white p-4 rounded-lg border border-[#E0E0E0]">
+
+                  <h2 className="text-xl font-semibold text-[#717182] font-raleway mb-4">Save Details</h2>
+
+                  <div className="border border-[#E0E0E0] rounded-lg">
+
+                      <div className="bg-[#10A4B0] text-white flex justify-between items-center px-3 py-3 rounded-t-lg">
+
+                          <h3 className="font-raleway font-medium text-lg">Arrival & Departure</h3>
+
+                          <MoreHorizontal className="w-6 h-6"/>
+
+                      </div>
+
+                      <div className="p-4 space-y-3">
+
+                          <SummaryRow label="Mode of Travel" value={journeyLegs[0]?.modeOfTravel} />
+
+                          <SummaryRow label="From" value={journeyLegs[0]?.fromCity} />
+
+                          <SummaryRow label="To" value={journeyLegs[journeyLegs.length - 1]?.fromCity} />
+
+                          <hr className="border-t-2 border-dashed border-gray-300 my-2" />
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </>
+
+  );
+
+};
+
+
+
+export default ArrivalDeparturePage;
+
+
+
+now what i want is that whatever information I take once then it doesn't need to be filled by user again, to improve user experience okay, and now tell me how do i create this data flow so that this can be done properly and effieciently
