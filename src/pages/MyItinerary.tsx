@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { MapPin, Calendar, Edit, MoreHorizontal } from "lucide-react";
 import { useSidebar } from "../context/SidebarContext"; // Adjust the import path as necessary
 
+import { useNavigate } from 'react-router-dom'; // ✅ import this
+
+
 const tripData = [
   {
     id: 1,
@@ -34,8 +37,14 @@ const ItineraryContainer = () => {
   const { sidebar, setSidebar } = useSidebar();
   const [currentStep, setCurrentStep] = useState(1);
 
+    const navigate = useNavigate(); // ✅ add this line
+
+
   const handleCreateNewClick = () => {
     setSidebar("itinerary");
+    // navigate('my-itinerary/create/travel-basic');
+      navigate('/my-itinerary/create/travel-basic');
+
   };
 
   return (
