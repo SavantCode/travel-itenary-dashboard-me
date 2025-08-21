@@ -1,0 +1,50 @@
+Of course. Here is a breakdown of the functionality of the code in the Canvas.
+
+### **Core Functionality**
+
+This React component is designed as a complete user interface for managing accommodation details for a trip. Its main purpose is to allow a user to:
+1.  **Search and Filter** for hotels from a backend database.
+2.  **Select** a specific hotel.
+3.  **Configure** the booking details, such as dates, number of rooms, and meal preferences.
+4.  **View a summary** of the selected details.
+5.  **Submit or clear** the form.
+
+---
+
+### **How It Works: A Step-by-Step Flow**
+
+1.  **Initial Data Fetching**:
+    * When the component first loads, the `useEffect` hook calls the `fetchHotels` function.
+    * `fetchHotels` sends a request to your backend API (`http://localhost:5000/api/hotels`).
+    * It populates the `allHotels` state with the data it receives. If the fetch fails (e.g., the server is not running), it displays an error message.
+
+2.  **Filtering via API**:
+    * The user can type into the **"Country"** and **"City"** input fields.
+    * Any change to these fields updates the `countryFilter` or `cityFilter` state.
+    * Because these states are dependencies of the `fetchHotels` function, a **new API call is automatically triggered** with the appropriate query parameters (e.g., `?country=India&city=Delhi`). This ensures the list of available hotels is always up-to-date based on the filters.
+
+3.  **Client-Side Searching**:
+    * Once a list of hotels is fetched, the user can type in the **"Hotel Name"** search bar.
+    * This action **does not** trigger a new API call. Instead, it filters the *currently loaded* `allHotels` list on the client-side.
+    * The results are shown in a dropdown menu below the search bar.
+
+4.  **State Management for the Form**:
+    * Every piece of data that can change is stored in a state variable using `useState`. This includes:
+        * The list of all hotels (`allHotels`).
+        * The currently selected hotel (`selectedHotel`).
+        * The check-in/check-out dates.
+        * The number of rooms (`numRooms`).
+        * The specific details for each room (`roomDetails`).
+    * When you change a value (like selecting a new date or changing the number of rooms), the corresponding state is updated, and React automatically re-renders the relevant parts of the UI to reflect that change.
+
+5.  **Dynamic Room Details**:
+    * A `useEffect` hook watches the `numRooms` state.
+    * If you change the number of rooms from 1 to 3, this effect runs and automatically adds two new default room objects to the `roomDetails` array, causing the UI to render two new rows of dropdowns for Room 2 and Room 3.
+
+6.  **Displaying the Summary**:
+    * The "Save Details" card on the right directly reads from the state variables (`selectedHotel`, `checkInDate`, etc.).
+    * Because it's tied to the state, it always shows a real-time summary of your current selections.
+
+7.  **Submitting and Deleting**:
+    * The **"Submit"** button gathers all the current state variables into a single `submissionData` object and logs it to the console.
+    * The **"Delete"** button resets all the state variables back to their initial empty or default values, effectively clearing the form.
