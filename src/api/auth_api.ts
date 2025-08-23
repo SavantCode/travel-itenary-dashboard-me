@@ -4,7 +4,7 @@ import axios from 'axios';
 // Create an Axios instance with a base URL
 const api = axios.create({
   // baseURL: 'http://localhost:5000/api/v1', // Your backend's base URL
-  baseURL: 'https://travelgpt-api-backend.onrender.com', // Your backend's base URL
+  baseURL: 'https://travelgpt-api-backend.onrender.com/api/v1', // Your backend's base URL
   withCredentials: true, // This is important for cookies, if you use them
 });
 
