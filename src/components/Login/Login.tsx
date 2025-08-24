@@ -12,30 +12,49 @@ export const Login = () => {
   const [error, setError] = useState('');
   const { login } = useAuth();
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError('');
+  e.preventDefault();
+  setError('');
+  setIsLoading(true);
 
-    try {
-      const response = await api.post('/auth/login', {
-        email,
-        password,
-        role: selectedRole, // Optional: depends if backend expects it
-      });
+  try {
+    const response = await api.post('/auth/login', {
+      email,
+      password,
+      role: selectedRole,
+    });
 
-      const { user, accessToken } = response.data.data;
-      login(user, accessToken);
+    const { user, accessToken } = response.data.data;
+    login(user, accessToken);
 
-      if (user.role === 'ADMIN') {
-        navigate('/admin/dashboard');
-      } else {
-        navigate('/agent/dashboard');
-      }
-    } catch (err: any) {
-      setError(err.response?.data?.message || 'Login failed. Please try again.');
+    if (user.role === 'ADMIN') {
+      navigate('/admin/dashboard');
+    } else {
+      navigate('/agent/dashboard');
     }
-  };
+  } catch (err: any) {
+    setError(err.response?.data?.message || 'Login failed. Please try again.');
+  } finally {
+    setIsLoading(false);
+  }
+};
+
+{/*loading animation*/}
+  const LoadingDots = () => {
+  return (
+    <span className="inline-flex items-center">
+      Log in
+      <span className="ml-1 inline-flex">
+        <span className="animate-loadingDot">.</span>
+        <span className="animate-loadingDot" style={{ animationDelay: "0.2s" }}>.</span>
+        <span className="animate-loadingDot" style={{ animationDelay: "0.4s" }}>.</span>
+        <span className="animate-loadingDot" style={{ animationDelay: "0.6s" }}>.</span>
+      </span>
+    </span>
+  );
+};
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-white px-4">
@@ -43,7 +62,18 @@ export const Login = () => {
         onSubmit={handleLogin}
         className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg"
       >
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Login</h2>
+
+           {/* Logo Section */}
+          <div className="flex justify-center mb-8">
+          <img 
+            src="/images/logo.png" 
+            alt="Global Vacations Logo" 
+            className="h-24 w-auto object-contain px-4"
+          />
+        </div>
+
+
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">See more from Global Vacations</h2>
 
         {/* Error Message */}
         {error && (
@@ -76,7 +106,7 @@ export const Login = () => {
         {/* Email Field */}
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            Email Address
+            Email address
           </label>
           <input
             id="email"
@@ -106,12 +136,43 @@ export const Login = () => {
         </div>
 
         {/* Submit Button */}
+      <button
+  type="submit"
+  disabled={isLoading}
+  className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200 disabled:opacity-75 disabled:cursor-not-allowed"
+>
+  {isLoading ? <LoadingDots /> : "Log in"}
+</button>
+
+           {/* Forgot Password Link */}
+        <div className="mt-4 text-center">
+          <a 
+            href="/forgot-password" 
+            className="text-sm text-blue-600 hover:text-blue-800 transition-colors duration-200"
+          >
+            Forgotten your password?
+          </a>
+        </div>
+        
+         {/* Or Divider */}
+        <div className="relative mt-6 mb-6">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-300"></div>
+          </div>
+          <div className="relative flex justify-center text-sm">
+            <span className="px-2 bg-white text-gray-500">or</span>
+          </div>
+        </div>
+
+{/* Additional Options */}
+            <div className="space-y-3 flex justify-center">
         <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200"
+          type="button"
+          className="inline-flex px-6 py-2 border border-green-600 rounded-md text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
         >
-          Login
+          Create new account
         </button>
+      </div>
       </form>
     </div>
   );

@@ -22,17 +22,16 @@ const Dashboard: React.FC = () => {
         <div className="flex items-center space-x-4">
           {/* Search bar section */}
           <div className="relative">
-            {/* Optional: place icon right-aligned instead */}
             <input
               type="text"
               placeholder="Search Here..."
               className="
               pl-4 pr-10 py-[6px]
-              w-[172px] h-[30px]
+              w-[201px] h-[30px]
               bg-white bg-opacity-100
               border border-gray-400 border-opacity-40
               rounded-full
-              text-[10px] font-inter font-normal leading-[100%]
+              text-[14px] font-raleway font-medium leading-[100%]
               placeholder-gray-500
               focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
             "

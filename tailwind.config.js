@@ -6,6 +6,16 @@ export default {
       fontFamily: {
       raleway: ['Raleway', 'sans-serif'],
     },
+      keyframes: {
+        loadingDot: {
+          '0%': { opacity: 0 },
+          '50%': { opacity: 1 },
+          '100%': { opacity: 0 }
+        }
+      },
+      animation: {
+        loadingDot: 'loadingDot 1.5s infinite',
+      },
     },
   },
   plugins: [],

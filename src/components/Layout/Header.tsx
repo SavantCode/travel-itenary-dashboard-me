@@ -16,9 +16,10 @@ const Header: React.FC = () => {
   };
 
   // Generate greeting based on role and name
-  const greeting = user
-    ? `Hello ${user.role === 'ADMIN' ? user.name : user.name}`
-    : 'Hello User';
+  // const greeting = user
+  //   ? `Hello ${user.role === 'ADMIN' ? user.name : user.name}`
+  //   : 'Hello User';
+  const greeting = 'Hello Prachi Singh';
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200 px-6 py-4">
@@ -43,18 +44,27 @@ const Header: React.FC = () => {
           {/* Profile */}
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-              <span className="text-sm font-medium text-gray-600">
+
+                {/*Added symbol for showcase*/}
+              <span className="text-sm font-medium text-gray-600">P</span>
+              {/* <span className="text-sm font-medium text-gray-600">
                 {user
                   ? user.name
                       .split(' ')
                       .map((n) => n[0])
                       .join('')
                   : 'NA'}
-              </span>
+              </span> */}
+
+
             </div>
             <div className="text-sm">
-              <p className="font-medium text-gray-800">{user?.name ?? 'User Name'}</p>
-              <p className="text-gray-500">{user?.role ?? 'Role'}</p>
+
+              {/*Changed super admin to prachi singh*/}
+              {/* <p className="font-medium text-gray-800">{user?.name ?? 'User Name'}</p>
+              <p className="text-gray-500">{user?.role ?? 'Role'}</p> */}
+              <p className="font-medium text-gray-800">Prachi Singh</p>
+
             </div>
           </div>
 
@@ -64,7 +74,7 @@ const Header: React.FC = () => {
             className="flex items-center space-x-1 text-red-600 hover:text-red-800 font-medium"
             aria-label="Logout"
           >
-            <LogOut className="w-5 h-5" />
+            <LogOut className="w-3 h-3" />
             <span>Logout</span>
           </button>
         </div>

@@ -10,7 +10,7 @@ const MonthlyConversionCard: React.FC = () => {
     box-border
     bg-[#FDEEE1]
     border border-[#CBCBCB]
-    shadow-[0_0_10px_rgba(0,0,0,0.25),inset_0_0_10px_rgba(0,0,0,0.25)]
+  
     rounded-[24px]
     p-4
     relative
