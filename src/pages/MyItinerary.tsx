@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+// components/ItineraryContainer.tsx
+
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { MapPin, Calendar, Edit, MoreHorizontal } from "lucide-react";
-import { useSidebar } from "../context/SidebarContext"; // Adjust the import path as necessary
+import { useSidebar } from "../context/SidebarContext";
 
 const tripData = [
   {
@@ -27,15 +30,15 @@ const tripData = [
     location: "Swiss Alps Adventure",
     createdOn: "December 15, 2024"
   }
-  // Add more if needed
 ];
 
 const ItineraryContainer = () => {
+  const navigate = useNavigate();
   const { sidebar, setSidebar } = useSidebar();
-  const [currentStep, setCurrentStep] = useState(1);
 
   const handleCreateNewClick = () => {
-    setSidebar("itinerary");
+    setSidebar("itinerary"); // switch sidebar
+    navigate("/my-itinerary/create/travel-basic");
   };
 
   return (
@@ -84,7 +87,7 @@ const ItineraryContainer = () => {
         </div>
       </div>
 
-      {/* Right: Notes (Only show when not in Itinerary mode) */}
+      {/* Right Sidebar: Notes */}
       {sidebar !== "itinerary" && (
         <div className="w-80 flex-shrink-0">
           <h2 className="text-xl font-bold mb-2">NOTE</h2>
