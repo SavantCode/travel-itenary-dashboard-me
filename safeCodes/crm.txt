@@ -477,25 +477,6 @@ export default function CRM() {
 
   return (
     <div className="w-full bg-[#F6F6FA] p-4 md:p-6">
-      {/* --- NEW HEADER SECTION --- */}
-      <div>
-        {/* Header Row */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-2">
-          <h1 className="text-3xl font-bold text-[#10A4B0]">
-            Leads
-          </h1>
-          <button
-            onClick={() => setNewLeadOpen(true)}
-            className="flex items-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors"
-          >
-            <Icons.Plus />
-            <span>New Lead</span>
-          </button>
-        </div>
-        {/* Underline */}
-        <div className="border-b border-gray-700 w-full mb-6 mt-7"></div>
-      </div>
-
       {/* Controls */}
       <div className="flex flex-wrap items-center gap-3">
         {/* Search */}
@@ -677,6 +658,16 @@ export default function CRM() {
             </div>
           )}
         </div>
+
+        {/* New Lead */}
+        <button
+          onClick={() => setNewLeadOpen(true)}
+          className="ml-auto flex items-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white"
+        >
+          <Icons.Plus />
+          <span className="font-medium">New Lead</span>
+          <Icons.ChevronDown />
+        </button>
       </div>
 
       {/* Active filter chips */}
