@@ -43,6 +43,7 @@ const Header: React.FC = () => {
             </div>
             <div className="text-sm">
               <p className="font-medium text-gray-800">Prachi Singh</p>
+               <p className="text-gray-500">Admin</p> 
             </div>
           </div>
 
