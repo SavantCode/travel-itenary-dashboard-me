@@ -1,6 +1,7 @@
 //v2
 
 import React, { createContext, useState, useContext, ReactNode } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface User {
   _id: string;
@@ -23,6 +24,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     const storedUser = localStorage.getItem('user');
     return storedUser ? JSON.parse(storedUser) : null;
   });
+  const navigate = useNavigate();
 
   const login = (userData: User, token: string) => {
     localStorage.setItem('user', JSON.stringify(userData));
@@ -49,9 +51,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     localStorage.removeItem('user');
     localStorage.removeItem('accessToken');
     setUser(null);
+    navigate('/login');
 
-    // Redirect to login
-    window.location.href = '/login';
+    // // Redirect to login
+    // window.location.href = '/login';
   };
 
   const isAuthenticated = !!user;

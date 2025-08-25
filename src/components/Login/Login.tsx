@@ -85,7 +85,11 @@ export const Login = () => {
 
         {/* Role Selector */}
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-1">Login as</label>
+          {/* <label className="block text-sm font-medium text-gray-700 mb-1">Login as</label> */}
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+  Login as {selectedRole === 'ADMIN' ? 'Admin' : 'Agent'}
+</label>
+
           <div className="flex space-x-4">
             {['ADMIN', 'AGENT'].map((role) => (
               <button
@@ -158,25 +162,8 @@ export const Login = () => {
           </a>
         </div>
         
-         {/* Or Divider */}
-        <div className="relative mt-6 mb-6">
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-gray-300"></div>
-          </div>
-          <div className="relative flex justify-center text-sm">
-            <span className="px-2 bg-white text-gray-500">or</span>
-          </div>
-        </div>
+        
 
-{/* Additional Options */}
-            <div className="space-y-3 flex justify-center">
-        <button
-          type="button"
-          className="inline-flex px-6 py-2 border border-green-600 rounded-md text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
-        >
-          Create new account
-        </button>
-      </div>
       </form>
     </div>
   );
