@@ -38,14 +38,14 @@ import TripInformation from './pages/itinerarySteps/TripInformation';
 const AppRoutes = () => {
   return (
     <Routes>
-      {/* Public Routes */}
-      <Route path="/" element={<HomeLogin />} />
-      <Route path="/login" element={<Login />} />
+      {/* Public routes that don't need layout */}
+      <Route path="/" element={<Login />} />
       <Route path="/unauthorized" element={<Unauthorized />} />
 
-      {/* Protected Admin Routes (with layout) */}
-      <Route element={<ProtectedRoute allowedRoles={['ADMIN']} />}>
-        <Route element={<Layout />}>
+      {/* Layout wrapper */}
+      <Route element={<Layout />}>
+        {/* Admin-only routes */}
+        <Route element={<ProtectedRoute allowedRoles={['ADMIN']} />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/agent-table" element={<AgentTable />} />
@@ -53,15 +53,12 @@ const AppRoutes = () => {
           <Route path="/reports" element={<Reports />} />
           <Route path="/crm" element={<CRM />} />
         </Route>
-      </Route>
 
-      {/* Protected Agent Routes (with layout) */}
-      <Route element={<ProtectedRoute allowedRoles={['AGENT']} />}>
-        <Route element={<Layout />}>
+        {/* Agent-only routes */}
+        <Route element={<ProtectedRoute allowedRoles={['AGENT']} />}>
           <Route path="/agent/dashboard" element={<AgentDashboard />} />
           <Route path="/agent/create-basic-itinerary" element={<BasicCreateItinerary />} />
 
-          {/* Itinerary steps */}
           <Route path="/my-itinerary" element={<MyItinerary />} />
           <Route path="/my-itinerary/create" element={<CreateItinerary />} />
           <Route path="/my-itinerary/create/travel-basic" element={<TravelBasic />} />
@@ -71,17 +68,17 @@ const AppRoutes = () => {
           <Route path="/my-itinerary/create/day-wise-itinerary" element={<DayWiseItinerary />} />
           <Route path="/my-itinerary/create/pricing" element={<Pricing />} />
           <Route path="/my-itinerary/create/trip-information" element={<TripInformation />} />
-
           <Route path="/follow-ups" element={<FollowUps />} />
           <Route path="/my-leads" element={<MyLeads />} />
         </Route>
       </Route>
 
-      {/* Catch-all for unknown routes */}
+      {/* Catch-all route */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 };
+
 
 const App = () => {
   return (
