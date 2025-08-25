@@ -1,115 +1,178 @@
 {
   "kpiCards": [
-  {
-    "id": 1,
-    "title": "Total Customers",
-    "value": "2,143",
-    "subtitle": "Engaged users",
-    "growth": "+20%",
-    "icon": "users",
-    "color": "bg-blue-100",
-    "iconColor": "text-blue-600"
-  },
-  {
-    "id": 2,
-    "title": "Revenue",
-    "value": "₹8.4L",
-    "subtitle": "Revenue generated",
-    "growth": "+20%",
-    "icon": "dollar",
-    "color": "bg-purple-100",
-    "iconColor": "text-purple-600"
-  },
-  {
-    "id": 3,
-    "title": "Total Leads",
-    "value": "2,143",
-    "subtitle": "Hot prospects",
-    "growth": "+20%",
-    "icon": "trending",
-    "color": "bg-green-100",
-    "iconColor": "text-green-600"
-  },
-  {
-    "id": 4,
-    "title": "Total Tours",
-    "value": "567",
-    "subtitle": "Trips booked",
-    "growth": "+20%",
-    "icon": "map",
-    "color": "bg-pink-100",
-    "iconColor": "text-pink-600"
-  }
-],
-  "revenueData": [
-    { "month": "Jan", "revenue": 1.2 },
-  { "month": "Feb", "revenue": 1.4 },
-  { "month": "Mar", "revenue": 1.1 },
-  { "month": "Apr", "revenue": 0.9 },
-  { "month": "May", "revenue": 1.6 },
-  { "month": "Jun", "revenue": 1.3 },
-  { "month": "Jul", "revenue": 1.0 },
-  { "month": "Aug", "revenue": 1.7 },
-  { "month": "Sep", "revenue": 1.5 },
-  { "month": "Oct", "revenue": 1.2 },
-  { "month": "Nov", "revenue": 0.8 },
-  { "month": "Dec", "revenue": 1.1 }
+    {
+      "id": 1,
+      "title": "Total Customers",
+      "value": "10,284",
+      "subtitle": "Customers",
+      "growth": "21.5%",
+      "icon": "users",
+      "color": "bg-blue-50",
+      "iconColor": "text-blue-500"
+    },
+    {
+      "id": 2,
+      "title": "Total Revenue",
+      "value": "$84,284",
+      "subtitle": "Revenue",
+      "growth": "12.8%",
+      "icon": "dollar",
+      "color": "bg-green-50",
+      "iconColor": "text-green-500"
+    },
+    {
+      "id": 3,
+      "title": "Conversion Rate",
+      "value": "68.4%",
+      "subtitle": "Conversion",
+      "growth": "8.2%",
+      "icon": "trending",
+      "color": "bg-purple-50",
+      "iconColor": "text-purple-500"
+    },
+    {
+      "id": 4,
+      "title": "Avg. Tour Price",
+      "value": "$1,240",
+      "subtitle": "Avg. Price",
+      "growth": "5.6%",
+      "icon": "map",
+      "color": "bg-orange-50",
+      "iconColor": "text-orange-500"
+    }
   ],
-
-  "tourCategories": [
-  {
-     "name": "Adventure Tours",
-      "value": 35,
-      "percentage": 0,
-      "customers": 500,
-      "color": "#A2D2FF"
-  },
-  {
-    "name": "Cultural Tours",
-      "value": 28,
-      "percentage": 0,
-      "customers": 1500,
-      "color": "#00B8A9"
-  },
-  {
-      "name": "Luxury Tours",
-      "value": 22,
-      "percentage": 0,
-      "customers": 400,
-      "color": "#FFB3C6"
-  },
-  {
-    "name": "Eco Tours",
-      "value": 15,
-      "percentage": 0,
-      "customers": 2200,
-      "color": "#CDB4DB"
-  }
-],
   "customersByCountry": [
-    { "country": "India", "percentage": 40, "customers": 857, "color": "#34D399" },
-    { "country": "USA", "percentage": 30, "customers": 643, "color": "#60A5FA" },
-    { "country": "France", "percentage": 20, "customers": 429, "color": "#F87171" },
-    { "country": "Japan", "percentage": 10, "customers": 214, "color": "#A78BFA" }
+    {
+      "country": "USA",
+      "percentage": 40,
+      "customers": 4112,
+      "color": "#8884d8"
+    },
+    {
+      "country": "Canada",
+      "percentage": 25,
+      "customers": 2570,
+      "color": "#82ca9d"
+    },
+    {
+      "country": "UK",
+      "percentage": 20,
+      "customers": 2056,
+      "color": "#ffc658"
+    },
+    {
+      "country": "Australia",
+      "percentage": 15,
+      "customers": 1542,
+      "color": "#ff8042"
+    }
   ],
   "leadsData": [
-   { "week": "W1", "leads": 90, "leadsDotted": 100 },
-  { "week": "W2", "leads": 105, "leadsDotted": 98 },
-  { "week": "W3", "leads": 92, "leadsDotted": 95 },
-  { "week": "W4", "leads": 110, "leadsDotted": 110 },
-  { "week": "W5", "leads": 120, "leadsDotted": 112 },
-  { "week": "W6", "leads": 95, "leadsDotted": 108 },
-  { "week": "W7", "leads": 118, "leadsDotted": 115 }  
-
+    {
+      "week": "Week 1",
+      "leads": 400,
+      "leadsDotted": 300
+    },
+    {
+      "week": "Week 2",
+      "leads": 300,
+      "leadsDotted": 200
+    },
+    {
+      "week": "Week 3",
+      "leads": 500,
+      "leadsDotted": 400
+    },
+    {
+      "week": "Week 4",
+      "leads": 450,
+      "leadsDotted": 350
+    }
+  ],
+  "revenueData": [
+    {
+      "month": "Jan",
+      "revenue": 1.8
+    },
+    {
+      "month": "Feb",
+      "revenue": 1.5
+    },
+    {
+      "month": "Mar",
+      "revenue": 1.9
+    },
+    {
+      "month": "Apr",
+      "revenue": 1.6
+    },
+    {
+      "month": "May",
+      "revenue": 1.8
+    },
+    {
+      "month": "Jun",
+      "revenue": 2.0
+    }
+  ],
+  "tourCategories": [
+    {
+      "name": "Adventure Tours",
+      "percentage": 35,
+      "color": "#A2D2FF"
+    },
+    {
+      "name": "Cultural Tours",
+      "percentage": 28,
+      "color": "#00B8A9"
+    },
+    {
+      "name": "Luxury Tours",
+      "percentage": 22,
+      "color": "#FFB3C6"
+    },
+    {
+      "name": "Eco Tours",
+      "percentage": 15,
+      "color": "#CDB4DB"
+    }
   ],
   "conversionData": [
-  { "month": "Jan", "conversion": 65, "total": 80, "percentage": 20.25 },
-  { "month": "Feb", "conversion": 72, "total": 90, "percentage": 80.00 },
-  { "month": "Mar", "conversion": 58, "total": 75, "percentage": 77.33 },
-  { "month": "Apr", "conversion": 68, "total": 85, "percentage": 80.00 },
-  { "month": "May", "conversion": 75, "total": 92, "percentage": 44.52 },
-  { "month": "Jun", "conversion": 82, "total": 100, "percentage": 82.00 },
-  { "month": "Jul", "conversion": 78, "total": 95, "percentage": 90.11 }
-]
-
+    {
+      "month": "Jan",
+      "conversion": 150,
+      "total": 200,
+      "percentage": 75.0
+    },
+    {
+      "month": "Feb",
+      "conversion": 180,
+      "total": 220,
+      "percentage": 81.8
+    },
+    {
+      "month": "Mar",
+      "conversion": 220,
+      "total": 250,
+      "percentage": 88.0
+    },
+    {
+      "month": "Apr",
+      "conversion": 200,
+      "total": 240,
+      "percentage": 83.3
+    },
+    {
+      "month": "May",
+      "conversion": 250,
+      "total": 280,
+      "percentage": 89.3
+    },
+    {
+      "month": "Jun",
+      "conversion": 230,
+      "total": 260,
+      "percentage": 88.5
+    }
+  ]
 }

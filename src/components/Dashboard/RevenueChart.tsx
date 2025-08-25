@@ -1,13 +1,5 @@
-import React from "react";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import React, { memo } from "react";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 interface RevenueData {
   month: string;
@@ -18,96 +10,31 @@ interface RevenueChartProps {
   data: RevenueData[];
 }
 
-const RevenueChart: React.FC<RevenueChartProps> = ({ data }) => {
+const RevenueChart: React.FC<RevenueChartProps> = memo(({ data }) => {
   return (
-    <div
-      className="relative bg-white border border-[#CBCBCB] rounded-[24px] w-full max-w-[838px] h-[255px] overflow-hidden"
-      style={{
-        fontFamily: "Inter, sans-serif",
-        // borderTopWidth: 0, // Remove top border for better top grid line visibility
-      }}
-    >
-      {/* Title and description */}
-      <div className="absolute top-[20px] left-[20px]">
-        <h2 className="text-lg font-semibold text-gray-900">
-          Total Revenue
-        </h2>
-        <p className="text-[13px] text-[#8C8B8B] mt-[6px] leading-[24px]">
-          {/* Track your monthly revenue growth and performance. */}
-          Track your monthly revenue growth and performance
-        </p>
-      </div>
-  
- <select className="absolute top-[16px] right-[20px] px-3 py-1.5 border-2 text-xs rounded-full font-medium text-[#626262] border-gray-600  hover:border-[#00B8A9] hover:bg-gray-100 focus:outline-none font-inter"
-        style={{ WebkitAppearance: 'none', MozAppearance: 'none', appearance: 'none' }}>
-          <option>Last Week</option>
-          <option>Last Month</option>
+    <div className="relative bg-white border border-[#CBCBCB] rounded-[24px] w-full h-full min-h-[255px] overflow-hidden flex flex-col p-5">
+      <div className="flex justify-between items-start">
+        <div>
+          <h2 className="text-lg font-semibold text-gray-900">Total Revenue</h2>
+          <p className="text-[13px] text-[#8C8B8B] mt-[6px] leading-[24px]">Track your monthly revenue growth</p>
+        </div>
+        <select className="px-3 py-1.5 border-2 text-xs rounded-full font-medium text-[#626262] border-gray-600 hover:border-[#00B8A9] focus:outline-none" style={{ WebkitAppearance: 'none', MozAppearance: 'none', appearance: 'none' }}>
           <option>Last Year</option>
         </select>
-      
-
-      {/* Y-axis labels aligned with ticks and grid lines */}
-      <div
-        className="absolute left-[20px] top-[82px] h-[133px] flex flex-col justify-between text-[12px] text-[rgba(0,0,0,0.6)] font-normal leading-[16px] pointer-events-none"
-        aria-hidden="true"
-        style={{ userSelect: "none" }}
-      >
-        <span style={{ lineHeight: "16px", paddingBottom: "4px" }}>2L</span>
-        <span style={{ lineHeight: "16px" }}>1.5L</span>
-        <span style={{ lineHeight: "16px" }}>1L</span>
-        <span style={{ lineHeight: "16px", paddingTop: "4px" }}>0L</span>
       </div>
-
-      {/* Chart container */}
-      <div className="absolute top-[82px] left-[64px] right-[16px] bottom-[32px]">
+      <div className="flex-grow mt-4">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart
-            data={data}
-            margin={{ top: 10, right: 0, left: 0, bottom: 0 }} // Add top margin to push lines down
-            barCategoryGap="20%"
-            barGap={4}
-          >
-            <CartesianGrid
-              vertical={false}
-              stroke="#A0A0A0" // consistent grey color
-              strokeOpacity={0.5} // increased opacity for better visibility
-              strokeDasharray="" // solid lines
-              horizontal={true}
-            />
-
-            <XAxis
-              dataKey="month"
-              axisLine={false}
-              tickLine={false}
-              tick={{ fill: "rgba(0,0,0,0.6)", fontSize: 12, fontWeight: 500 }}
-              dy={8}
-            />
-
-            <YAxis
-              hide
-              domain={[0, 2]}
-              type="number"
-              ticks={[0, 1, 1.5, 2]} // exact tick positions for grid lines and labels
-              interval={0}
-            />
-
-            <Tooltip
-              formatter={(value) => `${value} L`}
-              cursor={{ fill: "rgba(0,0,0,0.05)" }}
-              contentStyle={{ fontSize: 12, fontFamily: "Inter, sans-serif" }}
-            />
-
-            <Bar
-              dataKey="revenue"
-              fill="#D2FF77"
-              radius={[10, 10, 0, 0]}
-              maxBarSize={28}
-            />
+          <BarChart data={data} margin={{ top: 10, right: 0, left: -20, bottom: 0 }} barCategoryGap="20%">
+            <CartesianGrid vertical={false} stroke="#A0A0A0" strokeOpacity={0.5} />
+            <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fill: "rgba(0,0,0,0.6)", fontSize: 12 }} dy={8} />
+            <YAxis hide domain={[0, 2]} type="number" ticks={[0, 1, 1.5, 2]} />
+            <Tooltip formatter={(value: number) => `${value} L`} cursor={{ fill: "rgba(0,0,0,0.05)" }} contentStyle={{ fontSize: 12 }} />
+            <Bar dataKey="revenue" fill="#D2FF77" radius={[10, 10, 0, 0]} maxBarSize={28} />
           </BarChart>
         </ResponsiveContainer>
       </div>
     </div>
   );
-};
+});
 
 export default RevenueChart;

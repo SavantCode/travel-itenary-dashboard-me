@@ -38,8 +38,16 @@ import TripInformation from './pages/itinerarySteps/TripInformation';
 const AppRoutes = () => {
   return (
     <Routes>
-      {/* Public routes that don't need layout */}
-      <Route path="/" element={<Login />} />
+      {/* Public Routes */}
+      {/* <Route path="/" element={<HomeLogin />} /> */}
+
+
+      {/* fix error */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Navigate to="/login" replace />} />
+
+
+
       <Route path="/unauthorized" element={<Unauthorized />} />
 
       {/* Layout wrapper */}
