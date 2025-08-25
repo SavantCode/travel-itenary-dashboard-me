@@ -12,7 +12,7 @@ const Header: React.FC = () => {
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
+    navigate('/');
   };
 
   // Generate greeting based on role and name
