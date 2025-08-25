@@ -39,7 +39,9 @@ const AppRoutes = () => {
   return (
     <Routes>
       {/* Public routes that don't need layout */}
-      <Route path="/" element={<Login />} />
+      {/* <Route path="/" element={<Login />} /> */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Navigate to="/login" replace />} />
       <Route path="/unauthorized" element={<Unauthorized />} />
 
       {/* Layout wrapper */}
