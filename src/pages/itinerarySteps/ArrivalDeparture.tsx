@@ -208,7 +208,7 @@ const ArrivalDeparturePage: FC = () => {
   return (
     <>
       {isPreviewOpen && <PreviewModal legs={data.journeyLegs} onClose={() => setIsPreviewOpen(false)} />}
-      <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-sans">
+      <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-raleway">
         <header className="flex justify-between items-center mb-4">
           <h1 className="text-xl font-semibold text-[#10A4B0] font-raleway">Arrival & Departure</h1>
           

@@ -658,195 +658,207 @@ const VehicleBooking: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen p-4 font-sans sm:p-6 lg:p-2 ">
-      
-      <div className="w-full">
-        <h1 className="text-xl font-semibold text-teal-500 mb-4">Vehicle Booking</h1>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
-          {/* Left Form Panel */}
-          <div className="lg:col-span-3 bg-white border border-gray-200 rounded-lg p-5 space-y-4 shadow-sm">
-            <div className="flex justify-between items-center">
-                <h2 className="font-semibold text-base text-gray-800">{isEditing ? `Editing Booking for: ${currentVehicle.vehicleType}` : 'Add New Vehicle Booking'}</h2>
-                {savedVehicles.length > 0 && (
-                    <button onClick={handleAddNew} className="text-xs font-medium text-[#10A4B0] hover:underline disabled:text-gray-400 disabled:no-underline" disabled={!isEditing}>
-                        + Add New Booking
-                    </button>
-                )}
-            </div>
-            
-            <hr className="border-gray-200"/>
+  <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-raleway">
+    <div className="w-full">
+      <h1 className="text-xl font-semibold text-[#10A4B0] mb-4">Vehicle Booking</h1>
+      <form className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        {/* Left Form Panel */}
+        <div className="lg:col-span-2 bg-white border border-[#E0E0E0] rounded-lg p-4 space-y-6 self-stretch">
+          <div className="flex justify-between items-center">
+              <h2 className="font-semibold text-base text-gray-800">{isEditing ? `Editing Booking for: ${currentVehicle.vehicleType}` : 'Add New Vehicle Booking'}</h2>
+              {savedVehicles.length > 0 && (
+                  <button onClick={handleAddNew} className="text-xs font-medium text-[#10A4B0] hover:underline disabled:text-gray-400 disabled:no-underline" disabled={!isEditing}>
+                      + Add New Booking
+                  </button>
+              )}
+          </div>
+          
+          <hr className="border-gray-200"/>
 
-            {/* Drive Type */}
-            <div className="pt-2">
-              <div className="flex items-center gap-6">
-                {['self-drive', 'with-driver'].map((type) => (
-                  <label key={type} className="flex items-center gap-2 cursor-pointer text-xs font-medium">
-                    <input
-                      type="radio"
-                      name="driveType"
-                      value={type}
-                      checked={currentVehicle.driveType === type}
-                      onChange={() => handleInputChange('driveType', type)}
-                      className="h-3.5 w-3.5 accent-[#10A4B0]"
-                    />
-                    {type === 'self-drive' ? 'Self Drive' : 'Vehicle with Driver'}
-                  </label>
-                ))}
-              </div>
-            </div>
-
-            {/* Vehicle Type and Count */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <SelectField
-                label="Vehicle Type*"
-                value={currentVehicle.vehicleType}
-                options={['Carnival (Kia)', 'Toyota Alphard', 'Hyundai Staria', 'Mercedes V-Class', 'Mini Bus', 'Coach']}
-                onChange={e => handleInputChange('vehicleType', e.target.value)}
-              />
-              <InputField
-                label="No. of Vehicles"
-                type="number"
-                value={currentVehicle.numVehicles}
-                min={1}
-                onChange={e => handleInputChange('numVehicles', Math.max(1, parseInt(e.target.value) || 1))}
-              />
-            </div>
-
-            <InputField
-              label="Vehicle Number (Optional)"
-              placeholder="e.g. SGX1234Z"
-              value={currentVehicle.vehicleNumber}
-              onChange={e => handleInputChange('vehicleNumber', e.target.value)}
-            />
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <InputField
-                label="Pick Up Date"
-                type="date"
-                value={currentVehicle.pickUpDate}
-                onChange={e => handleInputChange('pickUpDate', e.target.value)}
-                icon={<CalendarIcon />}
-              />
-              <InputField
-                label="Pick Up Location*"
-                placeholder="Enter Address..."
-                value={currentVehicle.pickUpLocation}
-                onChange={e => handleInputChange('pickUpLocation', e.target.value)}
-              />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <InputField
-                label="Drop Off Date"
-                type="date"
-                value={currentVehicle.dropOffDate}
-                onChange={e => handleInputChange('dropOffDate', e.target.value)}
-                icon={<CalendarIcon />}
-              />
-              <InputField
-                label="Drop Off Location*"
-                placeholder="Enter Address..."
-                value={currentVehicle.dropOffLocation}
-                onChange={e => handleInputChange('dropOffLocation', e.target.value)}
-              />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <InputField
-                label="Vehicle Brand (Optional)"
-                placeholder="Type here"
-                value={currentVehicle.vehicleBrand}
-                onChange={e => handleInputChange('vehicleBrand', e.target.value)}
-              />
-              <InputField
-                label="Pick Up Time (Optional)"
-                type="time"
-                value={currentVehicle.pickUpTime}
-                onChange={e => handleInputChange('pickUpTime', e.target.value)}
-                icon={<ClockIcon />}
-              />
-              <InputField
-                label="Drop Off Time (Optional)"
-                type="time"
-                value={currentVehicle.dropOffTime}
-                onChange={e => handleInputChange('dropOffTime', e.target.value)}
-                icon={<ClockIcon />}
-              />
-            </div>
-
-            <div>
-              <label className="text-xs font-medium text-gray-700 block mb-1">Remark (Optional)</label>
-              <textarea
-                value={currentVehicle.remark}
-                onChange={e => handleInputChange('remark', e.target.value)}
-                placeholder="Enter a short overview..."
-                className="w-full h-20 p-2 text-xs bg-white rounded-md border border-gray-300 focus:ring-1 focus:ring-[#10A4B0] focus:border-[#10A4B0] transition"
-              />
-            </div>
-
-            <div className="flex justify-end items-center gap-4 pt-2">
-                {isEditing && (
-                    <button
-                        onClick={handleAddNew}
-                        className="px-6 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-md font-semibold text-xs hover:bg-gray-200 transition-colors"
-                    >
-                        Cancel
-                    </button>
-                )}
-              <button
-                onClick={handleSaveVehicle}
-                className="px-8 py-2 bg-[#10A4B0] text-white rounded-md font-semibold text-xs hover:bg-[#0d8a95] transition-colors shadow-sm"
-              >
-                {isEditing ? 'Update Booking' : '+ Add Booking'}
-              </button>
+          {/* Drive Type */}
+          <div className="pt-2">
+            <div className="flex items-center gap-6">
+              {['self-drive', 'with-driver'].map((type) => (
+                <label key={type} className="flex items-center gap-2 cursor-pointer text-xs font-medium">
+                  <input
+                    type="radio"
+                    name="driveType"
+                    value={type}
+                    checked={currentVehicle.driveType === type}
+                    onChange={() => handleInputChange('driveType', type)}
+                    className="h-3.5 w-3.5 accent-[#10A4B0]"
+                  />
+                  {type === 'self-drive' ? 'Self Drive' : 'Vehicle with Driver'}
+                </label>
+              ))}
             </div>
           </div>
 
-          {/* Right Summary Panel */}
-          <div className="lg:col-span-2">
-            <div className="bg-white border border-gray-200 rounded-lg sticky top-4 shadow-sm">
-              <div className="p-4 border-b border-gray-200 bg-teal-500 rounded-t-lg">
-                <h2 className="text-base font-semibold text-white">Saved Bookings ({savedVehicles.length})</h2>
-              </div>
-              <div className="p-3 space-y-3 max-h-[65vh] overflow-y-auto bg-gray-50/50">
-                {savedVehicles.length > 0 ? (
-                    savedVehicles.map((vehicle) => (
-                        <SavedVehicleCard 
-                            key={vehicle.id} 
-                            vehicle={vehicle} 
-                            onEdit={() => handleEditVehicle(vehicle.id)}
-                            onDelete={() => handleDeleteVehicle(vehicle.id)}
-                            isBeingEdited={editingId === vehicle.id}
-                        />
-                    ))
-                ) : (
-                    <div className="text-center py-10 text-gray-500 text-xs">
-                        <p className="font-medium text-base mb-2">No Bookings Yet</p>
-                        <p>Your saved bookings will appear here.</p>
-                    </div>
-                )}
-              </div>
-              {savedVehicles.length > 0 && (
-                <div className="p-3 border-t border-gray-200 bg-white">
-                    <button 
-                        onClick={handleFinalSubmit}
-                        className="w-full bg-green-600 text-white py-2 rounded-md font-semibold text-xs hover:bg-green-700 transition-colors shadow-sm"
-                    >
-                        Submit All Bookings
-                    </button>
-                </div>
+          {/* Vehicle Type and Count */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <SelectField
+              label="Vehicle Type*"
+              value={currentVehicle.vehicleType}
+              options={['Carnival (Kia)', 'Toyota Alphard', 'Hyundai Staria', 'Mercedes V-Class', 'Mini Bus', 'Coach']}
+              onChange={e => handleInputChange('vehicleType', e.target.value)}
+            />
+            <InputField
+              label="No. of Vehicles"
+              type="number"
+              value={currentVehicle.numVehicles}
+              min={1}
+              onChange={e => handleInputChange('numVehicles', Math.max(1, parseInt(e.target.value) || 1))}
+            />
+          </div>
+
+          <InputField
+            label="Vehicle Number (Optional)"
+            placeholder="e.g. SGX1234Z"
+            value={currentVehicle.vehicleNumber}
+            onChange={e => handleInputChange('vehicleNumber', e.target.value)}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InputField
+              label="Pick Up Date"
+              type="date"
+              value={currentVehicle.pickUpDate}
+              onChange={e => handleInputChange('pickUpDate', e.target.value)}
+              icon={<CalendarIcon />}
+            />
+            <InputField
+              label="Pick Up Location*"
+              placeholder="Enter Address..."
+              value={currentVehicle.pickUpLocation}
+              onChange={e => handleInputChange('pickUpLocation', e.target.value)}
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InputField
+              label="Drop Off Date"
+              type="date"
+              value={currentVehicle.dropOffDate}
+              onChange={e => handleInputChange('dropOffDate', e.target.value)}
+              icon={<CalendarIcon />}
+            />
+            <InputField
+              label="Drop Off Location*"
+              placeholder="Enter Address..."
+              value={currentVehicle.dropOffLocation}
+              onChange={e => handleInputChange('dropOffLocation', e.target.value)}
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <InputField
+              label="Vehicle Brand (Optional)"
+              placeholder="Type here"
+              value={currentVehicle.vehicleBrand}
+              onChange={e => handleInputChange('vehicleBrand', e.target.value)}
+            />
+            <InputField
+              label="Pick Up Time (Optional)"
+              type="time"
+              value={currentVehicle.pickUpTime}
+              onChange={e => handleInputChange('pickUpTime', e.target.value)}
+              icon={<ClockIcon />}
+            />
+            <InputField
+              label="Drop Off Time (Optional)"
+              type="time"
+              value={currentVehicle.dropOffTime}
+              onChange={e => handleInputChange('dropOffTime', e.target.value)}
+              icon={<ClockIcon />}
+            />
+          </div>
+
+          <div>
+            <label className="text-xs font-medium text-gray-700 block mb-1">Remark (Optional)</label>
+            <textarea
+              value={currentVehicle.remark}
+              onChange={e => handleInputChange('remark', e.target.value)}
+              placeholder="Enter a short overview..."
+              className="w-full h-20 p-2 text-xs bg-white rounded-md border border-gray-300 focus:ring-1 focus:ring-[#10A4B0] focus:border-[#10A4B0] transition"
+            />
+          </div>
+
+          <div className="flex justify-center items-center gap-4 pt-2">
+              {isEditing && (
+                  <button
+                      onClick={handleAddNew}
+                      className="px-6 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-md font-semibold text-xs hover:bg-gray-200 transition-colors"
+                  >
+                      Cancel
+                  </button>
               )}
-            </div>
-            {successMessage && (
-                <div className="mt-4 p-3 bg-green-100 border border-green-300 text-green-800 text-xs rounded-lg animate-fade-in-out shadow-sm">
-                    {successMessage}
-                </div>
-            )}
+            <button
+              onClick={handleSaveVehicle}
+              className="px-8 py-2 bg-[#10A4B0] text-white rounded-md font-semibold text-xs hover:bg-[#0d8a95] transition-colors shadow-sm"
+            >
+              {isEditing ? 'Update Booking' : '+ Add Booking'}
+            </button>
           </div>
         </div>
+        {/* Right Summary Panel */}
+      <div className="lg:col-span-1 sticky top-8">
+  <div className="bg-white p-4  rounded-lg border border-[#E0E0E0]">
+    <h2 className="text-xl font-semibold text-[#717182] font-raleway mb-4">
+      Saved Bookings ({savedVehicles.length})
+    </h2>
+
+    <div className=" rounded-md border border-[#E0E0E0]">
+      {/* Header */}
+      <div className="bg-[#10A4B0] text-white flex justify-between items-center px-3 py-3 rounded-t-md border">
+        <h3 className="font-raleway font-medium text-lg">Bookings List</h3>
+      </div>
+
+      {/* Content */}
+      <div className="p-4 space-y-3">
+        {savedVehicles.length > 0 ? (
+          savedVehicles.map((vehicle) => (
+            <SavedVehicleCard
+              key={vehicle.id}
+              vehicle={vehicle}
+              onEdit={() => handleEditVehicle(vehicle.id)}
+              onDelete={() => handleDeleteVehicle(vehicle.id)}
+              isBeingEdited={editingId === vehicle.id}
+            />
+          ))
+        ) : (
+          <div className="text-center py-10 text-gray-500 text-xs">
+            <p className="font-medium text-base mb-2">No Bookings Yet</p>
+            <p>Your saved bookings will appear here.</p>
+          </div>
+        )}
       </div>
     </div>
+
+    {/* Submit button */}
+    {savedVehicles.length > 0 && (
+      <div className="pt-4">
+        <button
+          onClick={handleFinalSubmit}
+          className="w-full bg-green-600 text-white py-2 font-semibold text-xs hover:bg-green-700 transition-colors shadow-sm"
+        >
+          Submit All Bookings
+        </button>
+      </div>
+    )}
+  </div>
+
+  {/* Success message */}
+  {successMessage && (
+    <div className="mt-4 p-3 bg-green-100 border border-green-300 text-green-800 text-xs animate-fade-in-out shadow-sm">
+      {successMessage}
+    </div>
+  )}
+</div>
+
+
+      </form>
+    </div>
+  </div>
   );
 };
 

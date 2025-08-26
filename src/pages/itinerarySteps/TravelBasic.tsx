@@ -133,7 +133,7 @@ const TravelBasicPage: FC = () => {
   };
 
   return (
-    <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-sans">
+    <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-raleway">
       {/* Header Section */}
       <header className="flex justify-between items-center mb-4">
         <div>
