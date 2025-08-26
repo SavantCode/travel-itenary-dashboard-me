@@ -133,13 +133,14 @@ const TravelBasicPage: FC = () => {
   };
 
   return (
-    <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-8 font-sans">
+    <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-sans">
       {/* Header Section */}
       <header className="flex justify-between items-center mb-4">
         <div>
-          <h1 className="text-xl font-semibold text-[#1E1E1E] font-raleway">Travel Basic</h1>
-          <div className="h-[1.5px] bg-black mt-1"></div>
+          <h1 className="text-xl font-semibold text-[#10A4B0] font-raleway">Travel Basic</h1>
+           
         </div>
+        
         <div className="flex items-center space-x-8">
           <div className="hidden md:flex items-center space-x-2 text-xs text-[#727171] cursor-pointer">
             <MapPin className="w-4 h-4" />

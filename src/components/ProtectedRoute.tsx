@@ -16,8 +16,12 @@ export const ProtectedRoute = ({ allowedRoles }: ProtectedRouteProps) => {
   }
 
   if (user && !allowedRoles.includes(user.role)) {
+    
     // If logged in but role is not allowed, redirect to an unauthorized page or home
     return <Navigate to="/unauthorized" />;
+    
+    
+    
   }
   
   // If authenticated and authorized, render the child component

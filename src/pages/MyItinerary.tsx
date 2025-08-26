@@ -50,7 +50,7 @@ const ItineraryContainer = () => {
           <h2 className="text-2xl font-bold">My Itinerary</h2>
           <button
             onClick={handleCreateNewClick}
-            className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded"
+            className="bg-teal-500 hover:bg-teal-600 text-white text-sm px-4 py-2 rounded"
           >
             Create New Itinerary
           </button>
@@ -68,7 +68,7 @@ const ItineraryContainer = () => {
                 alt={trip.location}
                 className="w-full h-28 object-cover"
               />
-              <div className="bg-blue-600 text-white p-2 flex flex-col space-y-1 relative">
+              <div className="bg-teal-500 text-white p-2 flex flex-col space-y-1 relative">
                 <div className="flex items-center space-x-1 text-xs">
                   <MapPin className="w-3 h-3" />
                   <span className="font-semibold">{trip.location}</span>
@@ -93,7 +93,7 @@ const ItineraryContainer = () => {
           <h2 className="text-xl font-bold mb-2">NOTE</h2>
           <hr className="border-gray-300 mb-4" />
           <div className="border border-gray-300 rounded-lg overflow-hidden">
-            <div className="bg-blue-600 text-white flex items-center justify-between px-4 py-2">
+            <div className="bg-teal-500 text-white flex items-center justify-between px-4 py-2">
               <span className="font-semibold">Sightseeing</span>
               <MoreHorizontal className="w-5 h-5 cursor-pointer" />
             </div>

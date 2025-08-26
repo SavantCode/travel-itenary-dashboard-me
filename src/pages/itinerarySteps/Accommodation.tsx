@@ -1665,10 +1665,13 @@ const Accommodation: React.FC = () => {
     };
 
     return (
-        <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-8 font-sans">
+        <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-sans">
             <div className="w-full">
-                <h1 className="text-2xl font-semibold text-[#10A4B0] mb-2">Accommodation Booking System*</h1>
-                <hr className="border-gray-300 mb-6" />
+               
+        <header className="flex justify-between items-center mb-4">
+                <h1 className="text-xl font-semibold text-[#10A4B0] font-raleway">Accommodation Booking System</h1>
+</header>
+
 
                 {/* Show booking result if available */}
                 {showBookingResult && bookingResult && (
@@ -1969,8 +1972,9 @@ const Accommodation: React.FC = () => {
                     {/* Right Sidebar */}
                     <div className="lg:col-span-1">
                         <div className="bg-white border border-gray-200 rounded-lg">
-                            <div className="p-4 border-b border-gray-200">
-                                <h2 className="text-xl font-semibold text-gray-600">Booking Summary</h2>
+                            
+                            <div className="p-4 border-b bg-teal-500 rounded-t-lg border border-[#E0E0E0]">
+                                <h2 className="text-xl font-Raleway text-white">Booking Summary</h2>
                             </div>
                             <div className="p-4 space-y-4">
                                 {/* Current Selection */}

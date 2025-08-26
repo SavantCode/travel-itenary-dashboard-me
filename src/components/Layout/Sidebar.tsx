@@ -27,14 +27,21 @@ const Sidebar: React.FC = () => {
   return (
     <div className="bg-white w-64 shadow-lg flex flex-col">
       {/* Logo */}
-      <div className="p-6 border-b border-gray-200">
-        <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center">
-            <MapPin className="w-5 h-5 text-white" />
-          </div>
-          <span className="text-xl font-bold text-gray-800">Global Vacations</span>
-        </div>
-      </div>
+    <div className="p-6 border-b border-gray-200">
+  <div className="flex items-center space-x-3">
+    <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+      <img 
+        src="/images/logo.png" 
+        alt="Global Vacations Logo" 
+        className="w-full h-full object-contain rounded-lg" 
+      />
+    </div>
+    <span className="text-xl font-bold text-teal-500">Global Vacations</span>
+  </div>
+</div>
+
+
+
 
       {/* Navigation */}
       <nav className="flex-1 py-6">

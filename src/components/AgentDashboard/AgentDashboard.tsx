@@ -86,10 +86,10 @@ export const AgentDashboard = () => {
   return (
     <div className="container mx-auto p-4 sm:p-6 lg:p-8">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold text-gray-800">Agent Itneraries ✈️</h1>
+        <h1 className="text-3xl font-bold text-teal-500">Agent Itneraries ✈️</h1>
         <button
           onClick={handleCreateNew}
-          className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
+          className="bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600 transition duration-300"
         >
           + Create New
         </button>

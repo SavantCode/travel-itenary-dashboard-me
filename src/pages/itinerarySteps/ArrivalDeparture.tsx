@@ -208,9 +208,10 @@ const ArrivalDeparturePage: FC = () => {
   return (
     <>
       {isPreviewOpen && <PreviewModal legs={data.journeyLegs} onClose={() => setIsPreviewOpen(false)} />}
-      <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-8 font-sans">
+      <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-sans">
         <header className="flex justify-between items-center mb-4">
-          <h1 className="text-xl font-semibold text-[#10A4B0] font-raleway">Arrival & Departure*</h1>
+          <h1 className="text-xl font-semibold text-[#10A4B0] font-raleway">Arrival & Departure</h1>
+          
           <div className="flex items-center space-x-4">
             <button onClick={addLeg} className="flex items-center space-x-2 text-xs text-[#727171] cursor-pointer hover:text-[#10A4B0]">
               <Plus className="w-4 h-4"/>

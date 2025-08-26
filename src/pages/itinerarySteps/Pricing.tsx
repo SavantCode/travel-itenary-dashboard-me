@@ -2,10 +2,10 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="p-6 bg-gray-50 min-h-screen font-sans">
+      <div className="bg-[#F6F6FA] min-h-screen p-4  sm:p-6 lg:p-2 font-sans">
       {/* Page Title */}
       <h1 className="text-xl font-semibold text-teal-600 mb-6">
-        Pricing<span className="text-red-500">*</span>
+        Pricing
       </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -96,8 +96,8 @@ const Pricing = () => {
         </div>
 
         {/* Right Preview Section */}
-        <div className="bg-white shadow rounded-xl p-4">
-          <h2 className="text-base font-semibold text-teal-600 border-b pb-2">
+        {/* <div className="bg-white shadow rounded-xl p-4">
+          <h2 className="text-base font-semibold bg-teal-500 text-white border-b pb-2">
             Pricing
           </h2>
           <div className="text-sm space-y-2 mt-4">
@@ -116,9 +116,43 @@ const Pricing = () => {
             </p>
           </div>
           <div className="flex justify-center mt-4">
-            <button className="bg-teal-600 text-white text-sm font-medium px-6 py-2 rounded-lg hover:bg-teal-700">
+            <button className="bg-teal-500 text-white text-sm font-medium px-6 py-2 rounded-lg hover:bg-teal-600">
               Edit
             </button>
+          </div>
+        </div> */}
+
+
+        <div className="lg:col-span-1 sticky top-8">
+          <div className="bg-white p-4 rounded-lg border border-[#E0E0E0]">
+            <h2 className="text-xl font-semibold text-[#717182] font-raleway mb-4">Save Details</h2>
+            <div className="border border-[#E0E0E0] rounded-lg">
+              <div className="bg-[#10A4B0] text-white flex justify-between items-center px-3 py-3 rounded-t-lg">
+                <h3 className="font-raleway font-medium text-lg">Travel Basic</h3>
+                
+              </div>
+              <div className="p-4 text-sm space-y-3 ">
+             
+               <p>
+              <span className="font-medium">Package pricing:</span> SGD 1300 per
+              adult x 2
+            </p>
+            <p>
+              <span className="font-medium">Bank and Branch Name:</span> Name
+            </p>
+            <p>
+              <span className="font-medium">Account No.:</span> 213156842135
+            </p>
+            <p>
+              <span className="font-medium">IFSC Code:</span> 2456114
+            </p>
+             <div className="flex justify-center mt-4">
+            <button className="bg-[#10A4B0] text-white text-sm font-medium px-6 py-2 rounded-lg hover:bg-teal-600">
+              Edit
+            </button>
+          </div> 
+              </div>
+            </div>
           </div>
         </div>
       </div>

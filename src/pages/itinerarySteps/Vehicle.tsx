@@ -658,9 +658,10 @@ const VehicleBooking: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen p-4 font-sans text-sm">
+    <div className="bg-gray-50 min-h-screen p-4 font-sans sm:p-6 lg:p-2 ">
+      
       <div className="w-full">
-        <h1 className="text-xl font-semibold text-gray-800 mb-4">Vehicle Booking</h1>
+        <h1 className="text-xl font-semibold text-teal-500 mb-4">Vehicle Booking</h1>
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
           {/* Left Form Panel */}
@@ -805,8 +806,8 @@ const VehicleBooking: React.FC = () => {
           {/* Right Summary Panel */}
           <div className="lg:col-span-2">
             <div className="bg-white border border-gray-200 rounded-lg sticky top-4 shadow-sm">
-              <div className="p-4 border-b border-gray-200">
-                <h2 className="text-base font-semibold text-gray-800">Saved Bookings ({savedVehicles.length})</h2>
+              <div className="p-4 border-b border-gray-200 bg-teal-500 rounded-t-lg">
+                <h2 className="text-base font-semibold text-white">Saved Bookings ({savedVehicles.length})</h2>
               </div>
               <div className="p-3 space-y-3 max-h-[65vh] overflow-y-auto bg-gray-50/50">
                 {savedVehicles.length > 0 ? (

@@ -4,6 +4,10 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, LabelList, ResponsiveContainer,
   PieChart, Pie, Cell, LineChart, Line
 } from 'recharts';
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 // --- UPDATED DUMMY DATA ---
 const dashboardData = {
@@ -75,6 +79,7 @@ interface KPICardProps {
 }
 const KPICard: React.FC<KPICardProps> = memo(({ title, value, subtitle, growth, icon, color, iconColor }) => {
   const IconComponent = { users: Users, dollar: DollarSign, trending: TrendingUp, map: MapPin }[icon];
+  
   return (
     <div className={`rounded-2xl shadow-sm border border-gray-200 p-4 flex flex-col justify-between ${color}`}>
       <div className="flex justify-between items-start">
@@ -296,8 +301,55 @@ const ConversionChart: React.FC<{ data: ConversionData[] }> = memo(({ data }) =>
   </div>
 ));
 
-const Dashboard: React.FC = () => (
-  <div className="w-full p-4 md:p-6 lg:p-8 bg-gray-50">
+// const Dashboard: React.FC = () => (
+//   <div className="w-full p-4 md:p-6 lg:p-8 bg-gray-50">
+//     <div className="space-y-6">
+//       <div className="flex flex-wrap items-center justify-between gap-4">
+//         <h1 className="text-2xl font-bold text-teal-600">Dashboard</h1>
+//         <div className="flex items-center flex-wrap gap-4">
+//           <div className="relative">
+//             <input type="text" placeholder="Search Here..." className="pl-4 pr-10 py-2 w-52 h-9 bg-white border border-gray-300 rounded-full text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500" />
+//             <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-600" />
+//           </div>
+
+//           <button className="flex items-center justify-center gap-x-2 px-5 py-2 w-52 h-9 bg-teal-500 hover:bg-teal-600 rounded-full text-sm font-medium text-white transition-colors">
+        
+//             <span>Create New Itinerary</span>
+//             <ChevronDown className="w-4 h-4" />
+//           </button>
+
+//         </div>
+//       </div>
+
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//         {dashboardData.kpiCards.map(card => (
+//           <KPICard
+//             key={card.id}
+//             title={card.title}
+//             value={card.value}
+//             subtitle={card.subtitle}
+//             growth={card.growth}
+//             icon={card.icon}
+//             color={card.color}
+//             iconColor={card.iconColor}
+//           />
+//         ))}
+//       </div>
+
+//       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6">
+//         <CustomersByCountryChart data={dashboardData.customersByCountry} />
+//         <LeadsChart data={dashboardData.leadsData} />
+//         <RevenueChart data={dashboardData.revenueData} />
+//         <MonthlyConversionChartInfo />
+//         <ConcentricTourGraph data={dashboardData.tourCategories} />
+//         <ConversionChart data={dashboardData.conversionData} />
+//       </div>
+//     </div>
+//   </div>
+// );
+const Dashboard: React.FC = () => {
+  const navigate = useNavigate();
+  return (<div className="w-full p-4 md:p-6 lg:p-8 bg-gray-50">
     <div className="space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
@@ -306,10 +358,17 @@ const Dashboard: React.FC = () => (
             <input type="text" placeholder="Search Here..." className="pl-4 pr-10 py-2 w-52 h-9 bg-white border border-gray-300 rounded-full text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500" />
             <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-600" />
           </div>
-          <button className="flex items-center justify-center gap-x-2 px-5 py-2 w-52 h-9 bg-teal-500 hover:bg-teal-600 rounded-full text-sm font-medium text-white transition-colors">
+          {/* <button className="flex items-center justify-center gap-x-2 px-5 py-2 w-52 h-9 bg-teal-500 hover:bg-teal-600 rounded-full text-sm font-medium text-white transition-colors">
             <span>Create New Itinerary</span>
             <ChevronDown className="w-4 h-4" />
-          </button>
+          </button> */}
+             <button
+      onClick={() => navigate("/login")}  // 👈 directly inside button
+      className="flex items-center justify-center gap-x-2 px-5 py-2 w-52 h-9 bg-teal-500 hover:bg-teal-600 rounded-full text-sm font-medium text-white transition-colors"
+    >
+      <span>Create New Itinerary</span>
+      <ChevronDown className="w-4 h-4" />
+    </button>
         </div>
       </div>
 
@@ -337,7 +396,7 @@ const Dashboard: React.FC = () => (
         <ConversionChart data={dashboardData.conversionData} />
       </div>
     </div>
-  </div>
-);
+  </div>)
+};
 
 export default Dashboard;

@@ -8,11 +8,11 @@ const DayWiseItinerary = () => {
   const [desc, setDesc] = useState("Welcome to Singapore! Your driver is awaiting your arrival and will transfer you to the hotel.");
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen font-sans">
+    <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-sans">
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-xl font-semibold text-cyan-700">
-          Day Wise Itinerary<span className="text-red-500">*</span>
+        <h1 className="text-xl font-semibold text-teal-600">
+          Day Wise Itinerary
         </h1>
         <button className="flex items-center space-x-2 bg-cyan-600 text-white px-4 py-2 rounded-md hover:bg-cyan-700 transition">
           <FaEye /> <span>Preview</span>
