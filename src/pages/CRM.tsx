@@ -482,7 +482,7 @@ export default function CRM() {
         {/* Header Row */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-2">
           <h1 className="text-3xl font-bold text-[#10A4B0]">
-            Leads
+            CRM
           </h1>
           <button
             onClick={() => setNewLeadOpen(true)}
