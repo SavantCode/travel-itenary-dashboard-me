@@ -1,0 +1,69 @@
+{
+  "followUps": [
+    {
+      "id": 1,
+      "customerName": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "+1 (555) 123-4567",
+      "lastContact": "2024-02-20",
+      "nextFollowUp": "2024-02-25",
+      "priority": "High",
+      "status": "Pending",
+      "assignedTo": "Priya Patel",
+      "notes": "Follow up on Europe tour quotation",
+      "type": "Sales Follow-up"
+    },
+    {
+      "id": 2,
+      "customerName": "Sarah Johnson",
+      "email": "sarah.j@example.com",
+      "phone": "+1 (555) 234-5678",
+      "lastContact": "2024-02-18",
+      "nextFollowUp": "2024-02-24",
+      "priority": "Medium",
+      "status": "Completed",
+      "assignedTo": "Rashmi Singh",
+      "notes": "Sent Thailand package details",
+      "type": "Information Follow-up"
+    },
+    {
+      "id": 3,
+      "customerName": "Mike Wilson",
+      "email": "mike.wilson@example.com",
+      "phone": "+1 (555) 345-6789",
+      "lastContact": "2024-02-12",
+      "nextFollowUp": "2024-02-26",
+      "priority": "Low",
+      "status": "Pending",
+      "assignedTo": "Priya Patel",
+      "notes": "Check interest in luxury cruise options",
+      "type": "Interest Check"
+    },
+    {
+      "id": 4,
+      "customerName": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "phone": "+1 (555) 456-7890",
+      "lastContact": "2024-02-22",
+      "nextFollowUp": "2024-02-27",
+      "priority": "High",
+      "status": "In Progress",
+      "assignedTo": "Rashmi Singh",
+      "notes": "Finalizing honeymoon package booking",
+      "type": "Booking Follow-up"
+    },
+    {
+      "id": 5,
+      "customerName": "David Brown",
+      "email": "david.brown@example.com",
+      "phone": "+1 (555) 567-8901",
+      "lastContact": "2024-02-19",
+      "nextFollowUp": "2024-02-28",
+      "priority": "Medium",
+      "status": "Pending",
+      "assignedTo": "Priya Patel",
+      "notes": "Send family vacation options for summer",
+      "type": "Proposal Follow-up"
+    }
+  ]
+}

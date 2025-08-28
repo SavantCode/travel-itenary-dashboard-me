@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "type": "Carnival",
+    "brand": "Kia",
+    "driveType": "with-driver",
+    "availableCount": 3
+  },
+  {
+    "id": "2",
+    "type": "Sedan",
+    "brand": "Toyota",
+    "driveType": "self-drive",
+    "availableCount": 5
+  },
+  {
+    "id": "3",
+    "type": "SUV",
+    "brand": "Honda",
+    "driveType": "with-driver",
+    "availableCount": 2
+  },
+  {
+    "id": "4",
+    "type": "Hatchback",
+    "brand": "Hyundai",
+    "driveType": "self-drive",
+    "availableCount": 4
+  }
+]

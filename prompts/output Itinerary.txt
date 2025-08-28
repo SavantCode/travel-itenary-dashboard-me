@@ -1,0 +1,11986 @@
+/* Desktop - 21 */
+
+position: relative;
+width: 1440px;
+height: 12204px;
+
+background: rgba(253, 255, 252, 0.988235);
+
+
+/* Rectangle 42138 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+border-radius: 0px;
+
+
+/* Frame 1321316269 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 587px;
+height: 28px;
+left: 693px;
+top: 35px;
+
+
+
+/* Home */
+
+width: 68px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Day Planner */
+
+width: 139px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Trip Details */
+
+width: 133px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Contact Us */
+
+width: 127px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Menu
+
+Keywords: bars, navigation, hamburger
+*/
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1344px;
+top: 26px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 25%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Desktop - 17 */
+
+position: absolute;
+width: 1440px;
+height: 606px;
+left: calc(50% - 1440px/2);
+top: 0px;
+
+background: rgba(253, 255, 252, 0.988235);
+
+
+/* Rectangle 42138 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+border-radius: 0px;
+
+
+/* Frame 1321316269 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 587px;
+height: 28px;
+left: 693px;
+top: 35px;
+
+
+
+/* Home */
+
+width: 68px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Day Planner */
+
+width: 139px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Trip Details */
+
+width: 133px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Contact Us */
+
+width: 127px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Menu
+
+Keywords: bars, navigation, hamburger
+*/
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1344px;
+top: 26px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 25%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Frame 1321316267 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 533px;
+height: 30px;
+left: 865.5px;
+top: 4644px;
+
+
+
+/* Frame 1321316264 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 11px;
+
+width: 164px;
+height: 30px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Instagram */
+
+width: 123px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* instagram (1) 1 */
+
+width: 30px;
+height: 30px;
+
+background: url(instagram (1).png);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316265 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 11px;
+
+width: 161px;
+height: 30px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* facebook */
+
+width: 120px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* facebook (2) */
+
+width: 30px;
+height: 30px;
+
+background: url(facebook (2).png);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316266 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 11px;
+
+width: 128px;
+height: 30px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Twitter */
+
+width: 87px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* twitter */
+
+width: 30px;
+height: 30px;
+
+background: url(twitter.png);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 42172 */
+
+position: absolute;
+width: 1440px;
+height: 606px;
+left: 0px;
+top: 0px;
+
+background: url(bharath-mohan-2CjOnwJCMJM-unsplash.jpg);
+
+
+/* Line 209 */
+
+position: absolute;
+width: 1347px;
+height: 0px;
+left: 93px;
+top: 802px;
+
+border: 1px solid #D1D1D1;
+
+
+/* "Thailand: Land of Smiles, Heart of Adventure" */
+
+position: absolute;
+width: 471px;
+height: 23px;
+left: 94px;
+top: 634px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Group 1171276753 */
+
+position: absolute;
+width: 200px;
+height: 46px;
+left: 93px;
+top: 677px;
+
+
+
+/* Rectangle 42184 */
+
+position: absolute;
+width: 100px;
+height: 46px;
+left: 93px;
+top: 677px;
+
+background: #1C1C21;
+border-radius: 10px 0px 0px 10px;
+
+
+/* Rectangle 42185 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 100px;
+height: 46px;
+left: 193px;
+top: 677px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 10px 0px 0px 10px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* 4 Nights */
+
+position: absolute;
+width: 70px;
+height: 15.33px;
+left: 108px;
+top: 692.34px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+
+/* 5 Days */
+
+position: absolute;
+width: 52px;
+height: 15.33px;
+left: 217px;
+top: 692.34px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Rectangle 42186 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 616px;
+height: 46px;
+left: 316px;
+top: 677px;
+
+background: rgba(224, 242, 254, 0.8);
+border: 1px solid #DFDFDF;
+border-radius: 10px;
+
+
+/* Frame 1321316309 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 103px;
+height: 39px;
+left: 421px;
+top: 743px;
+
+background: #E6F5FE;
+border-radius: 50px;
+
+
+/* 6 Adults */
+
+width: 68px;
+height: 19px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* No of Pax */
+
+position: absolute;
+width: 75px;
+height: 19px;
+left: 316px;
+top: 753px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Polygon 3 */
+
+position: absolute;
+width: 10px;
+height: 10px;
+left: 401px;
+top: 757.5px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+
+/* Group 1171276754 */
+
+position: absolute;
+width: 437px;
+height: 19px;
+left: 343px;
+top: 692px;
+
+
+
+/* Group 1171276750 */
+
+position: absolute;
+width: 78px;
+height: 19px;
+left: 343px;
+top: 692px;
+
+
+
+/* plane_16726824 1 */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 343px;
+top: 695px;
+
+background: url(air-mail_3178807.png);
+
+
+/* Mumbai */
+
+position: absolute;
+width: 62px;
+height: 19px;
+left: 359px;
+top: 692px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* plane_16726824 1 */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 476px;
+top: 696px;
+
+background: url(air-mail_3178807.png);
+
+
+/* Arrival in Thailand */
+
+position: absolute;
+width: 144px;
+height: 19px;
+left: 492px;
+top: 692px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Group 1171276752 */
+
+position: absolute;
+width: 82px;
+height: 19px;
+left: 698px;
+top: 692px;
+
+
+
+/* plane_16726824 1 */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 698px;
+top: 695px;
+
+background: url(air-mail_3178807.png);
+
+
+/* Bangkok */
+
+position: absolute;
+width: 66px;
+height: 19px;
+left: 714px;
+top: 692px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Arrow 14 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 39px;
+height: 0px;
+left: 427px;
+top: 702px;
+
+border: 1px solid #4B5675;
+
+
+/* Arrow 15 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 39px;
+height: 0px;
+left: 649px;
+top: 702px;
+
+border: 1px solid #4B5675;
+
+
+/* Frame 1321316310 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1347px;
+height: 48px;
+left: 93px;
+top: 842px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Trip Inclusions */
+
+width: 177px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316311 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1347px;
+height: 48px;
+left: 93px;
+top: 1036px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Trip Overview */
+
+width: 168px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316312 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1347px;
+height: 48px;
+left: 93px;
+top: 1234px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Package Itinerary */
+
+width: 214px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316315 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 95px;
+top: 4695px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Package Activities/Sightseeing */
+
+width: 392px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316316 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 93px;
+top: 6300px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Package Price Details */
+
+width: 265px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316341 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 93px;
+top: 6844px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Package Notes */
+
+width: 183px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316363 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 95px;
+top: 8276px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Travel Basics */
+
+width: 159px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316364 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 95px;
+top: 8821px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cancellation Policy */
+
+width: 242px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316365 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 95px;
+top: 9208px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Terms And Conditions */
+
+width: 267px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316369 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 95px;
+top: 9719px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Booking Terms */
+
+width: 180px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316372 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 95px;
+top: 10161px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Payment Terms */
+
+width: 194px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316373 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 95px;
+top: 10763px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* How to Book */
+
+width: 154px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316375 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1345px;
+height: 48px;
+left: 95px;
+top: 11708px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Need Help */
+
+width: 137px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316313 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1346px;
+height: 48px;
+left: 94px;
+top: 3054px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Package Flights */
+
+width: 195px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316314 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1347px;
+height: 48px;
+left: 93px;
+top: 3433px;
+
+background: #E9F7FF;
+
+
+/* Polygon 4 */
+
+width: 20px;
+height: 20px;
+
+background: #4B5675;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Package Accommodation */
+
+width: 311px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276760 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 465px;
+height: 78px;
+left: 136px;
+top: 910px;
+
+
+
+/* Group 1171276756 */
+
+width: 50px;
+height: 71px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 269 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 0px;
+top: 7px;
+
+background: url(airplane_1350172.png);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+
+/* Flight */
+
+position: absolute;
+width: 43px;
+height: 16px;
+left: 3px;
+top: 62px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Group 1171276757 */
+
+width: 50px;
+height: 71px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 274 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 90px;
+top: 7px;
+
+background: url(hotel_1926407.png);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+
+/* Hotels */
+
+position: absolute;
+width: 44px;
+height: 16px;
+left: 93px;
+top: 62px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Group 1171276758 */
+
+width: 57px;
+height: 71px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Ellipse 275 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 183px;
+top: 7px;
+
+background: url(car_171240.png);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+
+/* Transfer */
+
+position: absolute;
+width: 57px;
+height: 16px;
+left: 180px;
+top: 62px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Group 1171276759 */
+
+width: 84px;
+height: 71px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Ellipse 276 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 294px;
+top: 7px;
+
+background: url(binoculars_6858705.png);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+
+/* Sightseeing */
+
+position: absolute;
+width: 84px;
+height: 16px;
+left: 277px;
+top: 62px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Group 1171276755 */
+
+width: 64px;
+height: 78px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Ellipse 273 */
+
+position: absolute;
+width: 50px;
+height: 50px;
+left: 408px;
+top: 7px;
+
+background: #FFFFFF;
+
+
+/* Others */
+
+position: absolute;
+width: 45px;
+height: 16px;
+left: 411px;
+top: 62px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* More horizontal
+
+Keywords: ellipsis
+*/
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 401px;
+top: 0px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+border: 4px solid #99E6FC;
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Thailand, known as the "Land of Smiles," is a captivating destination that combines rich culture, */
+
+position: absolute;
+width: 734px;
+height: 19px;
+left: 136px;
+top: 1104px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Stunning natural landscapes, and vibrant cities. Whether you're seeking tranquil beaches, historical temples, lively markets, or a taste of authentic cuisine, Thailand offers something for every type of traveler. */
+
+position: absolute;
+width: 780px;
+height: 57px;
+left: 136px;
+top: 1129px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* We offers flexible payment options to book your dream vacation. You can make the payments by IMPS transfer as per below bank details or pay online using the View online & Book your vacation. */
+
+position: absolute;
+width: 1253px;
+height: 38px;
+left: 95px;
+top: 10859px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* You will get all your booking voucher by email, within 2-3 working days after your initial payment. Aconsolidate voucher will be sent after making the final payment. */
+
+position: absolute;
+width: 1253px;
+height: 38px;
+left: 95px;
+top: 10899px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Group 1171276827 */
+
+position: absolute;
+width: 1271px;
+height: 355px;
+left: 93px;
+top: 8370px;
+
+
+
+/* Frame 1321316366 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px 20px 50px;
+gap: 12px;
+
+position: absolute;
+width: 1253px;
+height: 321px;
+left: 93px;
+top: 8370px;
+
+background: linear-gradient(270deg, #063D41 0%, #0E95A1 100%);
+border-radius: 20px;
+
+
+/* Here is a must take list that you should carry while traveling: */
+
+width: 1213px;
+height: 19px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* ID Proof any Passport v(For International Travel) Water Bottle with a Filtering System Daily Medications Phone Chargers Camera ID Proof Toilet Papers Walking Shoes Ear Phones Cap Power bank Sun Screen Lotion Wipes Ladies basics Mosquito Creame/bands/net depending upon your itinerary. */
+
+width: 1213px;
+height: 220px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1321316367 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 20px 50px;
+gap: 12px;
+
+position: absolute;
+width: 1253px;
+height: 335px;
+left: 111px;
+top: 8390px;
+
+background: linear-gradient(90deg, #10A4B0 0%, #07454A 100%);
+box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.4);
+border-radius: 20px;
+
+
+/* Here is a must take list that you should carry while traveling: */
+
+width: 1213px;
+height: 23px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* ID Proof any Passport v(For International Travel) Water Bottle with a Filtering System Daily Medications Phone Chargers Camera ID Proof Toilet Papers Walking Shoes Ear Phones Cap Power bank Sun Screen Lotion Wipes Ladies basics Mosquito Creame/bands/net depending upon your itinerary. */
+
+width: 1213px;
+height: 220px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1321316367 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 20px 50px;
+gap: 12px;
+
+position: absolute;
+width: 1253px;
+height: 290px;
+left: 93px;
+top: 9313px;
+
+background: linear-gradient(90deg, #10A4B0 0%, #07454A 100%);
+box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.4);
+border-radius: 20px;
+
+
+/* In case client wishes to prepone /postpone his or her travel dates, we request you to kindly reach us 15 days prior to journey date via e-mail/SMS.. In all prepone or postpone scenarios, the services and the costing will be subject to availability of Hotel/Transport and season/off season time. We do not accept any changes in plan within 15 days of travel date. However in rare cases like adverse climatic conditions or strikes, package can be postponed which will be intimated to you beforehand. The validity to utilize your Advance payment in prepone/postpone scenarios is 1 Year from the date of advance payment. The advance payment and the invoice Number allotted to you, are transferable i.e. you can pass on your booking to any of your friends/ relatives. (Please Note: In order to transfer your booking you must meet the above terms and conditions first). */
+
+width: 1213px;
+height: 210px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* or 188% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1321316368 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 20px 50px;
+gap: 12px;
+
+position: absolute;
+width: 1253px;
+height: 290px;
+left: 113px;
+top: 9333px;
+
+background: linear-gradient(90deg, #10A4B0 0%, #07454A 100%);
+box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.4);
+border-radius: 20px;
+
+
+/* In case client wishes to prepone /postpone his or her travel dates, we request you to kindly reach us 15 days prior to journey date via e-mail/SMS.. In all prepone or postpone scenarios, the services and the costing will be subject to availability of Hotel/Transport and season/off season time. We do not accept any changes in plan within 15 days of travel date. However in rare cases like adverse climatic conditions or strikes, package can be postponed which will be intimated to you beforehand. The validity to utilize your Advance payment in prepone/postpone scenarios is 1 Year from the date of advance payment. The advance payment and the invoice Number allotted to you, are transferable i.e. you can pass on your booking to any of your friends/ relatives. (Please Note: In order to transfer your booking you must meet the above terms and conditions first). */
+
+width: 1213px;
+height: 210px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* or 188% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1321316370 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 20px 50px;
+gap: 12px;
+
+position: absolute;
+width: 1253px;
+height: 230px;
+left: 95px;
+top: 9815px;
+
+background: linear-gradient(90deg, #10A4B0 0%, #07454A 100%);
+box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.4);
+border-radius: 20px;
+
+
+/* 50% advance to be paid at the time of booking. Air fair is calculated at the time of proposal creation and is subject to change at the time of booking. 100% payment is to be made for domestic packages before 4 days of departure date. 100% payment is to be made for international packages before 7 days of departure date. In case of cancellation standard cancellation policies will be applicable or may be changed as per the policies */
+
+width: 1213px;
+height: 150px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* or 188% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1321316371 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 20px 50px;
+gap: 12px;
+
+position: absolute;
+width: 1253px;
+height: 230px;
+left: 115px;
+top: 9835px;
+
+background: linear-gradient(90deg, #10A4B0 0%, #07454A 100%);
+box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.4);
+border-radius: 20px;
+
+
+/* 50% advance to be paid at the time of booking. Air fair is calculated at the time of proposal creation and is subject to change at the time of booking. 100% payment is to be made for domestic packages before 4 days of departure date. 100% payment is to be made for international packages before 7 days of departure date. In case of cancellation standard cancellation policies will be applicable or may be changed as per the policies */
+
+width: 1213px;
+height: 150px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* or 188% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group 1171276828 */
+
+position: absolute;
+width: 1271px;
+height: 195px;
+left: 93px;
+top: 8917px;
+
+
+
+/* Frame 1321316366 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px 20px 50px;
+gap: 12px;
+
+position: absolute;
+width: 1253px;
+height: 168px;
+left: 93px;
+top: 8917px;
+
+background: linear-gradient(270deg, #063D41 0%, #0E95A1 100%);
+border-radius: 20px;
+
+
+/* Here is a must take list that you should carry while traveling: */
+
+width: 1213px;
+height: 19px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1321316367 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 20px 50px;
+gap: 12px;
+
+position: absolute;
+width: 1253px;
+height: 175px;
+left: 111px;
+top: 8937px;
+
+background: linear-gradient(90deg, #10A4B0 0%, #07454A 100%);
+box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.4);
+border-radius: 20px;
+
+
+/* If you Cancel your Holiday */
+
+width: 1213px;
+height: 23px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 30 days or more before date of departure : 25% of total cost 29 - 20 days before date of departure : 50% of total cost 19 days or less before date of departure : 100% of total cos */
+
+width: 1213px;
+height: 60px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group 1171276778 */
+
+position: absolute;
+width: 1251px;
+height: 286px;
+left: 95px;
+top: 4361px;
+
+
+
+/* Rectangle 42191 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1251px;
+height: 286px;
+left: 95px;
+top: 4361px;
+
+background: #E9F7FF;
+border: 1px solid #D1D1D1;
+border-radius: 40px;
+
+
+/* Frame 1321316363 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 221.78px;
+height: 43px;
+left: 110.84px;
+top: 4367px;
+
+
+
+/* 🍽️ Meal Plan Options */
+
+width: 211px;
+height: 23px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276829 */
+
+position: absolute;
+width: 595.14px;
+height: 216px;
+left: 111.44px;
+top: 4415px;
+
+
+
+/* Frame 1321316316 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 117.81px;
+height: 36px;
+left: 111.44px;
+top: 4415px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+border-radius: 5px 0px 0px 0px;
+
+
+/* Code */
+
+width: 37px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316319 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 117.81px;
+height: 36px;
+left: 111.44px;
+top: 4451px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* EP */
+
+width: 18px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316322 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 117.81px;
+height: 36px;
+left: 111.44px;
+top: 4487px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* BB */
+
+width: 20px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316325 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 117.81px;
+height: 36px;
+left: 111.44px;
+top: 4523px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* MAP */
+
+width: 32px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316328 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 117.81px;
+height: 36px;
+left: 111.44px;
+top: 4559px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* AP */
+
+width: 19px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316331 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 117.81px;
+height: 36px;
+left: 111.44px;
+top: 4595px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+border-radius: 0px 0px 0px 5px;
+
+
+/* AI */
+
+width: 14px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316317 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 195.54px;
+height: 36px;
+left: 229.25px;
+top: 4415px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* Plan Name */
+
+width: 77px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316320 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 195.54px;
+height: 36px;
+left: 229.25px;
+top: 4451px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* Room Only */
+
+width: 78px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316323 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 195.54px;
+height: 36px;
+left: 229.25px;
+top: 4487px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* Bed & Breakfast */
+
+width: 115px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316326 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 195.54px;
+height: 36px;
+left: 229.25px;
+top: 4523px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* Half Board */
+
+width: 76px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316329 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 195.54px;
+height: 36px;
+left: 229.25px;
+top: 4559px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* Full Board */
+
+width: 73px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316332 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 195.54px;
+height: 36px;
+left: 229.25px;
+top: 4595px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* All Inclusive */
+
+width: 87px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316318 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 281.78px;
+height: 36px;
+left: 424.79px;
+top: 4415px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+border-radius: 0px 5px 0px 0px;
+
+
+/* Includes */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316321 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 281.78px;
+height: 36px;
+left: 424.79px;
+top: 4451px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* No meals included */
+
+width: 134px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316324 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 281.78px;
+height: 36px;
+left: 424.79px;
+top: 4487px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* Breakfast only */
+
+width: 103px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316327 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 281.78px;
+height: 36px;
+left: 424.79px;
+top: 4523px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* Breakfast + Lunch or Dinner */
+
+width: 196px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316330 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 281.78px;
+height: 36px;
+left: 424.79px;
+top: 4559px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+
+
+/* Breakfast + Lunch + Dinner */
+
+width: 188px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316333 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 281.78px;
+height: 36px;
+left: 424.79px;
+top: 4595px;
+
+background: #10A4B0;
+border: 0.5px solid #D7D7D7;
+border-radius: 0px 0px 5px 0px;
+
+
+/* All meals + Drinks + Activities */
+
+width: 205px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276784 */
+
+position: absolute;
+width: 1253px;
+height: 288px;
+left: 93px;
+top: 6396px;
+
+filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+
+
+/* Rectangle 42191 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1253px;
+height: 288px;
+left: 93px;
+top: 6396px;
+
+background: #F9F9F9;
+border: 1px solid #D1D1D1;
+
+
+/* Price Details */
+
+position: absolute;
+width: 155.71px;
+height: 23px;
+left: 129.5px;
+top: 6408px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Frame 1321316316 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 129.5px;
+top: 6450px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* Pax Type */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316326 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 293.18px;
+height: 36px;
+left: 425.11px;
+top: 6450px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* No of Pax */
+
+width: 66px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316330 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 718.28px;
+top: 6450px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* Cost Per Person */
+
+width: 110px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316334 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 1013.89px;
+top: 6450px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* Total Cost */
+
+width: 69px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316319 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 129.5px;
+top: 6486px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* Adult Twin Sharing */
+
+width: 128px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316327 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 293.18px;
+height: 36px;
+left: 425.11px;
+top: 6486px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* 4 */
+
+width: 8px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316331 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 718.28px;
+top: 6486px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* INR 42,000 */
+
+width: 75px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316335 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 1013.89px;
+top: 6486px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* INR 1,68,000 */
+
+width: 87px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316322 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 129.5px;
+top: 6522px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* Adult Extra Bed */
+
+width: 105px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316328 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 293.18px;
+height: 36px;
+left: 425.11px;
+top: 6522px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* 2 */
+
+width: 8px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316332 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 718.28px;
+top: 6522px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* INR 42,000 */
+
+width: 75px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316336 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 1013.89px;
+top: 6522px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* INR 84,000 */
+
+width: 75px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316325 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 129.5px;
+top: 6558px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* Total Cost */
+
+width: 69px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316329 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 293.18px;
+height: 36px;
+left: 425.11px;
+top: 6558px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* 6 */
+
+width: 8px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316333 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 718.28px;
+top: 6558px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* Frame 1321316338 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 295.61px;
+height: 36px;
+left: 1013.89px;
+top: 6558px;
+
+background: #E9F7FF;
+border: 0.5px solid #D8D8D8;
+
+
+/* INR 2,52,000 */
+
+width: 87px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316339 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 296.83px;
+height: 36px;
+left: 830.41px;
+top: 6614px;
+
+background: #10A4B0;
+border: 0.5px solid #D8D8D8;
+border-radius: 5px;
+
+
+/* Total Package Cost:INR 2,52,000 */
+
+width: 222px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316340 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 166px;
+height: 36px;
+left: 1144px;
+top: 6614px;
+
+background: #10A4B0;
+border: 0.5px solid #D8D8D8;
+border-radius: 5px;
+
+
+/* View Online and Book */
+
+width: 147px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276792 */
+
+position: absolute;
+width: 1030px;
+height: 263px;
+left: calc(50% - 1030px/2);
+top: 3122px;
+
+
+
+/* Group 1171276768 */
+
+position: absolute;
+width: 455px;
+height: 120px;
+left: 780px;
+top: 3265px;
+
+
+
+/* Group 1171276774 */
+
+position: absolute;
+width: 455px;
+height: 120px;
+left: 780px;
+top: 3265px;
+
+
+
+/* Rectangle 42193 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 455px;
+height: 120px;
+left: 780px;
+top: 3265px;
+
+background: #F9F9F9;
+border: 1px solid #D1D1D1;
+border-radius: 10px;
+
+
+/* Rectangle 42195 */
+
+position: absolute;
+width: 453px;
+height: 38px;
+left: 781px;
+top: 3266px;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Depart Wed, 26 feb - Air India */
+
+position: absolute;
+width: 229px;
+height: 19px;
+left: 810px;
+top: 3274px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* 17:55 */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 820px;
+top: 3325px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* 21:15 */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 980px;
+top: 3325px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Bangkok */
+
+position: absolute;
+width: 58px;
+height: 16px;
+left: 810px;
+top: 3347px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* 4h 50m */
+
+position: absolute;
+width: 29px;
+height: 9px;
+left: 910px;
+top: 3329px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Non Stop */
+
+position: absolute;
+width: 36px;
+height: 9px;
+left: 906px;
+top: 3346px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #018548;
+
+
+
+/* New Delhi */
+
+position: absolute;
+width: 68px;
+height: 16px;
+left: 973px;
+top: 3347px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Line 210 */
+
+position: absolute;
+width: 75px;
+height: 0px;
+left: 887px;
+top: 3342px;
+
+border: 1px solid #000000;
+
+
+/* Group 1171276774 */
+
+position: absolute;
+width: 574.88px;
+height: 163px;
+left: 205px;
+top: 3122px;
+
+
+
+/* Rectangle 42193 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 455px;
+height: 120px;
+left: 205px;
+top: 3122px;
+
+background: #F9F9F9;
+border: 1px solid #D1D1D1;
+border-radius: 10px;
+
+
+/* Rectangle 42195 */
+
+position: absolute;
+width: 453px;
+height: 38px;
+left: 206px;
+top: 3123px;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Depart Wed, 26 feb - Air India */
+
+position: absolute;
+width: 229px;
+height: 19px;
+left: 235px;
+top: 3131px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* 11:30 */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 245px;
+top: 3182px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* 16:55 */
+
+position: absolute;
+width: 44px;
+height: 19px;
+left: 405px;
+top: 3182px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* New Delhi */
+
+position: absolute;
+width: 68px;
+height: 16px;
+left: 235px;
+top: 3204px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* 3h 55m */
+
+position: absolute;
+width: 29px;
+height: 9px;
+left: 335px;
+top: 3186px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Non Stop */
+
+position: absolute;
+width: 36px;
+height: 9px;
+left: 331px;
+top: 3203px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #018548;
+
+
+
+/* Bangkok */
+
+position: absolute;
+width: 58px;
+height: 16px;
+left: 398px;
+top: 3204px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #4B5675;
+
+
+
+/* Line 210 */
+
+position: absolute;
+width: 75px;
+height: 0px;
+left: 312px;
+top: 3199px;
+
+border: 1px solid #000000;
+
+
+/* Group 1171276775 */
+
+position: absolute;
+width: 141px;
+height: 119.88px;
+left: 660px;
+top: 3144px;
+
+transform: matrix(0, -1, -1, 0, 0, 0);
+
+
+/* Vector 72 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 718.58px;
+top: 3224.38px;
+
+border: 2px solid #00A2B6;
+transform: matrix(0, -1, -1, 0, 0, 0);
+
+
+/* Vector 74 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 660px;
+top: 3144px;
+
+border: 2px solid #00A2B6;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* taxi_18481276 1 */
+
+position: absolute;
+width: 35.42px;
+height: 35.42px;
+left: 698.83px;
+top: 3202.58px;
+
+background: url(plane_16726824.png);
+filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+transform: matrix(0, -1, -1, 0, 0, 0);
+
+
+/* Group 1171276787 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: 94px;
+top: 1339px;
+
+
+
+/* Rectangle 42167 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: calc(50% - 832px/2 - 210px);
+top: 1339px;
+
+background: rgba(16, 164, 176, 0.3);
+border-radius: 20px;
+
+
+/* image */
+
+position: absolute;
+width: 253.65px;
+height: 202.14px;
+left: 109.94px;
+top: 1355.29px;
+
+background: url(Thailand (4).png);
+border-radius: 10px;
+
+
+/* Rectangle 42152 */
+
+position: absolute;
+width: 530.54px;
+height: 202.14px;
+left: 379.52px;
+top: 1355.29px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Frame 1321316346 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 450.81px;
+top: 1376.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316347 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 504.6px;
+top: 1376.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316348 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 586.93px;
+top: 1376.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Upon arrival at Suvarnabhumi Airport in Bangkok, you will be greeted and transferred to your hotel in Pattaya. After checking in, you’ll have the rest of the day to relax and settle in. You can explore the local area or enjoy the hotel’s amenities at your leisure. Overnight stay at your hotel in Pattaya. */
+
+position: absolute;
+width: 472px;
+height: 95px;
+left: 391px;
+top: 1403px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Frame 1321316349 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 391px;
+top: 1522px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Day 1 */
+
+position: absolute;
+width: 43px;
+height: 23px;
+left: calc(50% - 43px/2 - 307.5px);
+top: 1374px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #10A4B0;
+
+
+
+/* Group 1171276809 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: 94px;
+top: 2053px;
+
+
+
+/* Rectangle 42167 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: calc(50% - 832px/2 - 210px);
+top: 2053px;
+
+background: rgba(16, 164, 176, 0.3);
+border-radius: 20px;
+
+
+/* image */
+
+position: absolute;
+width: 253.65px;
+height: 202.14px;
+left: 109.94px;
+top: 2069.29px;
+
+background: url(Thailand (2).png);
+border-radius: 10px;
+
+
+/* Rectangle 42152 */
+
+position: absolute;
+width: 530.54px;
+height: 202.14px;
+left: 379.52px;
+top: 2069.29px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Frame 1321316346 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 450.81px;
+top: 2090.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316347 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 504.6px;
+top: 2090.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316348 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 586.93px;
+top: 2090.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Upon arrival at Suvarnabhumi Airport in Bangkok, you will be greeted and transferred to your hotel in Pattaya. After checking in, you’ll have the rest of the day to relax and settle in. You can explore the local area or enjoy the hotel’s amenities at your leisure. Overnight stay at your hotel in Pattaya. */
+
+position: absolute;
+width: 472px;
+height: 95px;
+left: 391px;
+top: 2117px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Frame 1321316349 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 391px;
+top: 2236px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Day 1 */
+
+position: absolute;
+width: 43px;
+height: 23px;
+left: calc(50% - 43px/2 - 307.5px);
+top: 2088px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #10A4B0;
+
+
+
+/* Group 1171276815 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: 94px;
+top: 2767px;
+
+
+
+/* Rectangle 42167 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: calc(50% - 832px/2 - 210px);
+top: 2767px;
+
+background: rgba(16, 164, 176, 0.3);
+border-radius: 20px;
+
+
+/* image */
+
+position: absolute;
+width: 253.65px;
+height: 202.14px;
+left: 109.94px;
+top: 2783.29px;
+
+background: url(Thailand (5));
+border-radius: 10px;
+
+
+/* Rectangle 42152 */
+
+position: absolute;
+width: 530.54px;
+height: 202.14px;
+left: 379.52px;
+top: 2783.29px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Frame 1321316346 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 450.81px;
+top: 2804.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316347 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 504.6px;
+top: 2804.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316348 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 586.93px;
+top: 2804.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Upon arrival at Suvarnabhumi Airport in Bangkok, you will be greeted and transferred to your hotel in Pattaya. After checking in, you’ll have the rest of the day to relax and settle in. You can explore the local area or enjoy the hotel’s amenities at your leisure. Overnight stay at your hotel in Pattaya. */
+
+position: absolute;
+width: 472px;
+height: 95px;
+left: 391px;
+top: 2831px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Frame 1321316349 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 391px;
+top: 2950px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Day 1 */
+
+position: absolute;
+width: 43px;
+height: 23px;
+left: calc(50% - 43px/2 - 307.5px);
+top: 2802px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #10A4B0;
+
+
+
+/* Group 1171276808 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: 514px;
+top: 1696px;
+
+
+
+/* Rectangle 42167 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: calc(50% - 832px/2 + 210px);
+top: 1696px;
+
+background: rgba(16, 164, 176, 0.3);
+border-radius: 20px;
+
+
+/* image */
+
+position: absolute;
+width: 253.65px;
+height: 202.14px;
+left: 529.94px;
+top: 1712.29px;
+
+background: url(Thailand (3));
+border-radius: 10px;
+
+
+/* Rectangle 42152 */
+
+position: absolute;
+width: 530.54px;
+height: 202.14px;
+left: 799.52px;
+top: 1712.29px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Frame 1321316346 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 870.81px;
+top: 1733.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316347 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 924.6px;
+top: 1733.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316348 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 1006.93px;
+top: 1733.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Upon arrival at Suvarnabhumi Airport in Bangkok, you will be greeted and transferred to your hotel in Pattaya. After checking in, you’ll have the rest of the day to relax and settle in. You can explore the local area or enjoy the hotel’s amenities at your leisure. Overnight stay at your hotel in Pattaya. */
+
+position: absolute;
+width: 472px;
+height: 95px;
+left: 811px;
+top: 1760px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Frame 1321316349 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 811px;
+top: 1879px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Day 1 */
+
+position: absolute;
+width: 43px;
+height: 23px;
+left: calc(50% - 43px/2 + 112.5px);
+top: 1731px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #10A4B0;
+
+
+
+/* Group 1171276810 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: 514px;
+top: 2410px;
+
+
+
+/* Rectangle 42167 */
+
+position: absolute;
+width: 832px;
+height: 238.42px;
+left: calc(50% - 832px/2 + 210px);
+top: 2410px;
+
+background: rgba(16, 164, 176, 0.3);
+border-radius: 20px;
+
+
+/* image */
+
+position: absolute;
+width: 253.65px;
+height: 202.14px;
+left: 529.94px;
+top: 2426.29px;
+
+background: url(Thailand);
+border-radius: 10px;
+
+
+/* Rectangle 42152 */
+
+position: absolute;
+width: 530.54px;
+height: 202.14px;
+left: 799.52px;
+top: 2426.29px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Frame 1321316346 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 870.81px;
+top: 2447.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316347 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 924.6px;
+top: 2447.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316348 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 1006.93px;
+top: 2447.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Upon arrival at Suvarnabhumi Airport in Bangkok, you will be greeted and transferred to your hotel in Pattaya. After checking in, you’ll have the rest of the day to relax and settle in. You can explore the local area or enjoy the hotel’s amenities at your leisure. Overnight stay at your hotel in Pattaya. */
+
+position: absolute;
+width: 472px;
+height: 95px;
+left: 811px;
+top: 2474px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Frame 1321316349 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 811px;
+top: 2593px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Day 1 */
+
+position: absolute;
+width: 43px;
+height: 23px;
+left: calc(50% - 43px/2 + 112.5px);
+top: 2445px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #10A4B0;
+
+
+
+/* Group 1171276796 */
+
+position: absolute;
+width: 141px;
+height: 119.88px;
+left: calc(50% - 141px/2 - 0.5px);
+top: 3862px;
+
+
+
+/* Vector 72 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 649px;
+top: 3862px;
+
+border: 2px solid #00A2B6;
+
+
+/* Vector 73 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 729.38px;
+top: 3920.58px;
+
+border: 2px solid #00A2B6;
+transform: rotate(180deg);
+
+
+/* taxi_18481276 1 */
+
+position: absolute;
+width: 35.42px;
+height: 35.42px;
+left: 696px;
+top: 3907.64px;
+
+background: url(plane_16726824.png);
+filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+
+
+/* Group 1171276794 */
+
+position: absolute;
+width: 849px;
+height: 322px;
+left: 93px;
+top: 3538px;
+
+
+
+/* Group 1171276793 */
+
+position: absolute;
+width: 849px;
+height: 322px;
+left: 93px;
+top: 3538px;
+
+
+
+/* Rectangle 42187 */
+
+position: absolute;
+width: 849px;
+height: 322px;
+left: calc(50% - 849px/2 - 202.5px);
+top: 3538px;
+
+background: #B6E4E6;
+border-radius: 40px;
+
+
+/* image */
+
+position: absolute;
+width: 390px;
+height: 273px;
+left: 117px;
+top: 3562px;
+
+background: url(sumit-chinchane-jWKk-0ZBUyg-unsplash);
+border-radius: 30px;
+
+
+/* Group 1171276796 */
+
+position: absolute;
+width: 391px;
+height: 273px;
+left: 527px;
+top: 3562px;
+
+
+
+/* Rectangle 42188 */
+
+position: absolute;
+width: 391px;
+height: 273px;
+left: 527px;
+top: 3562px;
+
+background: #FFFFFF;
+border-radius: 30px;
+
+
+/* Frame 1321316350 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 99px;
+height: 23px;
+left: 546px;
+top: 3621px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 44px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316351 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 104px;
+height: 23px;
+left: 546px;
+top: 3687px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Check In */
+
+width: 50px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 104px;
+height: 23px;
+left: 757px;
+top: 3687px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Check Out */
+
+width: 60px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316353 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 36px;
+left: 545px;
+top: 3782px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 84px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Golden Beach Hotel */
+
+position: absolute;
+width: 335px;
+height: 28px;
+left: calc(50% - 335px/2 - 6.5px);
+top: 3578px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #10A4B0;
+
+
+
+/* Sat, 01 Mar, 2025 */
+
+position: absolute;
+width: 136px;
+height: 19px;
+left: 757px;
+top: 3726px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* 3 Night Stay/No of Room(s): 2 */
+
+position: absolute;
+width: 233px;
+height: 19px;
+left: 546px;
+top: 3650px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Wed, 26 Feb, 2025 */
+
+position: absolute;
+width: 146px;
+height: 19px;
+left: 546px;
+top: 3726px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Line 211 */
+
+position: absolute;
+width: 62px;
+height: 0px;
+left: 720.5px;
+top: 3683px;
+
+border: 1px solid #959595;
+transform: rotate(90deg);
+
+
+/* image */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 191px;
+height: 251px;
+left: 1139px;
+top: 4378px;
+
+background: url(pad-see-ew-redo.jpg[1]);
+border: 1px solid #4B4B4B;
+border-radius: 20px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* image */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 191px;
+height: 251px;
+left: 734px;
+top: 4378px;
+
+background: url(morningtom-yum-redo.jpg[1]);
+border: 1px solid #4B4B4B;
+border-radius: 20px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* image */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 116px;
+height: 192px;
+left: 936px;
+top: 4378px;
+
+background: url(morning[1]);
+border: 1px solid #4B4B4B;
+border-radius: 20px;
+transform: matrix(0, -1, -1, 0, 0, 0);
+
+
+/* image */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 126px;
+height: 192px;
+left: 936px;
+top: 4505px;
+
+background: url(mrning[1]);
+border: 1px solid #4B4B4B;
+border-radius: 20px;
+transform: matrix(0, -1, -1, 0, 0, 0);
+
+
+/* Group 1171276817 */
+
+position: absolute;
+width: 849px;
+height: 322px;
+left: 497px;
+top: 3982px;
+
+
+
+/* Rectangle 42187 */
+
+position: absolute;
+width: 849px;
+height: 322px;
+left: calc(50% - 849px/2 + 201.5px);
+top: 3982px;
+
+background: #B6E4E6;
+border-radius: 40px;
+
+
+/* image */
+
+position: absolute;
+width: 392px;
+height: 273px;
+left: 930px;
+top: 4006px;
+
+background: url(sara-dubler-Koei_7yYtIo-unsplash);
+border-radius: 30px;
+
+
+/* Group 1171276796 */
+
+position: absolute;
+width: 391px;
+height: 273px;
+left: 521px;
+top: 4006px;
+
+
+
+/* Rectangle 42188 */
+
+position: absolute;
+width: 391px;
+height: 273px;
+left: 521px;
+top: 4006px;
+
+background: #FFFFFF;
+border-radius: 30px;
+
+
+/* Frame 1321316350 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 99px;
+height: 23px;
+left: 540px;
+top: 4065px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 44px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316351 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 104px;
+height: 23px;
+left: 540px;
+top: 4131px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Check In */
+
+width: 50px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 104px;
+height: 23px;
+left: 751px;
+top: 4131px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Check Out */
+
+width: 60px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316353 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 36px;
+left: 539px;
+top: 4226px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 84px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Golden Beach Hotel */
+
+position: absolute;
+width: 335px;
+height: 28px;
+left: calc(50% - 335px/2 - 12.5px);
+top: 4022px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #10A4B0;
+
+
+
+/* Sat, 01 Mar, 2025 */
+
+position: absolute;
+width: 136px;
+height: 19px;
+left: 751px;
+top: 4170px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* 3 Night Stay/No of Room(s): 2 */
+
+position: absolute;
+width: 233px;
+height: 19px;
+left: 540px;
+top: 4094px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Wed, 26 Feb, 2025 */
+
+position: absolute;
+width: 146px;
+height: 19px;
+left: 540px;
+top: 4170px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Line 211 */
+
+position: absolute;
+width: 62px;
+height: 0px;
+left: 714.5px;
+top: 4127px;
+
+border: 1px solid #959595;
+transform: rotate(90deg);
+
+
+/* Union */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 903px;
+height: 273px;
+left: 93px;
+top: 4791px;
+
+background: #B6E4E6;
+border: 1px solid #C3C3C3;
+border-radius: 5px;
+
+
+/* image */
+
+position: absolute;
+width: 382px;
+height: 273px;
+left: 93px;
+top: 4791px;
+
+background: #D9D9D9;
+border-radius: 50px;
+
+
+/* Rectangle 42188 */
+
+position: absolute;
+width: 526px;
+height: 273px;
+left: 470px;
+top: 4791px;
+
+background: #D9D9D9;
+border-radius: 50px;
+
+
+/* Union */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 903px;
+height: 273px;
+left: 93px;
+top: 5583px;
+
+background: #B6E4E6;
+border: 1px solid #C3C3C3;
+border-radius: 5px;
+
+
+/* image */
+
+position: absolute;
+width: 382px;
+height: 273px;
+left: 93px;
+top: 5583px;
+
+background: #D9D9D9;
+border-radius: 50px;
+
+
+/* Rectangle 42188 */
+
+position: absolute;
+width: 526px;
+height: 273px;
+left: 470px;
+top: 5583px;
+
+background: #D9D9D9;
+border-radius: 50px;
+
+
+/* Union */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 903px;
+height: 273px;
+left: 444px;
+top: 5187px;
+
+background: #B6E4E6;
+border: 1px solid #C3C3C3;
+border-radius: 5px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* image */
+
+position: absolute;
+width: 382px;
+height: 273px;
+left: 965px;
+top: 5187px;
+
+background: #D9D9D9;
+border-radius: 50px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Rectangle 42188 */
+
+position: absolute;
+width: 526px;
+height: 273px;
+left: 444px;
+top: 5187px;
+
+background: #D9D9D9;
+border-radius: 50px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Union */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 903px;
+height: 273px;
+left: 444px;
+top: 5979px;
+
+background: #B6E4E6;
+border: 1px solid #C3C3C3;
+border-radius: 5px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* image */
+
+position: absolute;
+width: 382px;
+height: 273px;
+left: 965px;
+top: 5979px;
+
+background: #D9D9D9;
+border-radius: 50px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Rectangle 42188 */
+
+position: absolute;
+width: 526px;
+height: 273px;
+left: 444px;
+top: 5979px;
+
+background: #D9D9D9;
+border-radius: 50px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Rectangle 42196 */
+
+position: absolute;
+width: 498px;
+height: 249px;
+left: 486px;
+top: 4803px;
+
+background: #FFFFFF;
+border-radius: 40px;
+
+
+/* Rectangle 42200 */
+
+position: absolute;
+width: 498px;
+height: 249px;
+left: 486px;
+top: 5595px;
+
+background: #FFFFFF;
+border-radius: 40px;
+
+
+/* Rectangle 42198 */
+
+position: absolute;
+width: 498px;
+height: 249px;
+left: 455px;
+top: 5199px;
+
+background: #FFFFFF;
+border-radius: 40px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 42201 */
+
+position: absolute;
+width: 498px;
+height: 249px;
+left: 455px;
+top: 5991px;
+
+background: #FFFFFF;
+border-radius: 40px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 42197 */
+
+position: absolute;
+width: 350px;
+height: 249px;
+left: 105px;
+top: 4803px;
+
+background: url(Thailand (3));
+border-radius: 40px;
+
+
+/* Rectangle 42202 */
+
+position: absolute;
+width: 350px;
+height: 249px;
+left: 105px;
+top: 5595px;
+
+background: url(Thailand);
+border-radius: 40px;
+
+
+/* Rectangle 42199 */
+
+position: absolute;
+width: 350px;
+height: 249px;
+left: 984px;
+top: 5199px;
+
+background: url(Thailand (2).png);
+border-radius: 40px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Rectangle 42203 */
+
+position: absolute;
+width: 350px;
+height: 249px;
+left: 984px;
+top: 5991px;
+
+background: url(Thailand (5));
+border-radius: 40px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Pattaya City offers a kaleidoscope of experiences, from its pulsating nightlife to serene coastal beauty. By day, pristine beaches like Jomtien and Naklua invite sun-seekers, while adrenaline junkies flock to water sports like jet skiing and parasailing. The city's cultural richness shines through attractions like the Sanctuary of Truth, a stunning wooden temple. As the sun sets, Pattaya transforms into a neon-lit playground, with the infamous Walking Street pulsing with energy, offering a plethora of bars, clubs, and cabaret shows. With its eclectic blend of entertainment, cultural immersion, and coastal charm, Pattaya promises an exhilarating and diverse getaway for all... */
+
+position: absolute;
+width: 456px;
+height: 126px;
+left: 507px;
+top: 4849px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Pattaya City offers a kaleidoscope of experiences, from its pulsating nightlife to serene coastal beauty. By day, pristine beaches like Jomtien and Naklua invite sun-seekers, while adrenaline junkies flock to water sports like jet skiing and parasailing. The city's cultural richness shines through attractions like the Sanctuary of Truth, a stunning wooden temple. As the sun sets, Pattaya transforms into a neon-lit playground, with the infamous Walking Street pulsing with energy, offering a plethora of bars, clubs, and cabaret shows. With its eclectic blend of entertainment, cultural immersion, and coastal charm, Pattaya promises an exhilarating and diverse getaway for all... */
+
+position: absolute;
+width: 456px;
+height: 126px;
+left: 507px;
+top: 5641px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Pattaya City offers a kaleidoscope of experiences, from its pulsating nightlife to serene coastal beauty. By day, pristine beaches like Jomtien and Naklua invite sun-seekers, while adrenaline junkies flock to water sports like jet skiing and parasailing. The city's cultural richness shines through attractions like the Sanctuary of Truth, a stunning wooden temple. As the sun sets, Pattaya transforms into a neon-lit playground, with the infamous Walking Street pulsing with energy, offering a plethora of bars, clubs, and cabaret shows. With its eclectic blend of entertainment, cultural immersion, and coastal charm, Pattaya promises an exhilarating and diverse getaway for all... */
+
+position: absolute;
+width: 456px;
+height: 126px;
+left: 476px;
+top: 5245px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Pattaya City offers a kaleidoscope of experiences, from its pulsating nightlife to serene coastal beauty. By day, pristine beaches like Jomtien and Naklua invite sun-seekers, while adrenaline junkies flock to water sports like jet skiing and parasailing. The city's cultural richness shines through attractions like the Sanctuary of Truth, a stunning wooden temple. As the sun sets, Pattaya transforms into a neon-lit playground, with the infamous Walking Street pulsing with energy, offering a plethora of bars, clubs, and cabaret shows. With its eclectic blend of entertainment, cultural immersion, and coastal charm, Pattaya promises an exhilarating and diverse getaway for all... */
+
+position: absolute;
+width: 456px;
+height: 126px;
+left: 476px;
+top: 6037px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Frame 1321316346 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 504.81px;
+top: 4819.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 504.81px;
+top: 5611.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316351 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 475.4px;
+top: 5215.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 40.5px;
+height: 17.03px;
+left: 475.4px;
+top: 6007.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Pattaya */
+
+width: 29px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316347 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 558.6px;
+top: 4819.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316357 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 558.6px;
+top: 5611.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316352 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 529.19px;
+top: 5215.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316358 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 69.06px;
+height: 17.03px;
+left: 529.19px;
+top: 6007.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* 26-Feb-25 Wed */
+
+width: 58px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316348 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 640.93px;
+top: 4819.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316359 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 640.93px;
+top: 5611.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316353 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 611.53px;
+top: 5215.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 83.66px;
+height: 17.03px;
+left: 611.53px;
+top: 6007.1px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Arrival in Thailand. */
+
+width: 72px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 9px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316349 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 507px;
+top: 5013px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316361 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 507px;
+top: 5805px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 476px;
+top: 5409px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1321316362 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 167px;
+height: 27px;
+left: 476px;
+top: 6201px;
+
+background: #CDEDEC;
+border-radius: 50px;
+
+
+/* Sightseeing */
+
+width: 72px;
+height: 14px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* : Pattaya */
+
+width: 61px;
+height: 16px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #2978D6;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Group 1171276770 */
+
+position: absolute;
+width: 141px;
+height: 119.88px;
+left: calc(50% - 141px/2 + 0.5px);
+top: 1577px;
+
+
+
+/* Vector 72 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 650px;
+top: 1577px;
+
+border: 2px dashed #00A2B6;
+
+
+/* Vector 73 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 730.38px;
+top: 1635.58px;
+
+border: 2px dashed #00A2B6;
+transform: rotate(180deg);
+
+
+/* taxi_18481276 1 */
+
+position: absolute;
+width: 35.42px;
+height: 35.42px;
+left: 697px;
+top: 1622.64px;
+
+background: url(plane_16726824.png);
+filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+
+
+/* Group 1171276812 */
+
+position: absolute;
+width: 141px;
+height: 119.88px;
+left: calc(50% - 141px/2 + 0.5px);
+top: 1934px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Vector 72 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 730.38px;
+top: 1934px;
+
+border: 2px dashed #00A2B6;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Vector 73 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 650px;
+top: 1992.58px;
+
+border: 2px dashed #00A2B6;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* taxi_18481276 1 */
+
+position: absolute;
+width: 35.42px;
+height: 35.42px;
+left: 708.58px;
+top: 1979.64px;
+
+background: url(plane_16726824.png);
+filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Group 1171276816 */
+
+position: absolute;
+width: 141px;
+height: 119.88px;
+left: calc(50% - 141px/2 + 0.5px);
+top: 2648px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Vector 72 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 730.38px;
+top: 2648px;
+
+border: 2px dashed #00A2B6;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Vector 73 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 650px;
+top: 2706.58px;
+
+border: 2px dashed #00A2B6;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* taxi_18481276 1 */
+
+position: absolute;
+width: 35.42px;
+height: 35.42px;
+left: 708.58px;
+top: 2693.64px;
+
+background: url(plane_16726824.png);
+filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Group 1171276811 */
+
+position: absolute;
+width: 141px;
+height: 119.88px;
+left: calc(50% - 141px/2 + 0.5px);
+top: 2291px;
+
+
+
+/* Vector 72 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 650px;
+top: 2291px;
+
+border: 2px dashed #00A2B6;
+
+
+/* Vector 73 */
+
+position: absolute;
+width: 60.62px;
+height: 61.3px;
+left: 730.38px;
+top: 2349.58px;
+
+border: 2px dashed #00A2B6;
+transform: rotate(180deg);
+
+
+/* taxi_18481276 1 */
+
+position: absolute;
+width: 35.42px;
+height: 35.42px;
+left: 697px;
+top: 2336.64px;
+
+background: url(plane_16726824.png);
+filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+
+
+/* Union */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1440px;
+height: 1147.35px;
+left: 0px;
+top: 6952px;
+
+background: url(robin-noguier-sydwCr54rf0-unsplash);
+border: 1px solid #D3D3D3;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+/* Rectangle 42198 */
+
+position: absolute;
+width: 722.93px;
+height: 1147.35px;
+left: 0px;
+top: 6952px;
+
+background: #D9D9D9;
+border-radius: 100px;
+
+
+/* Rectangle 42199 */
+
+position: absolute;
+width: 722.93px;
+height: 1147.35px;
+left: 717.07px;
+top: 6952px;
+
+background: #D9D9D9;
+border-radius: 100px;
+
+
+/* Union */
+
+position: absolute;
+width: 1206.23px;
+height: 985px;
+left: 117px;
+top: 7033px;
+
+background: rgba(217, 217, 217, 0.5);
+border-radius: 10px;
+
+
+/* Rectangle 42198 */
+
+position: absolute;
+width: 605.57px;
+height: 985px;
+left: 117px;
+top: 7033px;
+
+background: #D9D9D9;
+border-radius: 100px;
+
+
+/* Rectangle 42199 */
+
+position: absolute;
+width: 605.57px;
+height: 985px;
+left: 717.66px;
+top: 7033px;
+
+background: #D9D9D9;
+border-radius: 100px;
+
+
+/* Frame 1321316336 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 555px;
+height: 937px;
+left: 141px;
+top: 7057px;
+
+background: #FFFFFF;
+border: 5px solid rgba(16, 164, 176, 0.5);
+border-radius: 80px;
+
+
+/* 📍 Flights Return Flights (DEL – DMK – DEL) Baggage: 20kg Check-In + 7kg Hand Baggage 🛬 Arrival & Departure Meet & Greet Assistance at the Airport One-Way Transfer: Airport ➝ Pattaya Hotel One-Way Transfer: Pattaya ➝ Bangkok Hotel One-Way Transfer: Hotel ➝ Airport 🏨 Stay 4 Nights Accommodation (Double/Twin Sharing) Hotels as per itinerary 🍽️ Meals As per hotel meal plan 🌴 Tours & Sightseeing (SIC) Coral Island Tour with Lunch Pattaya City Tour Bangkok City Tour 🚐 Transport All transfers & sightseeing by air-conditioned vehicle on shared basis 🧾 Eligibility Valid for Indian Nationals Only */
+
+position: absolute;
+width: 496px;
+height: 667px;
+left: 30px;
+top: 118px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Inclusions */
+
+position: absolute;
+width: 159px;
+height: 38px;
+left: 199px;
+top: 36px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* Frame 1321316350 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 555px;
+height: 937px;
+left: 744px;
+top: 7057px;
+
+background: #FFFFFF;
+border: 5px solid #88D2D8;
+border-radius: 80px;
+
+
+/* 💸 Taxes & Charges GST (Goods & Services Tax) TCS (Tax Collected at Source) Tourism Dirhams 🌊 Activities Not Included Water Sports (unless specified) Train Fare (unless specified) 🧳 Travel Essentials Travel Insurance (if not mentioned) Airfare (Flight rates are dynamic in nature) 👛 Personal Expenses Tips, laundry, phone/fax charges Alcoholic beverages Medical expenses Camera/video camera fees at monuments Airport departure tax 🏛️ Entrance & Sightseeing Entry fees to monuments and attractions (unless mentioned) Anything not mentioned under Package Inclusions ⚠️ Itinerary Changes Additional costs due to flight delays, bad weather, illness, roadblocks, or unforeseen events */
+
+position: absolute;
+width: 496px;
+height: 690px;
+left: 30px;
+top: 118px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Exclusions */
+
+position: absolute;
+width: 168px;
+height: 38px;
+left: 198px;
+top: 36px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #1C1C21;
+
+
+
+/* image 41 */
+
+position: absolute;
+width: 158.06px;
+height: 155px;
+left: 1145px;
+top: 4850px;
+
+background: url(image [Background removed]);
+filter: drop-shadow(-4px -4px 10px rgba(0, 0, 0, 0.4));
+
+
+/* image 42 */
+
+position: absolute;
+width: 158.06px;
+height: 155px;
+left: 1145px;
+top: 5642px;
+
+background: url(image [Background removed]);
+filter: drop-shadow(-4px -4px 10px rgba(0, 0, 0, 0.4));
+
+
+/* Group 1171276814 */
+
+position: absolute;
+width: 283px;
+height: 118px;
+left: 94px;
+top: 5264px;
+
+
+
+/* Frame 1321316357 */
+
+position: absolute;
+width: 275px;
+height: 110px;
+left: 94px;
+top: 5264px;
+
+background: #007E88;
+border-radius: 10px;
+
+
+/* Chalo Kahin Chale */
+
+position: absolute;
+width: 251px;
+height: 86px;
+left: 12px;
+top: 12px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+
+
+/* Frame 1321316358 */
+
+position: absolute;
+width: 275px;
+height: 110px;
+left: 102px;
+top: 5272px;
+
+background: #10A4B0;
+box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+/* Chalo Kahin Chale */
+
+position: absolute;
+width: 251px;
+height: 86px;
+left: 12px;
+top: 12px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+
+
+/* Group 1171276818 */
+
+position: absolute;
+width: 283px;
+height: 118px;
+left: 94px;
+top: 6056px;
+
+
+
+/* Frame 1321316357 */
+
+position: absolute;
+width: 275px;
+height: 110px;
+left: 94px;
+top: 6056px;
+
+background: #007E88;
+border-radius: 10px;
+
+
+/* Chalo Kahin Chale */
+
+position: absolute;
+width: 251px;
+height: 86px;
+left: 12px;
+top: 12px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+
+
+/* Frame 1321316358 */
+
+position: absolute;
+width: 275px;
+height: 110px;
+left: 102px;
+top: 6064px;
+
+background: #10A4B0;
+box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+/* Chalo Kahin Chale */
+
+position: absolute;
+width: 251px;
+height: 86px;
+left: 12px;
+top: 12px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+
+
+/* Group 1171276813 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 606px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 606px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 1086px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276825 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1391px;
+top: 606px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 606px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 1086px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276819 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 1566px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 1566px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 2046px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276826 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1391px;
+top: 1566px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 1566px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 2046px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276824 */
+
+position: absolute;
+width: 1920px;
+height: 47px;
+left: 1391px;
+top: 2524px;
+
+transform: rotate(90deg);
+
+
+/* Group 1171276813 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1391px;
+top: 2524px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 2524px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 3004px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276819 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1391px;
+top: 3484px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 3484px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 3964px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276820 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1391px;
+top: 3484px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 3484px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 3964px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276821 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1391px;
+top: 4444px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 4444px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 4924px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276822 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1391px;
+top: 5404px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 5404px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 5884px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276823 */
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 6364px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1391px;
+top: 6364px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+position: absolute;
+width: 231px;
+height: 27px;
+left: 10px;
+top: 162.5px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Group 1171276819 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 2524px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 2524px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 3004px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276820 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 3484px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 3484px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 3964px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276821 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 4444px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 4444px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 4924px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276822 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 5404px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 5404px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 5884px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276823 */
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 6364px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 6364px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+position: absolute;
+width: 231px;
+height: 27px;
+left: 10px;
+top: 162.5px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Rectangle 42204 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1251px;
+height: 97px;
+left: 95px;
+top: 10257px;
+
+background: #F9F9F9;
+border: 1px solid #E4E4E4;
+border-radius: 20px 20px 0px 0px;
+
+
+/* Rectangle 42207 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1252px;
+height: 117px;
+left: 94px;
+top: 10976px;
+
+background: #F9F9F9;
+border: 1px solid #E4E4E4;
+border-radius: 20px;
+
+
+/* Rectangle 42205 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1251px;
+height: 234px;
+left: 95px;
+top: 10354px;
+
+background: #FDFDFD;
+border: 1px solid #E4E4E4;
+border-radius: 0px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 42206 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1251px;
+height: 79px;
+left: 95px;
+top: 10588px;
+
+background: #FDFDFD;
+border: 1px solid #E4E4E4;
+border-radius: 20px 20px 0px 0px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Payment needs to be made in the comapny name ie Vogue Tourism LLP. You can deposit cheque or DD in our current account as below */
+
+position: absolute;
+width: 1199px;
+height: 56px;
+left: 115px;
+top: 10277px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Pay online Secure SSL Payment gateway. Accepts all major cards and payment modes */
+
+position: absolute;
+width: 905px;
+height: 56px;
+left: 325px;
+top: 11005px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* We do not accept cash and charge 2% as processing fee in case of credit card payments. */
+
+position: absolute;
+width: 1199px;
+height: 28px;
+left: 115px;
+top: 10611px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* 1.State bank of India Vogue Tourism LLP */
+
+position: absolute;
+width: 509px;
+height: 28px;
+left: 115px;
+top: 10371px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* 2.Axis Bank, Vogue Tourism LLP */
+
+position: absolute;
+width: 509px;
+height: 28px;
+left: 730px;
+top: 10371px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Account No */
+
+position: absolute;
+width: 466px;
+height: 28px;
+left: 135px;
+top: 10413px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Account No */
+
+position: absolute;
+width: 466px;
+height: 28px;
+left: 750px;
+top: 10413px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* 42206696783 */
+
+position: absolute;
+width: 466px;
+height: 28px;
+left: 135px;
+top: 10455px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* 922020001245647 */
+
+position: absolute;
+width: 466px;
+height: 28px;
+left: 750px;
+top: 10455px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Pushkar Road, Ajmer */
+
+position: absolute;
+width: 466px;
+height: 28px;
+left: 135px;
+top: 10495px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Panchsheel Nagar, Ajmer */
+
+position: absolute;
+width: 466px;
+height: 28px;
+left: 750px;
+top: 10495px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* IFSC: SBIN0015309 */
+
+position: absolute;
+width: 466px;
+height: 28px;
+left: 135px;
+top: 10535px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* IFSC: UTIB0002935 */
+
+position: absolute;
+width: 466px;
+height: 28px;
+left: 750px;
+top: 10535px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Line 212 */
+
+position: absolute;
+width: 178px;
+height: 0px;
+left: 670px;
+top: 10379px;
+
+border: 1px solid #CECECE;
+transform: rotate(90deg);
+
+
+/* download (3) 1 */
+
+position: absolute;
+width: 75.35px;
+height: 31px;
+left: 178px;
+top: 11006px;
+
+background: url(download (3).png);
+
+
+/* download (4) 1 */
+
+position: absolute;
+width: 49.36px;
+height: 31px;
+left: 259px;
+top: 11006px;
+
+background: url(download (4).png);
+
+
+/* Frame 1321316374 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 188px;
+height: 36px;
+left: calc(50% - 188px/2);
+top: 11118px;
+
+background: #10A4B0;
+border: 0.5px solid #D8D8D8;
+border-radius: 5px;
+
+
+/* Pay & Book your vication */
+
+width: 168px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Rectangle 42208 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1251px;
+height: 97px;
+left: 95px;
+top: 11202px;
+
+background: #F9F9F9;
+border: 1px solid #E4E4E4;
+border-radius: 20px 20px 0px 0px;
+
+
+/* Rectangle 42211 */
+
+position: absolute;
+width: 1440px;
+height: 97px;
+left: 0px;
+top: 11804px;
+
+background: #10A4B0;
+border-radius: 0px;
+
+
+/* Rectangle 42209 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1251px;
+height: 234px;
+left: 95px;
+top: 11299px;
+
+background: #FDFDFD;
+border: 1px solid #E4E4E4;
+border-radius: 0px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 42212 */
+
+position: absolute;
+width: 1440px;
+height: 165px;
+left: 0px;
+top: 11901px;
+
+background: #10A4B0;
+border-radius: 0px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 42210 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1251px;
+height: 79px;
+left: 95px;
+top: 11533px;
+
+background: #FDFDFD;
+border: 1px solid #E4E4E4;
+border-radius: 20px 20px 0px 0px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 42213 */
+
+position: absolute;
+width: 1440px;
+height: 139px;
+left: 0px;
+top: 12065px;
+
+background: #10A4B0;
+border-radius: 0px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Payment needs to be made in the comapny name ie Vogue Tourism LLP. You can deposit cheque or DD in our current account as below */
+
+position: absolute;
+width: 1199px;
+height: 56px;
+left: 115px;
+top: 11222px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Vogue Toursim LLP */
+
+position: absolute;
+width: 1199px;
+height: 28px;
+left: 115px;
+top: 11838px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+
+/* We do not accept cash and charge 2% as processing fee in case of credit card payments. */
+
+position: absolute;
+width: 1199px;
+height: 28px;
+left: 115px;
+top: 11556px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* prashant@voguetourism.com */
+
+position: absolute;
+width: 357px;
+height: 28px;
+left: 158px;
+top: 12089px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+
+/* +919509616188 */
+
+position: absolute;
+width: 357px;
+height: 28px;
+left: 960px;
+top: 12089px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+
+/* https://www.voguetourism.com/ */
+
+position: absolute;
+width: 404px;
+height: 28px;
+left: 158px;
+top: 12141px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+
+/* Rate Our Services */
+
+position: absolute;
+width: 357px;
+height: 28px;
+left: 960px;
+top: 12141px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+
+/* 1. Nova Bank */
+
+position: absolute;
+width: 509px;
+height: 28px;
+left: 115px;
+top: 11316px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* 2.Zenith Bank */
+
+position: absolute;
+width: 509px;
+height: 28px;
+left: 730px;
+top: 11316px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Account Name: Orion Travel Solutions Pvt. Ltd. */
+
+position: absolute;
+width: 535px;
+height: 23px;
+left: 135px;
+top: 11373px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Account Name: Zenith Enterprises LLP */
+
+position: absolute;
+width: 466px;
+height: 23px;
+left: 750px;
+top: 11372px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Account Number: 557899003245 */
+
+position: absolute;
+width: 466px;
+height: 23px;
+left: 135px;
+top: 11408px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Account Number: 778899665544 */
+
+position: absolute;
+width: 466px;
+height: 23px;
+left: 750px;
+top: 11414px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Branch: Galaxy Mall, Jaipur */
+
+position: absolute;
+width: 466px;
+height: 23px;
+left: 135px;
+top: 11443px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Branch: Downtown Business Hub, Ahmedabad */
+
+position: absolute;
+width: 466px;
+height: 23px;
+left: 750px;
+top: 11454px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* IFSC: NOVA0012345 */
+
+position: absolute;
+width: 466px;
+height: 23px;
+left: 135px;
+top: 11478px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* IFSC: ZENT0005678 */
+
+position: absolute;
+width: 466px;
+height: 23px;
+left: 750px;
+top: 11494px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+
+
+/* Orbit Square, D-22, Opp. Sapphire Heights, Lotus Avenue, Green Valley Nagar, Jaipur, Rajasthan 302001 */
+
+position: absolute;
+width: 880px;
+height: 56px;
+left: 158px;
+top: 11915px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+
+/* Office No-504, Block-B, Elite Plaza, Near Global Times Office, M.G. Highway */
+
+position: absolute;
+width: 880px;
+height: 28px;
+left: 158px;
+top: 11999px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+
+
+/* Line 213 */
+
+position: absolute;
+width: 178px;
+height: 0px;
+left: 670px;
+top: 11324px;
+
+border: 1px solid #CECECE;
+transform: rotate(90deg);
+
+
+/* Map pin
+
+Keywords: location, navigation, travel, marker
+*/
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 124px;
+top: 11915px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 4.17%;
+bottom: 4.17%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Map pin
+
+Keywords: location, navigation, travel, marker
+*/
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 124px;
+top: 11999px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 4.17%;
+bottom: 4.17%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Mail
+
+Keywords: email, message
+*/
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 124px;
+top: 12093px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 16.67%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Phone
+
+Keywords: call
+*/
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 926px;
+top: 12093px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 8.8%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.63%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Globe
+
+Keywords: world, browser, language, translate
+*/
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 124px;
+top: 12145px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Check square */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 926px;
+top: 12145px;
+
+
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Group 1171276819 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 8099px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 8099px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 8579px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276829 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1393px;
+top: 8099px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1393px;
+top: 8099px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1393px;
+top: 8579px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276820 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 9059px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 9059px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 9539px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276830 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1393px;
+top: 9059px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1393px;
+top: 9059px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1393px;
+top: 9539px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276821 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 0px;
+top: 10019px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 10019px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 0px;
+top: 10499px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276831 */
+
+position: absolute;
+width: 960px;
+height: 47px;
+left: 1393px;
+top: 10019px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1393px;
+top: 10019px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 47px;
+left: 1393px;
+top: 10499px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276822 */
+
+position: absolute;
+width: 825px;
+height: 47px;
+left: 0px;
+top: 10979px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 412.5px;
+height: 47px;
+left: 0px;
+top: 10979px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 412.5px;
+height: 47px;
+left: 0px;
+top: 11391.5px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 1171276832 */
+
+position: absolute;
+width: 825px;
+height: 47px;
+left: 1393px;
+top: 10979px;
+
+transform: rotate(90deg);
+
+
+/* Frame 1321316355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 412.5px;
+height: 47px;
+left: 1393px;
+top: 10979px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1321316356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 50px;
+gap: 10px;
+
+position: absolute;
+width: 412.5px;
+height: 47px;
+left: 1393px;
+top: 11391.5px;
+
+background: #10A4B0;
+transform: rotate(90deg);
+
+
+/* Chalo Kahin Chale */
+
+width: 231px;
+height: 27px;
+
+font-family: 'LEMON MILK';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
