@@ -25,6 +25,8 @@ const ItinerarySidebar: React.FC<ItinerarySidebarProps> = ({
     { id: 5, label: 'Day Wise Itinerary', path: '/my-itinerary/create/day-wise-itinerary' },
     { id: 6, label: 'Pricing', path: '/my-itinerary/create/pricing' },
     { id: 7, label: 'Trip Information', path: '/my-itinerary/create/trip-information' },
+    { id: 8, label: 'View Itinerary', path: '/my-itinerary/create/view-itinerary' },
+
   ];
 
   return (

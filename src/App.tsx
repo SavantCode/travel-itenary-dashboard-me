@@ -34,6 +34,7 @@ import Vehicle from './pages/itinerarySteps/Vehicle';
 import DayWiseItinerary from './pages/itinerarySteps/DayWiseItinerary';
 import Pricing from './pages/itinerarySteps/Pricing';
 import TripInformation from './pages/itinerarySteps/TripInformation';
+import ViewItinerary from './pages/itinerarySteps/ViewItinerary';
 
 const AppRoutes = () => {
   return (
@@ -70,6 +71,11 @@ const AppRoutes = () => {
           <Route path="/my-itinerary/create/day-wise-itinerary" element={<DayWiseItinerary />} />
           <Route path="/my-itinerary/create/pricing" element={<Pricing />} />
           <Route path="/my-itinerary/create/trip-information" element={<TripInformation />} />
+
+          <Route path="/my-itinerary/create/view-itinerary" element={<ViewItinerary />} />
+
+              
+
           
           <Route path="/follow-ups" element={<FollowUps />} />
           <Route path="/my-leads" element={<MyLeads />} />
