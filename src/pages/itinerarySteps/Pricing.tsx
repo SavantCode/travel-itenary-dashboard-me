@@ -5,6 +5,7 @@ const Pricing = () => {
       <div className="bg-[#F6F6FA] min-h-screen p-4  sm:p-6 lg:p-2 font-raleway">
       {/* Page Title */}
       <h1 className="text-2xl font-semibold text-teal-500 mb-3">
+
         Pricing
       </h1>
 
