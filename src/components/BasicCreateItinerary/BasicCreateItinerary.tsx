@@ -53,8 +53,8 @@ export const BasicCreateItinerary = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow mt-10">
-      <h2 className="text-2xl font-bold mb-4 text-gray-800">Create New Itinerary</h2>
+    <div className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow mt-10 font-raleway">
+      <h2 className="text-2xl font-bold mb-4 text-teal-600">Create New Itinerary</h2>
 
       {error && <p className="text-red-500 mb-4">{error}</p>}
 
@@ -130,7 +130,7 @@ export const BasicCreateItinerary = () => {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+          className="w-full bg-teal-600 text-white py-2 rounded hover:bg-teal-700"
           disabled={loading}
         >
           {loading ? 'Creating...' : 'Create Itinerary'}

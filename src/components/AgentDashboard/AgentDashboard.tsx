@@ -84,9 +84,10 @@ export const AgentDashboard = () => {
   }
 
   return (
-    <div className="container mx-auto p-4 sm:p-6 lg:p-8">
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold text-teal-500">Agent Itneraries ✈️</h1>
+    <div className="container mx-auto p-4 sm:p-6 lg:p-1 font-raleway">
+      <div>
+      <div className="flex justify-between items-center mb-2">
+        <h1 className="text-2xl font-semibold text-teal-500">Agent Itneraries</h1>
         <button
           onClick={handleCreateNew}
           className="bg-teal-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-600 transition duration-300"
@@ -94,6 +95,9 @@ export const AgentDashboard = () => {
           + Create New
         </button>
       </div>
+       {/* Underline */}
+        <div className="border-b border-gray-700 w-full mb-6 mt-3"></div>
+        </div>
 
       {itineraries.length === 0 ? (
         <div className="text-center py-20 bg-white rounded-lg shadow">

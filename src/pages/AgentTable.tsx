@@ -190,17 +190,17 @@ export default function AgentTable() {
   );
 
   return (
-    <div className="w-full bg-[#F6F6FA] p-4 md:p-6 lg:p-8">
+    <div className="w-full bg-[#F6F6FA] p-4 md:p-2 font-raleway lg:p-1">
       <div>
         {/* Header Row */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-2">
-          <h1 className="text-3xl font-bold text-[#10A4B0]">
+        <div className="flex flex-wrap items-center font-raleway justify-between gap-4 mb-2">
+          <h1 className="text-2xl font-semibold text-[#10A4B0]">
             Agents
           </h1>
 
           <button
             onClick={() => setNewAgentOpen(true)}
-            className="flex items-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors"
+            className="flex items-center gap-2 h-10 font-raleway px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors"
           >
             <Icons.Plus />
             <span>Add Agent</span>
@@ -208,27 +208,30 @@ export default function AgentTable() {
         </div>
 
         {/* Underline */}
-        <div className="border-b border-gray-700 w-full mb-6 mt-7"></div>
+        <div className="border-b border-gray-700 w-full mb-6 mt-3"></div>
       </div>
 
 
-      <div className="flex flex-wrap items-center gap-3 mb-4">
-        <div className="flex items-center gap-2 rounded-full border border-gray-400 h-10 px-4 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
+      <div className="flex flex-wrap items-center font-raleway gap-3 mb-4">
+        <div className="flex items-center gap-2 rounded-full border border-gray-300 h-10 px-4 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
           <Icons.Search />
           <input
-            className="outline-none text-sm placeholder-gray-500 w-48 md:w-64 bg-transparent"
+            className="outline-none text-sm placeholder-gray-500 w-full bg-transparent"
             placeholder="Search agents..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
 
-        <div ref={menuRef} className="flex items-center gap-3">
+
+
+
+        <div ref={menuRef} className="flex items-center  gap-3">
           {/* Action Dropdown */}
-          <div className="relative">
+          <div className="relative text-sm">
             <button
               onClick={() => setShowAction(v => !v)}
-              className="flex items-center gap-2 h-10 px-4 rounded-full border border-gray-400 bg-white text-gray-700 font-medium hover:bg-gray-50"
+              className="flex items-center gap-2  h-10 px-4 rounded-full border border-gray-400 bg-white text-gray-700 font-medium hover:bg-gray-50"
             >
               <span>Action</span>
               <Icons.ChevronDown />
@@ -240,7 +243,7 @@ export default function AgentTable() {
             )}
           </div>
           {/* Create Column Dropdown */}
-          <div className="relative">
+          <div className="relative text-sm">
             <button
               onClick={() => setShowColumn(v => !v)}
               className="flex items-center gap-2 h-10 px-4 rounded-full border border-gray-400 bg-white text-gray-700 font-medium hover:bg-gray-50"
@@ -263,7 +266,7 @@ export default function AgentTable() {
             )}
           </div>
           {/* Filter Dropdown */}
-          <div className="relative">
+          <div className="relative text-sm">
             <button
               onClick={() => setShowFilter(v => !v)}
               className="flex items-center gap-2 h-10 px-4 rounded-full border border-gray-400 bg-white text-gray-700 font-medium hover:bg-gray-50"
@@ -318,8 +321,8 @@ export default function AgentTable() {
               <tr key={row.id} className="border-b border-gray-100 hover:bg-gray-50">
                 {columns.checkbox && <td className="px-3 py-3"><input type="checkbox" className="h-4 w-4 rounded accent-teal-600" checked={selectedIds.has(row.id)} onChange={(e) => toggleSelect(row.id, e.target.checked)} aria-label={`Select ${row.name}`} /></td>}
                 {columns.name && <td className="px-4 py-3 whitespace-nowrap"><div className="text-gray-800 font-medium">{row.name}</div></td>}
-                {columns.email && <td className="px-4 py-3 text-gray-600">{row.email}</td>}
-                {columns.phone && <td className="px-4 py-3 text-gray-600">{row.phone}</td>}
+                {columns.email && <td className="px-4 py-3  text-gray-600">{row.email}</td>}
+                {columns.phone && <td className="px-4 py-3 font-sans text-gray-600">{row.phone}</td>}
                 {columns.role && <td className="px-4 py-3 text-gray-600">{row.role}</td>}
                 {columns.team && <td className="px-4 py-3"><span className={classNames("inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-semibold", teamPillClasses(row.team))}>{row.team}</span></td>}
                 {columns.audio && <td className="px-4 py-3">{row.audioUrl ? <AudioPlayer audioUrl={row.audioUrl} /> : <span className="text-gray-400">No Audio</span>}</td>}
@@ -499,7 +502,7 @@ function AudioRecorder({ onSave, onCancel }: { onSave: (audioBlob: Blob) => void
   }, []);
 
   return (
-    <div className="flex flex-col items-center space-y-4 p-4 bg-gray-50 rounded-lg">
+    <div className="flex flex-col items-center space-y-4 p-4 font-raleway bg-gray-50 rounded-lg">
       <div className="text-3xl font-mono text-gray-700">{formatTime(recordingTime)}</div>
       {isRecording && <div className="text-red-500 animate-pulse font-semibold">Recording...</div>}
       <div className="flex items-center gap-4">

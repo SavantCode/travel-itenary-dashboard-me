@@ -27,7 +27,7 @@ const Sidebar: React.FC = () => {
   return (
     <div className="bg-white w-64 shadow-lg flex flex-col">
       {/* Logo */}
-    <div className="p-6 border-b border-gray-200">
+    <div className="p-5 border-b border-r border-gray-200">
   <div className="flex items-center space-x-3">
     <div className="w-8 h-8 rounded-lg flex items-center justify-center">
       <img 
@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
         className="w-full h-full object-contain rounded-lg" 
       />
     </div>
-    <span className="text-xl font-bold text-teal-500">Global Vacations</span>
+    <span className="text-xl font-bold text-teal-600 font-raleway">Global Vacations</span>
   </div>
 </div>
 
@@ -44,14 +44,14 @@ const Sidebar: React.FC = () => {
 
 
       {/* Navigation */}
-      <nav className="flex-1 py-6">
+      <nav className="flex-1 py-6 ">
         <ul className="space-y-2 px-4">
           {menuItems.map((item) => (
             <li key={item.path}>
               <NavLink
                 to={item.path}
                 className={({ isActive }) =>
-                  `flex items-center justify-between px-4 py-3 rounded-lg transition-colors duration-200 ${
+                  `flex items-center justify-between font-raleway text-gray-900 px-4 py-3 rounded-lg transition-colors duration-200 ${
                     isActive
                       ? 'bg-teal-500 text-white'
                       : 'text-gray-600 hover:bg-gray-100'

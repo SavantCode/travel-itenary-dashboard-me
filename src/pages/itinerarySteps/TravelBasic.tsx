@@ -152,6 +152,7 @@ const TravelBasicPage: FC = () => {
           </button>
         </div>
       </header>
+      
 
       <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         {/* Left Form Section */}

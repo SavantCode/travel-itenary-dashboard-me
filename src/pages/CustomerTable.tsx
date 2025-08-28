@@ -44,16 +44,19 @@ const CustomerTable: React.FC = () => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 font-raleway">
+      <div>
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-900">Customer Table</h1>
-        <button className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors">
+      <div className="flex items-center justify-between font-raleway">
+        <h1 className="text-2xl font-semibold text-[#10A4B0]">Customer Table</h1>
+        <button className="bg-teal-500 hover:bg-teal-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors">
           <Plus className="w-4 h-4" />
           <span>Add Customer</span>
         </button>
       </div>
-
+      {/* Underline */}
+        <div className="border-b border-gray-700 w-full mb-6 mt-3"></div>
+</div>
       {/* Stats Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
@@ -95,7 +98,7 @@ const CustomerTable: React.FC = () => {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-gray-600">Avg. Booking Value</p>
-              <p className="text-2xl font-bold text-gray-900">
+              <p className="text-2xl font-semibold  text-gray-900">
                 ₹{Math.round(customersData.customers.reduce((sum, c) => sum + c.totalSpent, 0) / customersData.customers.length).toLocaleString()}
               </p>
             </div>
@@ -107,7 +110,7 @@ const CustomerTable: React.FC = () => {
       </div>
 
       {/* Controls */}
-      <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+      
         <div className="flex items-center space-x-4">
           {/* Search */}
           <div className="relative">
@@ -117,17 +120,16 @@ const CustomerTable: React.FC = () => {
               placeholder="Search customers..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent w-64"
+              className="pl-10 pr-2 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent w-full"
             />
           </div>
-        </div>
 
         <div className="flex items-center space-x-3">
           {/* Status Filter */}
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="px-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm"
           >
             <option value="all">All Status</option>
             <option value="active">Active</option>
@@ -136,7 +138,7 @@ const CustomerTable: React.FC = () => {
           </select>
 
           {/* Action Dropdown */}
-          <div className="relative">
+          <div className="relative text-sm">
             <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
               <span>Action</span>
               <ChevronDown className="w-4 h-4" />
@@ -144,18 +146,22 @@ const CustomerTable: React.FC = () => {
           </div>
 
           {/* Filter */}
-          <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+          <button className="flex items-center text-sm space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
             <Filter className="w-4 h-4" />
             <span>Filter</span>
             <ChevronDown className="w-4 h-4" />
           </button>
+
+
         </div>
-      </div>
+
+        </div>
+     
 
       {/* Table */}
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full">
+          <table className="min-w-[1400px] w-full text-sm">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
                 <th className="px-6 py-4 text-left">
@@ -235,7 +241,7 @@ const CustomerTable: React.FC = () => {
       </div>
 
       {/* Table Footer */}
-      <div className="flex items-center justify-between text-sm text-gray-600">
+      {/* <div className="flex items-center justify-between text-sm text-gray-600">
         <span>Showing {filteredCustomers.length} of {customersData.customers.length} customers</span>
         <div className="flex items-center space-x-2">
           <button className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-50">Previous</button>
@@ -243,7 +249,7 @@ const CustomerTable: React.FC = () => {
           <button className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-50">2</button>
           <button className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-50">Next</button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

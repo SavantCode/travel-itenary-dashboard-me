@@ -57,7 +57,7 @@ export const Login = () => {
 };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-white px-4">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br font-raleway from-blue-100 to-white px-4">
       <form
         onSubmit={handleLogin}
         className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg"

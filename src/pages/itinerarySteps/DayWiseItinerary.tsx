@@ -305,7 +305,7 @@ const DayWiseItineraryPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#F6F6FA] min-h-screen font-sans text-[#1E1E1E]">
+    <div className="bg-[#F6F6FA] min-h-screen font-raleway text-[#1E1E1E]">
       {/* IMPROVEMENT 1: Replaced max-w-screen-2xl with simple padding for a fluid, edge-to-edge layout. */}
       <div className="test w-full mx-auto px-1 sm:px-6 lg:px-2 py-2">
         <header className="flex justify-between items-center mb-6">
@@ -328,30 +328,37 @@ const DayWiseItineraryPage: React.FC = () => {
           {/* ---- MAIN FORM CONTENT (Left column on desktop) ---- */}
           {/* IMPROVEMENT 3: The form content is now order-2 (second on mobile) and order-1 (first on desktop). */}
           <div className="w-full xl:flex-[2] order-2 xl:order-1 space-y-6">
-            <div className="flex items-center gap-2 flex-wrap">
-              {days.map((day, index) => (
-                <button
-                  key={day.id}
-                  onClick={() => setActiveDayId(day.id)}
-                  className={`px-4 py-2 text-sm rounded-md font-semibold transition-colors ${activeDay?.id === day.id ? 'bg-[#10A4B0] text-white shadow-sm' : 'bg-white hover:bg-gray-100 border'}`}
-                >
-                  Day {index + 1}
-                </button>
-              ))}
-              <button onClick={handleAddDay} className="flex items-center gap-2 px-4 py-2 text-sm rounded-md font-semibold transition-colors bg-white hover:bg-gray-100 border text-[#10A4B0]">
-                <Plus className="w-4 h-4" />
-                <span>Add Day</span>
-              </button>
-            </div>
+            
+
+
             
             {activeDay && (
               <div className="bg-white p-4 sm:p-6 rounded-lg border border-[#E0E0E0] shadow-sm">
                   <div className="pb-3 mb-4 border-b border-gray-200">
-                      <h2 className="font-semibold text-lg">
+                    
+                      <h2 className="font-semibold text-lg ">
                           Day {days.findIndex(d => d.id === activeDay.id) + 1}: {activeDay.date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                                   
                       </h2>
-                  </div>
+                       </div>
+                      <div className="flex items-center gap-2 pb-4 flex-wrap border-b border-gray-200">
+                            {days.map((day, index) => (
+                              <button
+                                key={day.id}
+                                onClick={() => setActiveDayId(day.id)}
+                                className={`px-4 py-2 text-sm rounded-md font-semibold transition-colors ${activeDay?.id === day.id ? 'bg-[#10A4B0] text-white shadow-sm' : 'bg-white hover:bg-gray-100 border'}`}
+                              >
+                                Day {index + 1}
+                              </button>
+                            ))}
+                            <button onClick={handleAddDay} className="flex items-center gap-2 px-4 py-2 text-sm rounded-md font-semibold transition-colors bg-white hover:bg-gray-100 border text-[#10A4B0]">
+                              <Plus className="w-4 h-4" />
+                              <span>Add Day</span>
+                            </button>
+                          </div>
+                 
                   <div className="py-2 mb-4 border-b border-gray-200 flex flex-wrap gap-x-6 gap-y-3">
+                    
                       {activityTabs.map(tab => (
                           <div key={tab} className="flex items-center gap-2 cursor-pointer" onClick={() => handleUpdateDay(activeDay.id, 'activeTab', tab)}>
                               <div className={`w-3 h-3 rounded-full flex items-center justify-center transition-all ${activeDay.activeTab === tab ? 'bg-[#01B613]' : 'bg-gray-400'}`}>
@@ -363,6 +370,9 @@ const DayWiseItineraryPage: React.FC = () => {
                   </div>
                   {renderActiveForm()}
                   <div className="mt-8 flex justify-center">
+
+ 
+
                       <button onClick={handleSubmit} className="bg-[#10A4B0] text-white font-raleway font-medium text-sm px-10 py-2 rounded-md hover:bg-opacity-90 transition-colors">
                           Save & Next
                       </button>

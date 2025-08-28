@@ -358,13 +358,28 @@ const ReportsPage: FC = () => {
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
       
-      <div className="p-4 md:p-6 bg-[#F6F6FA] min-h-screen font-sans">
+      <div className="bg-[#F6F6FA] min-h-screen p-4 md:p-2 font-raleway lg:p-1">
         <div className="space-y-6">
+            <div >
             
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <h1 className="text-3xl font-bold text-[#10A4B0]">Reports</h1>
+          <div className="flex flex-col md:flex-row md:items-center  md:justify-between gap-4">
+              <h1 className="text-2xl font-bold text-[#10A4B0]">Reports</h1>
               <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
-                <div className="flex items-center gap-2 rounded-full border border-gray-300 h-10 px-4 bg-white w-full sm:flex-grow max-w-md">
+                <button className="flex-shrink-0 flex items-center justify-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors w-full sm:w-auto">
+                  <Download className="w-4 h-4" />
+                  <span>Download Reports</span>
+                </button>
+              </div>
+          </div>
+
+          {/* Underline */}
+          <div className="border-b border-gray-700 w-full mb-6 mt-3"></div>
+        </div>
+
+          <div className="flex items-center space-x-2 sm:space-x-4 overflow-x-auto pb-2">
+           
+           <div className="flex flex-col sm:flex-row items-center gap-4 p-1 w-full md:w-auto">
+<div className="flex items-center gap-2 rounded-full border border-gray-300 h-10 px-4 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
                   <Search className="w-5 h-5 text-gray-500" />
                   <input
                     className="outline-none text-sm placeholder-gray-500 w-full bg-transparent"
@@ -373,15 +388,7 @@ const ReportsPage: FC = () => {
                     onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
                   />
                 </div>
-                <button className="flex-shrink-0 flex items-center justify-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors w-full sm:w-auto">
-                  <Download className="w-4 h-4" />
-                  <span>Download Reports</span>
-                </button>
-              </div>
-          </div>
-          <div className="border-b border-gray-200 w-full"></div>
-
-          <div className="flex items-center space-x-2 sm:space-x-4 overflow-x-auto pb-2">
+           
             {TABS.map((tab) => {
               const isActive = activeTab === tab.id;
               return (
@@ -400,7 +407,7 @@ const ReportsPage: FC = () => {
               );
             })}
           </div>
-
+</div>
           <div className="flex flex-wrap items-center gap-4">
             <span className="font-semibold text-gray-800 text-lg whitespace-nowrap">
               {TABS.find(t => t.id === activeTab)?.label} Performance Reports

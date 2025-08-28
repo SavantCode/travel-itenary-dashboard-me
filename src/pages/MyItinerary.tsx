@@ -42,12 +42,13 @@ const ItineraryContainer = () => {
   };
 
   return (
-    <div className="flex space-x-6 p-6 pt-2 bg-gray-50 min-h-screen">
+    <div className="bg-[#F6F6FA] flex space-x-6 p-4 pt-2 md:p-2 font-raleway lg:p-1 min-h-screen">
+     
       {/* Left: Main Content */}
       <div className="flex-1 overflow-y-auto max-h-[calc(100vh-3rem)]">
         {/* Header */}
-        <div className="flex justify-between items-center mb-4 sticky top-0 bg-gray-50 z-10 py-2">
-          <h2 className="text-2xl font-bold">My Itinerary</h2>
+        <div className="flex justify-between items-center mb-4 sticky top-0 bg-gray-50 z-10 ">
+          <h2 className="text-2xl font-bold text-[#10A4B0]">My Itinerary</h2>
           <button
             onClick={handleCreateNewClick}
             className="bg-teal-500 hover:bg-teal-600 text-white text-sm px-4 py-2 rounded"
@@ -55,6 +56,10 @@ const ItineraryContainer = () => {
             Create New Itinerary
           </button>
         </div>
+        
+       {/* Underline */}
+        <div className="border-b border-gray-700 w-full mb-6 mt-3"></div>
+        
 
         {/* Trips Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -89,9 +94,9 @@ const ItineraryContainer = () => {
 
       {/* Right Sidebar: Notes */}
       {sidebar !== "itinerary" && (
-        <div className="w-80 flex-shrink-0">
+        <div className="w-80 flex-shrink-0 p-4 rounded-lg border ">
           <h2 className="text-xl font-bold mb-2">NOTE</h2>
-          <hr className="border-gray-300 mb-4" />
+          <hr className="border-gray-800 mb-4" />
           <div className="border border-gray-300 rounded-lg overflow-hidden">
             <div className="bg-teal-500 text-white flex items-center justify-between px-4 py-2">
               <span className="font-semibold">Sightseeing</span>

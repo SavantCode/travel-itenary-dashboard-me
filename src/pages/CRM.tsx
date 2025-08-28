@@ -476,12 +476,12 @@ export default function CRM() {
   );
 
   return (
-    <div className="w-full bg-[#F6F6FA] p-4 md:p-6">
+    <div className="w-full bg-[#F6F6FA] p-4 md:p-2 font-raleway">
       {/* --- NEW HEADER SECTION --- */}
       <div>
         {/* Header Row */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-2">
-          <h1 className="text-3xl font-bold text-[#10A4B0]">
+          <h1 className="text-2xl font-bold text-[#10A4B0]">
             CRM
           </h1>
           <button
@@ -493,16 +493,16 @@ export default function CRM() {
           </button>
         </div>
         {/* Underline */}
-        <div className="border-b border-gray-700 w-full mb-6 mt-7"></div>
+        <div className="border-b border-gray-700 w-full mb-6 mt-3"></div>
       </div>
 
       {/* Controls */}
       <div className="flex flex-wrap items-center gap-3">
         {/* Search */}
-        <div className="flex items-center gap-2 rounded-full border border-gray-400 h-10 px-4 bg-white">
+        <div className="flex items-center gap-2 rounded-full border border-gray-300 h-10 px-4 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
           <Icons.Search />
           <input
-            className="outline-none text-sm placeholder-gray-500 w-56 md:w-72"
+            className="outline-none text-sm placeholder-gray-500 w-full"
             placeholder="Search Here..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -510,7 +510,7 @@ export default function CRM() {
         </div>
 
         {/* Action */}
-        <div ref={menuRef} className="relative">
+        <div ref={menuRef} className="relative text-sm">
           <button
             onClick={() => setShowAction((v) => !v)}
             className="flex items-center gap-2 h-10 px-4 rounded-full border border-gray-400 bg-white text-gray-600"
@@ -530,7 +530,7 @@ export default function CRM() {
         </div>
 
         {/* Create Column */}
-        <div className="relative">
+        <div className="relative text-sm">
           <button
             onClick={() => setShowColumn((v) => !v)}
             className="flex items-center gap-2 h-10 px-4 rounded-full border border-gray-400 bg-white text-gray-600"
@@ -559,7 +559,7 @@ export default function CRM() {
         </div>
 
         {/* Filter */}
-        <div className="relative">
+        <div className="relative text-sm">
           <button
             onClick={() => setShowFilter((v) => !v)}
             className="flex items-center gap-2 h-10 px-4 rounded-full border border-gray-400 bg-white text-gray-600"

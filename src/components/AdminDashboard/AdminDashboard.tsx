@@ -106,8 +106,10 @@ export const AdminDashboard = () => {
   }
 
   return (
-    <div className="container mx-auto p-4 sm:p-6 lg:p-8 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">Admin Dashboard 👑</h1>
+    <div className="container mx-auto p-4 sm:p-6 lg:p-2 bg-gray-50 font-raleway min-h-screen">
+      <h1 className="text-2xl font-bold text-teal-600 mb-6">Admin Dashboard</h1>
+       {/* Underline */}
+        <div className="border-b border-gray-700 w-full mb-6 mt-7"></div>
 
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -129,7 +131,7 @@ export const AdminDashboard = () => {
               onClick={() => setActiveTab('agents')}
               className={`${
                 activeTab === 'agents'
-                  ? 'border-blue-500 text-blue-600'
+                  ? 'border-teal-600 text-teal-700'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}
             >
@@ -139,7 +141,7 @@ export const AdminDashboard = () => {
               onClick={() => setActiveTab('itineraries')}
               className={`${
                 activeTab === 'itineraries'
-                  ? 'border-blue-500 text-blue-600'
+                  ? 'border-teal-600 text-teal-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}
             >
@@ -153,7 +155,7 @@ export const AdminDashboard = () => {
       <div>
         {activeTab === 'agents' && (
           <div className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-2xl font-semibold mb-4">Agents List</h2>
+            <h2 className="text-xl font-semibold mb-4">Agents List</h2>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">

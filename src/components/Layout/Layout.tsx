@@ -40,6 +40,7 @@ const Layout = () => {
             currentStep={currentStep}
             onStepClick={handleStepClick}
             onBackToItinerary={handleBackToItinerary}
+            
           />
         ) : (
           <Sidebar />

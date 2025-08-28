@@ -2875,18 +2875,18 @@ const Accommodation: React.FC = () => {
                             {/* Banner image */}
                             <div className="w-full h-44 md:h-48 bg-gray-200 rounded overflow-hidden">
                                 <img
-                                    src={selectedHotel?.images?.[0] || 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4dXJ5JTIwaG90ZWx8ZW58MHx8MHx8fDA%3D'}
+                                    src={selectedHotel?.images?.[0] || 'https://plus.unsplash.com/premium_photo-1661963123153-5471a95b7042?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bHV4dXJ5JTIwaG90ZWwlMjBoZCUyMHF1YWxpdHl8ZW58MHx8MHx8fDA%3D'}
                                     alt="banner"
                                     className="w-full h-full object-cover"
                                     onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.unsplash.com/photo-1504268449039-8b4c8f8f18f0?w=1600&q=80'; }}
                                 />
                             </div>
 
-                            <div className="p-4 space-y-6 mt-4 border rounded">
-                                <h2 className="text-lg font-medium text-[#10A4B0]">Search Accomodation from database</h2>
+                            <div className="pt-2 pl-4 pr-4  space-y-6 mt-4 border rounded">
+                                <h2 className="text-lg font-medium text-gray-800 p-0">Search Accomodation from database</h2>
 
                                 {/* Search & Filters */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
                                     <div className="space-y-3">
                                         <label className="text-xs font-medium text-gray-700 block">Country</label>
                                         <input

@@ -81,7 +81,7 @@ const KPICard: React.FC<KPICardProps> = memo(({ title, value, subtitle, growth, 
   const IconComponent = { users: Users, dollar: DollarSign, trending: TrendingUp, map: MapPin }[icon];
   
   return (
-    <div className={`rounded-2xl shadow-sm border border-gray-200 p-4 flex flex-col justify-between ${color}`}>
+    <div className={`rounded-2xl shadow-sm border border-gray-300 p-4 flex flex-col justify-between ${color}`}>
       <div className="flex justify-between items-start">
         <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-black/5">
           <IconComponent className={`${iconColor} w-6 h-6`} />
@@ -112,6 +112,7 @@ const CustomersByCountryChart: React.FC<CustomersByCountryChartProps> = memo(({ 
         <select className="px-3 py-1.5 border text-xs rounded-full font-medium text-gray-600 border-gray-300 hover:border-teal-500 focus:outline-none">
           <option>Last Week</option>
           <option>Last Month</option>
+            <option>All Time</option>
         </select>
       </div>
       <div className="flex flex-col md:flex-row items-center gap-6">
@@ -152,9 +153,18 @@ const LeadsChart: React.FC<LeadsChartProps> = memo(({ data }) => {
           <h2 className="text-lg font-semibold text-gray-900">Total Leads</h2>
           <p className="text-sm text-gray-500 mt-1">Weekly overview of lead generation trends</p>
         </div>
-        <button className="px-4 py-1.5 border text-xs font-medium rounded-md text-gray-700 border-gray-300 hover:bg-gray-50 focus:outline-none">
-          Last Week
-        </button>
+        {/* <button className="px-4 py-1.5 border text-xs font-medium rounded-md text-gray-700 border-gray-300 hover:bg-gray-50 focus:outline-none">
+            <select className="px-3 py-1.5 border text-xs rounded-full font-medium text-gray-600 border-gray-300 hover:border-teal-500 focus:outline-none">
+        </select>
+         
+         
+        </button> */}
+        <select className="px-3 py-1.5 border text-xs rounded-full font-medium text-gray-600 border-gray-300 hover:border-teal-500 focus:outline-none">
+          <option>Last Week</option>
+          <option>Last Month</option>
+          <option>All Time</option>
+        </select>
+          
       </div>
       <div className="flex-grow">
         <ResponsiveContainer width="100%" height="100%">
@@ -182,7 +192,7 @@ const RevenueChart: React.FC<{ data: { month: string; revenue: number }[] }> = m
   const minY = Math.floor((Math.min(...revenueValues) - 0.2) * 2) / 2;
 
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 h-full flex flex-col">
+    <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-200 h-full flex flex-col">
       <div className="flex items-start justify-between mb-4">
         <div>
           <h2 className="text-lg font-semibold text-gray-900">Total Revenue</h2>
@@ -236,6 +246,8 @@ const ConcentricTourGraph: React.FC<{ data: TourCategory[] }> = memo(({ data }) 
         <h2 className="text-lg font-semibold text-gray-900">Total Tours</h2>
         <select className="px-3 py-1.5 border text-xs rounded-full font-medium text-gray-600 border-gray-300 hover:border-teal-500 focus:outline-none">
           <option>Last Week</option>
+          <option>Last Month</option>
+          <option>All Time</option>
         </select>
       </div>
       <div className="flex flex-col md:flex-row items-center gap-6">
@@ -282,6 +294,7 @@ const ConversionChart: React.FC<{ data: ConversionData[] }> = memo(({ data }) =>
       </div>
       <button className="px-4 py-1.5 border text-xs font-medium rounded-md text-gray-700 border-gray-300 hover:bg-gray-50 focus:outline-none">
         Last 6 Month
+          
       </button>
     </div>
     <div className="flex-grow w-full">
@@ -349,13 +362,13 @@ const ConversionChart: React.FC<{ data: ConversionData[] }> = memo(({ data }) =>
 // );
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
-  return (<div className="w-full p-4 md:p-6 lg:p-8 bg-gray-50">
-    <div className="space-y-6">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+  return (<div className=" w-full rounded-lg  pl-0 p-4 md:p-2 lg:p-2 bg-gray-50 ">
+    <div className="space-y-5">
+      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-gray-400 pb-4">
+        <h1 className="text-2xl font-bold text-[#10A4B0] font-raleway">Dashboard</h1>
         <div className="flex items-center flex-wrap gap-4">
           <div className="relative">
-            <input type="text" placeholder="Search Here..." className="pl-4 pr-10 py-2 w-52 h-9 bg-white border border-gray-300 rounded-full text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500" />
+            <input type="text" placeholder="Search Here..." className="pl-4 pr-10 py-2 w-52 h-9 bg-white border border-gray-300 rounded-full text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 font-raleway" />
             <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-600" />
           </div>
           {/* <button className="flex items-center justify-center gap-x-2 px-5 py-2 w-52 h-9 bg-teal-500 hover:bg-teal-600 rounded-full text-sm font-medium text-white transition-colors">
@@ -364,7 +377,7 @@ const Dashboard: React.FC = () => {
           </button> */}
              <button
       onClick={() => navigate("/login")}  // 👈 directly inside button
-      className="flex items-center justify-center gap-x-2 px-5 py-2 w-52 h-9 bg-teal-500 hover:bg-teal-600 rounded-full text-sm font-medium text-white transition-colors"
+      className="flex items-center justify-center gap-x-2 px-5 py-2 w-52 h-9 bg-teal-500 hover:bg-teal-600 rounded-full text-sm font-medium text-white transition-colors font-raleway"
     >
       <span>Create New Itinerary</span>
       <ChevronDown className="w-4 h-4" />
