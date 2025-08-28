@@ -45,16 +45,19 @@ const MyLeads: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-900">My Leads</h1>
-        <button className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors">
+      <div> 
+      <div className="flex items-center justify-between font-roboto">
+        <h1 className="text-2xl font-semibold text-teal-600 font-raleway">My Leads</h1>
+        <button className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-lg font-raleway flex items-center space-x-2 transition-colors">
           <Plus className="w-4 h-4" />
           <span>Add Lead</span>
         </button>
       </div>
+        <div className="border-b border-gray-700 w-full mb-6 mt-3"></div>
+        </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 font-raleway">
         <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
           <div className="flex items-center justify-between">
             <div>
@@ -102,27 +105,24 @@ const MyLeads: React.FC = () => {
       </div>
 
       {/* Controls */}
-      <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-        <div className="flex items-center space-x-4">
+    
+        <div className="flex items-center space-x-4 font-raleway">
           {/* Search */}
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 " />
             <input
               type="text"
               placeholder="Search leads..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent w-64"
+              className="pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent w-64"
             />
           </div>
-        </div>
 
-        <div className="flex items-center space-x-3">
-          {/* Status Filter */}
-          <select
+  <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="px-4 py-2 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-full"
           >
             <option value="all">All Status</option>
             <option value="hot">Hot</option>
@@ -131,52 +131,100 @@ const MyLeads: React.FC = () => {
           </select>
 
           {/* Filter Button */}
-          <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+          <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-50">
             <Filter className="w-4 h-4" />
             <span>Filter</span>
           </button>
         </div>
-      </div>
+
+        
+      
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Leads List */}
         <div className="lg:col-span-2">
           <div className="bg-white rounded-lg shadow-sm border border-gray-200">
             <div className="p-4 border-b border-gray-200">
-              <h2 className="text-lg font-semibold text-gray-900">Leads List</h2>
+              <h2 className="text-lg font-semibold font-raleway text-gray-900">Leads List</h2>
             </div>
-            <div className="divide-y divide-gray-200">
-              {filteredLeads.map((lead) => (
-                <div
-                  key={lead.id}
-                  className={`p-4 hover:bg-gray-50 cursor-pointer transition-colors ${
-                    selectedLead?.id === lead.id ? 'bg-teal-50 border-l-4 border-teal-500' : ''
-                  }`}
-                  onClick={() => setSelectedLead(lead)}
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
-                        <User className="w-5 h-5 text-gray-600" />
-                      </div>
-                      <div>
-                        <h3 className="text-sm font-medium text-gray-900">{lead.name}</h3>
-                        <p className="text-sm text-gray-600">{lead.email}</p>
-                        <p className="text-xs text-gray-500">{lead.interestedIn}</p>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <span className={`inline-flex px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(lead.status)}`}>
-                        {lead.status}
-                      </span>
-                      <p className="text-sm text-gray-600 mt-1">₹{lead.budget.toLocaleString()}</p>
-                      <span className={`inline-flex px-2 py-1 rounded-full text-xs font-medium mt-1 ${getSourceColor(lead.source)}`}>
-                        {lead.source}
-                      </span>
-                    </div>
-                  </div>
+            <div className="overflow-x-auto">
+              <table className="min-w-full table-fixed divide-y divide-gray-200 text-sm font-inter">
+                <thead className="font-roboto ">
+                  <tr>
+                    <th className="min-w-[180px] px-6 py-3 text-left font-raleway font-semibold text-[12px]  tracking-wider text-gray-700 bg-[#F6F6FA] whitespace-nowrap">
+                      Customer Name
+                    </th>
+                    <th className="w-[180px] px-6 py-3 text-left font-raleway font-semibold text-[12px]  tracking-wider text-gray-700 bg-[#F6F6FA] whitespace-nowrap">
+                      Email
+                    </th>
+                    <th className="w-[140px] px-6 py-3 text-left font-raleway font-semibold text-[12px]  tracking-wider text-gray-700 bg-[#F6F6FA] whitespace-nowrap">
+                      Interested In
+                    </th>
+                    <th className="w-[110px] px-6 py-3 text-center font-raleway font-semibold text-[12px] tracking-wider text-gray-700 bg-[#F6F6FA]">
+                      Status
+                    </th>
+                    <th className="w-[120px] px-6 py-3 text-right font-raleway font-semibold text-[12px]  tracking-wider text-gray-700 bg-[#F6F6FA]">
+                      Budget
+                    </th>
+                    <th className="w-[110px] px-6 py-3 text-center font-raleway font-semibold text-[12px]  tracking-wider text-gray-700 bg-[#F6F6FA]">
+                      Source
+                    </th>
+                    <th className="w-[140px] px-6 py-3 text-left font-raleway font-semibold text-[12px] tracking-wider text-gray-700 bg-[#F6F6FA] whitespace-nowrap">
+                      Assigned To
+                    </th>
+                    <th className="w-[120px] px-6 py-3 text-center font-raleway font-semibold text-[12px]  tracking-wider text-gray-700 bg-[#F6F6FA]">
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100 font-roboto">
+                  {filteredLeads.map((lead) => (
+                    <tr
+                      key={lead.id}
+                      className={`cursor-pointer transition-colors ${selectedLead?.id === lead.id ? 'bg-gray-100 border-l-4 border-teal-500' : 'hover:bg-gray-50'}`}
+                      onClick={() => setSelectedLead(lead)}
+                    >
+                      <td className="min-w-[180px] px-6 py-3 font-roboto font-semibold text-[11px] text-[#22223B] whitespace-nowrap truncate align-middle">
+                        {lead.name}
+                      </td>
+                      <td className="w-[180px] px-6 py-3 font-inter text-[12px] text-gray-700 whitespace-nowrap align-middle">
+                        {lead.email}
+                      </td>
+                      <td className="w-[140px] px-6 py-3 font-inter text-[12px] text-gray-700 whitespace-nowrap align-middle">
+                        {lead.interestedIn}
+                      </td>
+                      <td className="w-[110px] px-6 py-3 text-center align-middle">
+                        <span className={`inline-flex px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(lead.status)}`}>
+                          {lead.status}
+                        </span>
+                      </td>
+                      <td className="w-[120px] px-6 py-3 text-right font-inter text-[12px] text-gray-900 align-middle">
+                        ₹{lead.budget.toLocaleString()}
+                      </td>
+                      <td className="w-[110px] px-6 py-3 text-center align-middle">
+                        <span className={`inline-flex px-2 py-1 rounded-full text-xs font-medium ${getSourceColor(lead.source)}`}>
+                          {lead.source}
+                        </span>
+                      </td>
+                      <td className="w-[140px] px-6 py-3 font-inter text-[12px] text-gray-700 whitespace-nowrap align-middle">
+                        {lead.assignedTo}
+                      </td>
+                      <td className="w-[120px] px-6 py-3 text-center align-middle">
+                        <button className="bg-teal-500 hover:bg-teal-600 text-white px-3 py-1 rounded text-xs font-semibold transition-colors">
+                          View
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              {filteredLeads.length === 0 && (
+                <div className="text-center py-12">
+                  <TrendingUp className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+                  <h3 className="text-lg font-medium text-gray-900 mb-2">No leads found</h3>
+                  <p className="text-gray-600 mb-4">Add a new lead to get started</p>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>

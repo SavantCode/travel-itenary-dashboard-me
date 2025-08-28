@@ -44,7 +44,7 @@ const CustomerTable: React.FC = () => {
   };
 
   return (
-    <div className="space-y-6 font-raleway">
+    <div className="space-y-6 font-roboto">
       <div>
       {/* Header */}
       <div className="flex items-center justify-between font-raleway">
@@ -58,12 +58,12 @@ const CustomerTable: React.FC = () => {
         <div className="border-b border-gray-700 w-full mb-6 mt-3"></div>
 </div>
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4  gap-6">
         <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Total Customers</p>
-              <p className="text-2xl font-bold text-gray-900">{customersData.customers.length}</p>
+              <p className="text-sm font-medium font-raleway text-gray-600">Total Customers</p>
+              <p className="text-2xl font-semibold text-gray-900">{customersData.customers.length}</p>
             </div>
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
               <User className="w-6 h-6 text-blue-600" />
@@ -73,8 +73,8 @@ const CustomerTable: React.FC = () => {
         <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Active Customers</p>
-              <p className="text-2xl font-bold text-gray-900">{customersData.customers.filter(c => c.status === 'Active').length}</p>
+              <p className="text-sm font-medium font-raleway text-gray-600">Active Customers</p>
+              <p className="text-2xl font-semibold text-gray-900">{customersData.customers.filter(c => c.status === 'Active').length}</p>
             </div>
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
               <User className="w-6 h-6 text-green-600" />
@@ -84,9 +84,9 @@ const CustomerTable: React.FC = () => {
         <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Total Revenue</p>
-              <p className="text-2xl font-bold text-gray-900">
-                ₹{customersData.customers.reduce((sum, c) => sum + c.totalSpent, 0).toLocaleString()}
+              <p className="text-sm font-medium font-raleway text-gray-600">Total Revenue</p>
+              <p className="text-2xl font-semibold text-gray-900">
+                ₹ {customersData.customers.reduce((sum, c) => sum + c.totalSpent, 0).toLocaleString()}
               </p>
             </div>
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
@@ -97,9 +97,9 @@ const CustomerTable: React.FC = () => {
         <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Avg. Booking Value</p>
+              <p className="text-sm font-medium font-raleway text-gray-600">Avg. Booking Value</p>
               <p className="text-2xl font-semibold  text-gray-900">
-                ₹{Math.round(customersData.customers.reduce((sum, c) => sum + c.totalSpent, 0) / customersData.customers.length).toLocaleString()}
+                ₹ {Math.round(customersData.customers.reduce((sum, c) => sum + c.totalSpent, 0) / customersData.customers.length).toLocaleString()}
               </p>
             </div>
             <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
@@ -111,7 +111,7 @@ const CustomerTable: React.FC = () => {
 
       {/* Controls */}
       
-        <div className="flex items-center space-x-4">
+        <div className="font-raleway text-sm flex items-center space-x-4">
           {/* Search */}
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />

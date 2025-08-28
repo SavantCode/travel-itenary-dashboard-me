@@ -190,7 +190,7 @@ export default function AgentTable() {
   );
 
   return (
-    <div className="w-full bg-[#F6F6FA] p-4 md:p-2 font-raleway lg:p-1">
+    <div className="w-full bg-[#F6F6FA] p-4 md:p-2 font-roboto lg:p-1">
       <div>
         {/* Header Row */}
         <div className="flex flex-wrap items-center font-raleway justify-between gap-4 mb-2">

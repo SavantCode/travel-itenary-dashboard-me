@@ -476,20 +476,20 @@ export default function CRM() {
   );
 
   return (
-    <div className="w-full bg-[#F6F6FA] p-4 md:p-2 font-raleway">
+    <div className="w-full bg-[#F6F6FA] p-4 md:p-2 font-roboto">
       {/* --- NEW HEADER SECTION --- */}
       <div>
         {/* Header Row */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-2">
-          <h1 className="text-2xl font-bold text-[#10A4B0]">
+          <h1 className="text-2xl font-bold font-raleway text-[#10A4B0]">
             CRM
           </h1>
           <button
             onClick={() => setNewLeadOpen(true)}
-            className="flex items-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors"
+            className="flex font-raleway items-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors"
           >
             <Icons.Plus />
-            <span>New Lead</span>
+            <span >New Lead</span>
           </button>
         </div>
         {/* Underline */}
@@ -497,7 +497,7 @@ export default function CRM() {
       </div>
 
       {/* Controls */}
-      <div className="flex flex-wrap items-center gap-3">
+      <div className="flex flex-wrap items-center font-raleway gap-3">
         {/* Search */}
         <div className="flex items-center gap-2 rounded-full border border-gray-300 h-10 px-4 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
           <Icons.Search />
@@ -755,7 +755,7 @@ export default function CRM() {
           </thead>
           <tbody>
             {filtered.map((row) => (
-              <tr key={row.id} className="border-b border-gray-100 hover:bg-gray-50">
+              <tr key={row.id} className="border-b  border-gray-100 hover:bg-gray-50">
                 {columns.checkbox && (
                   <td className="px-3 py-4" style={{ minWidth: 48 }}>
                     <input

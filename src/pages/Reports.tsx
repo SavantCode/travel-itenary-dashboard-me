@@ -358,14 +358,14 @@ const ReportsPage: FC = () => {
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
       
-      <div className="bg-[#F6F6FA] min-h-screen p-4 md:p-2 font-raleway lg:p-1">
+      <div className="bg-[#F6F6FA] min-h-screen p-4 md:p-2 font-roboto lg:p-1">
         <div className="space-y-6">
             <div >
             
           <div className="flex flex-col md:flex-row md:items-center  md:justify-between gap-4">
-              <h1 className="text-2xl font-bold text-[#10A4B0]">Reports</h1>
+              <h1 className="text-2xl font-bold font-raleway text-[#10A4B0]">Reports</h1>
               <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
-                <button className="flex-shrink-0 flex items-center justify-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors w-full sm:w-auto">
+                <button className="flex-shrink-0 flex items-center font-raleway justify-center gap-2 h-10 px-5 rounded-full bg-[#10A4B0] text-white font-semibold hover:bg-[#0D8A94] transition-colors w-full sm:w-auto">
                   <Download className="w-4 h-4" />
                   <span>Download Reports</span>
                 </button>
@@ -382,7 +382,7 @@ const ReportsPage: FC = () => {
 <div className="flex items-center gap-2 rounded-full border border-gray-300 h-10 px-4 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
                   <Search className="w-5 h-5 text-gray-500" />
                   <input
-                    className="outline-none text-sm placeholder-gray-500 w-full bg-transparent"
+                    className="outline-none text-sm placeholder-gray-500 w-full font-raleway bg-transparent"
                     placeholder="Search Here..."
                     value={searchQuery}
                     onChange={(e: ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
@@ -395,7 +395,7 @@ const ReportsPage: FC = () => {
                 <button
                   key={tab.id}
                   onClick={() => handleTabClick(tab.id)}
-                  className={`flex-shrink-0 flex items-center justify-center px-3 sm:px-4 h-9 w-auto gap-2 rounded-md border text-sm font-medium transition-colors
+                  className={`flex-shrink-0 flex items-center justify-center px-3 sm:px-4 h-9 w-auto gap-2 rounded-full  border text-sm font-medium font-raleway transition-colors
                     ${isActive
                       ? 'bg-[#10A4B0] text-white border-transparent'
                       : 'bg-white text-[#717182] border border-[#717182] hover:text-[#10A4B0]'}`

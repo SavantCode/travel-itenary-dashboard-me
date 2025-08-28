@@ -107,9 +107,11 @@ export const AdminDashboard = () => {
 
   return (
     <div className="container mx-auto p-4 sm:p-6 lg:p-2 bg-gray-50 font-raleway min-h-screen">
-      <h1 className="text-2xl font-bold text-teal-600 mb-6">Admin Dashboard</h1>
+      <div>
+      <h1 className="text-2xl font-bold text-teal-600 mb-4">Admin Dashboard</h1>
        {/* Underline */}
-        <div className="border-b border-gray-700 w-full mb-6 mt-7"></div>
+        <div className="border-b border-gray-700 w-full mb-6 mt-2"></div>
+        </div>
 
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">

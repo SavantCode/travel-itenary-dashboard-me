@@ -58,7 +58,7 @@ const MonthlyConversionCard: React.FC = () => {
           Leads turned into customers
         </h4>
         <p className="text-xs text-gray-700 leading-tight line-clamp-4">
-          “Leads Turned into Customers” shows the percentage of potential clients who showed interest in your travel services and successfully booked a trip. It helps you understand how effective your sales team is at converting leads into sales.
+          Leads Turned into Customers” shows how many people who showed interest in your travel services actually booked a trip. It helps you understand how well you're turning inquiries into real customers. The better this number, the more successful your efforts are in converting leads into sales.
         </p>
       </div>
     </div>

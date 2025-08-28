@@ -198,7 +198,7 @@ const RevenueChart: React.FC<{ data: { month: string; revenue: number }[] }> = m
           <h2 className="text-lg font-semibold text-gray-900">Total Revenue</h2>
           <p className="text-sm text-gray-500 mt-1">Track your monthly revenue growth and performance.</p>
         </div>
-        <select className="px-4 py-1.5 border text-xs font-medium rounded-md text-gray-700 border-gray-300 hover:bg-gray-50 focus:outline-none"
+        <select className="px-4 py-1.5 border text-xs font-medium rounded-full text-gray-700 border-gray-300 hover:bg-gray-50 focus:outline-none"
           value={selectedYear}
           onChange={e => setSelectedYear(e.target.value)}>
           {years.map(y => <option key={y} value={y}>Year {y}</option>)}
@@ -231,12 +231,13 @@ const MonthlyConversionChartInfo: React.FC = memo(() => (
           20%
         </div>
       </div>
-      <h3 className="text-lg font-bold text-gray-900 mt-4">Leads turned into customers</h3>
+      <h5 className='text-md font-bold text-gray-700 mt-4'> Monthly Conversion</h5>
+      <h3 className="text-lg font-bold text-gray-800 mt-6">Leads turned into customers</h3>
+    
+    <p className="text-sm text-gray-600 leading-relaxed mt-4 font-semibold">Leads Turned into Customers shows how many people who showed interest in your travel services actually booked a trip. It helps you understand how well you're turning inquiries into real customers. The better this number, the more successful your efforts are in converting leads into sales."</p>
     </div>
-    <p className="text-sm text-gray-700 leading-relaxed">This shows the percentage of potential clients who showed interest and successfully booked a trip, indicating sales effectiveness.</p>
   </div>
 ));
-
 interface TourCategory { name: string; value: number; percentage: number; customers: number; color: string; }
 const ConcentricTourGraph: React.FC<{ data: TourCategory[] }> = memo(({ data }) => {
   const size = 200, center = size / 2, maxRadius = 90, strokeWidth = 16, gap = 6;
@@ -292,7 +293,7 @@ const ConversionChart: React.FC<{ data: ConversionData[] }> = memo(({ data }) =>
         <h2 className="text-lg font-semibold text-gray-900">Monthly Conversion</h2>
         <p className="text-sm text-gray-500 mt-1">Track Growth, One Month at a Time.</p>
       </div>
-      <button className="px-4 py-1.5 border text-xs font-medium rounded-md text-gray-700 border-gray-300 hover:bg-gray-50 focus:outline-none">
+      <button className="px-4 py-1.5 border text-xs font-medium rounded-full text-gray-700 border-gray-300 hover:bg-gray-50 focus:outline-none">
         Last 6 Month
           
       </button>
@@ -364,7 +365,7 @@ const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   return (<div className=" w-full rounded-lg  pl-0 p-4 md:p-2 lg:p-2 bg-gray-50 ">
     <div className="space-y-5">
-      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-gray-400 pb-4">
+      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800 pb-4">
         <h1 className="text-2xl font-bold text-[#10A4B0] font-raleway">Dashboard</h1>
         <div className="flex items-center flex-wrap gap-4">
           <div className="relative">
