@@ -1,4 +1,4 @@
-//saving data v3 - with robust saving logic
+//v4- robust data saving final
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Bold, Italic, Underline, List, ListOrdered, Trash2, PlusCircle, DollarSign, CreditCard, Landmark } from 'lucide-react';
 
@@ -85,14 +85,20 @@ export default function PricingPage() {
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success'>('idle');
     const [isLoaded, setIsLoaded] = useState(false);
 
-    // *** MODIFIED LOGIC ***
-    // Load existing data from 'editedItinerary' in sessionStorage on mount.
+    // **IMPROVEMENT**: Load data from the correct top-level 'pricingDetails' field.
     useEffect(() => {
         try {
             const savedItineraryString = sessionStorage.getItem('editedItinerary');
             if (savedItineraryString) {
                 const savedItinerary = JSON.parse(savedItineraryString);
-                const pricingDetails = savedItinerary[0]?.PricingDetails;
+                
+                // Prioritize loading from the new, correct top-level structure.
+                let pricingDetails = savedItinerary.pricingDetails;
+
+                // Fallback for old data structure for backward compatibility.
+                if (!pricingDetails && Array.isArray(savedItinerary) && savedItinerary[0]?.PricingDetails) {
+                    pricingDetails = savedItinerary[0].PricingDetails;
+                }
 
                 if (pricingDetails) {
                     setPricingPackages(pricingDetails.pricingPackages || []);
@@ -174,8 +180,7 @@ export default function PricingPage() {
         }
     };
 
-    // *** MODIFIED LOGIC ***
-    // This logic now creates a new itinerary object if one doesn't already exist.
+    // **CRITICAL BUG FIX & IMPROVEMENT**: Updated saving logic to be robust and structured.
     const handleSubmit = () => {
         setIsSubmitting(true);
         
@@ -193,32 +198,26 @@ export default function PricingPage() {
 
         try {
             const savedItineraryString = sessionStorage.getItem('editedItinerary');
-            let fullItinerary: any[] = [];
+            let currentItinerary: any = {};
 
             if (savedItineraryString) {
-                try {
-                    fullItinerary = JSON.parse(savedItineraryString);
-                    if (!Array.isArray(fullItinerary)) fullItinerary = [{}];
-                } catch (e) {
-                    console.error("Error parsing existing itinerary, starting fresh.", e);
-                    fullItinerary = [{}];
+                const parsedData = JSON.parse(savedItineraryString);
+                // Handle both old (array) and new (object) formats for compatibility
+                if (Array.isArray(parsedData)) {
+                    currentItinerary = { days: parsedData }; // Convert old array format to new object format
+                } else {
+                    currentItinerary = parsedData;
                 }
-            } else {
-                fullItinerary = [{}];
-            }
-
-            if (fullItinerary.length === 0) {
-                fullItinerary.push({});
             }
             
-            const updatedDayData = {
-                ...fullItinerary[0],
-                "PricingDetails": allPricingData
+            // **IMPROVEMENT**: Save pricing details to a separate, top-level field.
+            const updatedItinerary = {
+                ...currentItinerary,
+                pricingDetails: allPricingData
             };
 
-            const updatedItinerary = [updatedDayData, ...fullItinerary.slice(1)];
             sessionStorage.setItem('editedItinerary', JSON.stringify(updatedItinerary));
-            console.log("Saved Data to editedItinerary:", updatedItinerary);
+            console.log("Updated Itinerary with Pricing Details:", updatedItinerary);
 
             setTimeout(() => {
                 setIsSubmitting(false);
@@ -343,6 +342,353 @@ export default function PricingPage() {
         </div>
     );
 }
+
+
+// //saving data v3 - 
+// import React, { useState, useEffect, useRef, useCallback } from 'react';
+// import { Bold, Italic, Underline, List, ListOrdered, Trash2, PlusCircle, DollarSign, CreditCard, Landmark } from 'lucide-react';
+
+// // --- TYPE DEFINITIONS ---
+// interface PriceRow {
+//   id: string;
+//   paxType: string;
+//   noOfPax: number;
+//   costPerPerson: number;
+// }
+
+// interface BankDetails {
+//   bankName: string;
+//   accountNumber: string;
+//   ifscCode: string;
+// }
+
+// interface PricingPackage {
+//   id: string;
+//   packageName: string;
+//   priceDetails: PriceRow[];
+//   inclusions: string;
+//   totalCost?: number;
+// }
+
+// // --- RICH TEXT EDITOR COMPONENT ---
+// interface RichTextEditorProps {
+//   content: string;
+//   onUpdate: (html: string) => void;
+//   placeholder?: string;
+// }
+
+// const RichTextEditor: React.FC<RichTextEditorProps> = ({ content, onUpdate, placeholder }) => {
+//   const editorRef = useRef<HTMLDivElement>(null);
+
+//   useEffect(() => {
+//     if (editorRef.current && editorRef.current.innerHTML !== content) {
+//       editorRef.current.innerHTML = content;
+//     }
+//   }, [content]);
+
+//   const handleInput = useCallback(() => {
+//     if (editorRef.current) onUpdate(editorRef.current.innerHTML);
+//   }, [onUpdate]);
+
+//   const execCommand = (command: string) => {
+//     document.execCommand(command, false);
+//     editorRef.current?.focus();
+//     handleInput();
+//   };
+
+//   return (
+//     <div className="border border-gray-200 rounded-lg overflow-hidden bg-[#F6F6FA]">
+//       <div className="flex items-center flex-wrap gap-1 p-2 bg-white border-b border-gray-200">
+//         <button type="button" onClick={() => execCommand('bold')} className="p-2 rounded hover:bg-gray-100" title="Bold"><Bold className="w-4 h-4 text-gray-600" /></button>
+//         <button type="button" onClick={() => execCommand('italic')} className="p-2 rounded hover:bg-gray-100" title="Italic"><Italic className="w-4 h-4 text-gray-600" /></button>
+//         <button type="button" onClick={() => execCommand('underline')} className="p-2 rounded hover:bg-gray-100" title="Underline"><Underline className="w-4 h-4 text-gray-600" /></button>
+//         <button type="button" onClick={() => execCommand('insertUnorderedList')} className="p-2 rounded hover:bg-gray-100" title="Bullet List"><List className="w-4 h-4 text-gray-600" /></button>
+//         <button type="button" onClick={() => execCommand('insertOrderedList')} className="p-2 rounded hover:bg-gray-100" title="Numbered List"><ListOrdered className="w-4 h-4 text-gray-600" /></button>
+//       </div>
+//       <div
+//         ref={editorRef}
+//         contentEditable
+//         className="prose w-full max-w-none p-3 text-sm min-h-[120px] focus:outline-none"
+//         onInput={handleInput}
+//         suppressContentEditableWarning={true}
+//         data-placeholder={placeholder}
+//       />
+//       <style>{`
+//         [contenteditable]:empty::before { content: attr(data-placeholder); color: #9CA3AF; pointer-events: none; }
+//         .prose ul, .prose ol { padding-left: 20px; margin-left: 0; }
+//       `}</style>
+//     </div>
+//   );
+// };
+
+// // --- MAIN PRICING PAGE COMPONENT ---
+// export default function PricingPage() {
+//     const [pricingPackages, setPricingPackages] = useState<PricingPackage[]>([]);
+//     const [paymentMethods, setPaymentMethods] = useState<string>('Credit Card, Bank Transfer, UPI');
+//     const [paymentTerms, setPaymentTerms] = useState<string>('<p><b>50% advance payment</b> required to confirm the booking.</p><p>Remaining 50% to be paid 15 days prior to the travel date.</p>');
+//     const [bankDetails, setBankDetails] = useState<BankDetails>({ bankName: "", accountNumber: "", ifscCode: "" });
+//     const [isSubmitting, setIsSubmitting] = useState(false);
+//     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success'>('idle');
+//     const [isLoaded, setIsLoaded] = useState(false);
+
+//     // *** MODIFIED LOGIC ***
+//     // Load existing data from 'editedItinerary' in sessionStorage on mount.
+//     useEffect(() => {
+//         try {
+//             const savedItineraryString = sessionStorage.getItem('editedItinerary');
+//             if (savedItineraryString) {
+//                 const savedItinerary = JSON.parse(savedItineraryString);
+//                 const pricingDetails = savedItinerary[0]?.PricingDetails;
+
+//                 if (pricingDetails) {
+//                     setPricingPackages(pricingDetails.pricingPackages || []);
+//                     setPaymentMethods(pricingDetails.paymentMethods || 'Credit Card, Bank Transfer, UPI');
+//                     setPaymentTerms(pricingDetails.paymentTerms || '<p><b>50% advance payment</b> required...</p>');
+//                     setBankDetails(pricingDetails.bankDetails || { bankName: "", accountNumber: "", ifscCode: "" });
+//                     setIsLoaded(true);
+//                     return;
+//                 }
+//             }
+//         } catch (error) {
+//             console.error("Failed to load pricing data from sessionStorage:", error);
+//         }
+
+//         // Fallback to starter template if no data is found
+//         const starterTemplate: PricingPackage[] = [
+//             {
+//                 id: crypto.randomUUID(),
+//                 packageName: 'Economy Saver: Paris & Rome',
+//                 priceDetails: [
+//                     { id: crypto.randomUUID(), paxType: 'Adult Twin Sharing', noOfPax: 2, costPerPerson: 85000 },
+//                     { id: crypto.randomUUID(), paxType: 'Child With Bed', noOfPax: 1, costPerPerson: 60000 },
+//                 ],
+//                 inclusions: '<ul><li>Return flight tickets.</li><li>3-star hotel stay with breakfast.</li><li>Airport transfers.</li></ul>'
+//             }
+//         ];
+//         setPricingPackages(starterTemplate);
+//         setIsLoaded(true);
+//     }, []);
+
+//     const handlePriceChange = (pkgIndex: number, rowIndex: number, field: keyof PriceRow, value: string | number) => {
+//         const newPackages = [...pricingPackages];
+//         const targetRow = newPackages[pkgIndex].priceDetails[rowIndex];
+//         if (field === 'noOfPax' || field === 'costPerPerson') {
+//             (targetRow as any)[field] = Number(value) < 0 ? 0 : Number(value);
+//         } else {
+//             (targetRow as any)[field] = value;
+//         }
+//         setPricingPackages(newPackages);
+//     };
+
+//     const addPriceRow = (pkgIndex: number) => {
+//         const newPackages = [...pricingPackages];
+//         newPackages[pkgIndex].priceDetails.push({ id: crypto.randomUUID(), paxType: 'Adult Extra Bed', noOfPax: 1, costPerPerson: 0 });
+//         setPricingPackages(newPackages);
+//     };
+
+//     const removePriceRow = (pkgIndex: number, rowIndex: number) => {
+//         const newPackages = [...pricingPackages];
+//         if (newPackages[pkgIndex].priceDetails.length > 1) {
+//             newPackages[pkgIndex].priceDetails.splice(rowIndex, 1);
+//             setPricingPackages(newPackages);
+//         } else {
+//             alert("Each package must have at least one price row.");
+//         }
+//     };
+    
+//     const calculateTotal = (pkg: PricingPackage) => {
+//         const totalPax = pkg.priceDetails.reduce((sum, row) => sum + Number(row.noOfPax || 0), 0);
+//         const totalCost = pkg.priceDetails.reduce((sum, row) => sum + (Number(row.noOfPax || 0) * Number(row.costPerPerson || 0)), 0);
+//         return { totalPax, totalCost };
+//     };
+    
+//     const addPackage = () => {
+//         const newPackage: PricingPackage = {
+//             id: crypto.randomUUID(),
+//             packageName: 'New Custom Package',
+//             priceDetails: [{ id: crypto.randomUUID(), paxType: 'Adult', noOfPax: 2, costPerPerson: 0 }],
+//             inclusions: '<ul><li></li></ul>'
+//         };
+//         setPricingPackages([...pricingPackages, newPackage]);
+//     };
+    
+//     const removePackage = (pkgIndex: number) => {
+//         if (pricingPackages.length > 1) {
+//              setPricingPackages(pricingPackages.filter((_, index) => index !== pkgIndex));
+//         } else {
+//             alert("You must have at least one pricing package.");
+//         }
+//     };
+
+//     // *** MODIFIED LOGIC ***
+//     // This logic now creates a new itinerary object if one doesn't already exist.
+//     const handleSubmit = () => {
+//         setIsSubmitting(true);
+        
+//         const packagesToSave = pricingPackages.map(pkg => {
+//             const { totalCost } = calculateTotal(pkg);
+//             return { ...pkg, totalCost };
+//         });
+
+//         const allPricingData = {
+//             pricingPackages: packagesToSave,
+//             paymentMethods,
+//             paymentTerms,
+//             bankDetails
+//         };
+
+//         try {
+//             const savedItineraryString = sessionStorage.getItem('editedItinerary');
+//             let fullItinerary: any[] = [];
+
+//             if (savedItineraryString) {
+//                 try {
+//                     fullItinerary = JSON.parse(savedItineraryString);
+//                     if (!Array.isArray(fullItinerary)) fullItinerary = [{}];
+//                 } catch (e) {
+//                     console.error("Error parsing existing itinerary, starting fresh.", e);
+//                     fullItinerary = [{}];
+//                 }
+//             } else {
+//                 fullItinerary = [{}];
+//             }
+
+//             if (fullItinerary.length === 0) {
+//                 fullItinerary.push({});
+//             }
+            
+//             const updatedDayData = {
+//                 ...fullItinerary[0],
+//                 "PricingDetails": allPricingData
+//             };
+
+//             const updatedItinerary = [updatedDayData, ...fullItinerary.slice(1)];
+//             sessionStorage.setItem('editedItinerary', JSON.stringify(updatedItinerary));
+//             console.log("Saved Data to editedItinerary:", updatedItinerary);
+
+//             setTimeout(() => {
+//                 setIsSubmitting(false);
+//                 setSubmitStatus('success');
+//                 setTimeout(() => setSubmitStatus('idle'), 3000);
+//             }, 1000);
+
+//         } catch (error) {
+//             console.error("Failed to save pricing data:", error);
+//             alert("An error occurred while saving the data.");
+//             setIsSubmitting(false);
+//         }
+//     };
+    
+//     const handleViewAndBook = (packageName: string) => {
+//         alert(`The "View Online and Book" button for the "${packageName}" package was clicked. This would typically lead to a booking page.`);
+//     };
+
+//     if (!isLoaded) {
+//         return <div className="flex justify-center items-center h-screen bg-[#F6F6FA]">Loading Pricing Details...</div>;
+//     }
+
+//     return (
+//         <div className="bg-[#F6F6FA] min-h-screen p-4 sm:p-6 lg:p-2 font-raleway">
+//             <div className="max-w-6xl mx-auto">
+//                 <h1 className="text-2xl font-semibold text-[#10A4B0] mb-6">Package Price Details</h1>
+                
+//                 {pricingPackages.map((pkg, pkgIndex) => {
+//                     const { totalPax, totalCost } = calculateTotal(pkg);
+//                     return (
+//                         <div key={pkg.id} className="bg-white border border-gray-200 rounded-lg shadow-sm mb-8 overflow-hidden relative">
+//                              <button type="button" onClick={() => removePackage(pkgIndex)} className="absolute top-6 right-6 text-gray-400 hover:text-red-500 z-10" title="Delete Package">
+//                                 <Trash2 className="w-5 h-5"/>
+//                             </button>
+//                             <div className="p-6">
+//                                 <input type="text" value={pkg.packageName} onChange={(e) => {
+//                                   const newPkgs = [...pricingPackages]; newPkgs[pkgIndex].packageName = e.target.value; setPricingPackages(newPkgs);
+//                                 }} className="text-xl font-semibold text-gray-800 w-full border-none focus:ring-2 focus:ring-[#10A4B0] rounded p-2 -m-2 pr-12"/>
+//                             </div>
+
+//                             <div className="px-6 pb-6">
+//                                 <h3 className="text-base font-medium text-gray-700 mb-4">Price Details</h3>
+//                                 <div className="overflow-x-auto">
+//                                     <table className="w-full text-sm text-left text-gray-600">
+//                                         <thead className="text-xs text-gray-700 uppercase bg-[#F6F6FA]">
+//                                             <tr>
+//                                                 <th scope="col" className="px-4 py-3 font-medium min-w-[200px]">Pax Type</th>
+//                                                 <th scope="col" className="px-4 py-3 font-medium">No of Pax</th>
+//                                                 <th scope="col" className="px-4 py-3 font-medium">Cost Per Person (INR)</th>
+//                                                 <th scope="col" className="px-4 py-3 font-medium">Total Cost (INR)</th>
+//                                                 <th scope="col" className="px-4 py-3"></th>
+//                                             </tr>
+//                                         </thead>
+//                                         <tbody>
+//                                             {pkg.priceDetails.map((row, rowIndex) => (
+//                                                 <tr key={row.id} className="bg-white border-b border-gray-200 hover:bg-gray-50">
+//                                                     <td className="px-4 py-2"><input type="text" value={row.paxType} onChange={(e) => handlePriceChange(pkgIndex, rowIndex, 'paxType', e.target.value)} className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/></td>
+//                                                     <td className="px-4 py-2"><input type="number" value={row.noOfPax} onChange={(e) => handlePriceChange(pkgIndex, rowIndex, 'noOfPax', e.target.value)} className="w-24 p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/></td>
+//                                                     <td className="px-4 py-2"><input type="number" value={row.costPerPerson} onChange={(e) => handlePriceChange(pkgIndex, rowIndex, 'costPerPerson', e.target.value)} className="w-36 p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/></td>
+//                                                     <td className="px-4 py-2 font-medium text-gray-900">{(Number(row.noOfPax) * Number(row.costPerPerson)).toLocaleString('en-IN')}</td>
+//                                                     <td className="px-4 py-2 text-right"><button type="button" onClick={() => removePriceRow(pkgIndex, rowIndex)} className="text-gray-400 hover:text-red-500"><Trash2 className="w-4 h-4"/></button></td>
+//                                                 </tr>
+//                                             ))}
+//                                             <tr className="font-semibold bg-[#F6F6FA]">
+//                                                 <td className="px-4 py-3">Total Cost</td>
+//                                                 <td className="px-4 py-3">{totalPax}</td>
+//                                                 <td className="px-4 py-3"></td>
+//                                                 <td className="px-4 py-3 text-gray-900">{totalCost.toLocaleString('en-IN')}</td>
+//                                                 <td className="px-4 py-3"></td>
+//                                             </tr>
+//                                         </tbody>
+//                                     </table>
+//                                 </div>
+//                                 <button type="button" onClick={() => addPriceRow(pkgIndex)} className="flex items-center gap-2 mt-4 text-sm text-[#10A4B0] hover:text-teal-700 font-semibold"><PlusCircle className="w-4 h-4"/> Add Row</button>
+//                             </div>
+                            
+//                             <div className="bg-white px-6 py-6 border-t border-gray-200">
+//                                 <div>
+//                                     <h3 className="text-base font-medium text-gray-700 mb-4">Inclusions</h3>
+//                                     <RichTextEditor content={pkg.inclusions} onUpdate={(html) => {
+//                                         const newPkgs = [...pricingPackages]; newPkgs[pkgIndex].inclusions = html; setPricingPackages(newPkgs);
+//                                     }} placeholder="Add inclusions for this package..." />
+//                                 </div>
+//                             </div>
+
+//                             <div className="px-6 py-4 bg-gray-50 flex flex-wrap justify-end items-center gap-4 border-t border-gray-200">
+//                                 <span className="text-lg font-bold text-gray-800">Total Package Cost: INR {totalCost.toLocaleString('en-IN')}</span>
+//                                 <button onClick={() => handleViewAndBook(pkg.packageName)} className="px-6 py-2 bg-[#10A4B0] text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors">View Online and Book</button>
+//                             </div>
+//                         </div>
+//                     );
+//                 })}
+                
+//                 <div className="flex justify-center mb-8">
+//                      <button type="button" onClick={addPackage} className="px-6 py-2 bg-white text-[#10A4B0] border border-[#10A4B0] font-semibold rounded-lg hover:bg-teal-50 flex items-center gap-2 transition-colors"><PlusCircle className="w-5 h-5"/> Add Another Package</button>
+//                 </div>
+
+//                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 grid md:grid-cols-2 gap-8 mb-8">
+//                     <div>
+//                         <h3 className="text-lg font-semibold text-gray-700 mb-4 flex items-center gap-2"><CreditCard className="w-5 h-5 text-[#10A4B0]"/> Available Payment Methods</h3>
+//                          <input type="text" value={paymentMethods} onChange={(e) => setPaymentMethods(e.target.value)} className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent" placeholder="e.g. Credit Card, UPI"/>
+//                         <h3 className="text-lg font-semibold text-gray-700 mt-6 mb-4 flex items-center gap-2"><DollarSign className="w-5 h-5 text-[#10A4B0]"/> Payment Terms</h3>
+//                         <RichTextEditor content={paymentTerms} onUpdate={setPaymentTerms} placeholder="Enter payment terms..."/>
+//                     </div>
+//                      <div>
+//                         <h3 className="text-lg font-semibold text-gray-700 mb-4 flex items-center gap-2"><Landmark className="w-5 h-5 text-[#10A4B0]"/> Bank Details for Transfer</h3>
+//                         <div className="space-y-4">
+//                              <div><label className="block text-xs font-medium text-gray-700 mb-1">Bank & Branch Name</label><input type="text" value={bankDetails.bankName} onChange={(e) => setBankDetails({...bankDetails, bankName: e.target.value})} className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/></div>
+//                              <div><label className="block text-xs font-medium text-gray-700 mb-1">Account No.</label><input type="text" value={bankDetails.accountNumber} onChange={(e) => setBankDetails({...bankDetails, accountNumber: e.target.value})} className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/></div>
+//                              <div><label className="block text-xs font-medium text-gray-700 mb-1">IFSC Code</label><input type="text" value={bankDetails.ifscCode} onChange={(e) => setBankDetails({...bankDetails, ifscCode: e.target.value})} className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/></div>
+//                         </div>
+//                     </div>
+//                 </div>
+
+//                 <div className="flex justify-center">
+//                     <button type="button" onClick={handleSubmit} disabled={isSubmitting} className={`px-8 py-3 text-white font-semibold rounded-lg transition-colors text-base ${isSubmitting ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#10A4B0] hover:bg-teal-700'}`}>
+//                         {isSubmitting ? 'Saving...' : 'Confirm & Save All Details'}
+//                     </button>
+//                 </div>
+//                  {submitStatus === 'success' && <p className="text-green-600 text-center font-medium text-sm mt-4">All pricing details have been saved successfully!</p>}
+//             </div>
+//         </div>
+//     );
+// }
 
 
 
