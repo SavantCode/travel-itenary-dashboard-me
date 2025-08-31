@@ -36,6 +36,9 @@ import Pricing from './pages/itinerarySteps/Pricing';
 import TripInformation from './pages/itinerarySteps/TripInformation';
 import ViewItinerary from './pages/itinerarySteps/ViewItinerary';
 
+
+import ViewFinal from './components/ViewFInal/ViewFInal';
+
 const AppRoutes = () => {
   return (
     <Routes>
@@ -44,6 +47,7 @@ const AppRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Navigate to="/login" replace />} />
       <Route path="/unauthorized" element={<Unauthorized />} />
+      <Route path="/view" element={<ViewFinal />} />
 
       {/* Layout wrapper */}
       <Route element={<Layout />}>
@@ -73,6 +77,10 @@ const AppRoutes = () => {
           <Route path="/my-itinerary/create/trip-information" element={<TripInformation />} />
 
           <Route path="/my-itinerary/create/view-itinerary" element={<ViewItinerary />} />
+
+          <Route path="/my-itinerary/create/view" element={<ViewFinal />} />
+                
+
 
               
 
