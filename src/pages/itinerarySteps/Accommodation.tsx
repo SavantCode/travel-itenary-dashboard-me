@@ -4238,7 +4238,435 @@
 
 // export default AccommodationPage;
 
-//============================================final final final
+// //============================================final final final
+// import React, { useState, useEffect, useCallback, FC } from 'react';
+
+// //-=================================-//
+// //-============[ ICONS ]============-//
+// //-=================================-//
+
+// const SearchIcon = () => (
+//   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-400">
+//     <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+//   </svg>
+// );
+
+// const CalendarIcon = () => (
+//     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-500">
+//         <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M5.25 12h13.5" />
+//     </svg>
+// );
+
+// const StarIcon = ({ filled }: { filled: boolean }) => (
+//   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill={filled ? "#FFC107" : "none"} stroke="currentColor" strokeWidth={1.5} className="w-4 h-4 text-yellow-500">
+//     <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+//   </svg>
+// );
+
+// const TrashIcon = () => (
+//     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-600 hover:text-red-500">
+//         <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+//     </svg>
+// );
+
+// const PlusIcon = () => (
+//     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+//         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+//     </svg>
+// );
+
+// const MinusIcon = () => (
+//     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+//         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
+//     </svg>
+// );
+
+// //-=================================-//
+// //-========[ DATA & TYPES ]=========//
+// //-=================================-//
+
+// interface Hotel {
+//   id: number;
+//   name: string;
+//   location: {
+//     country: string;
+//     city: string;
+//   };
+//   rating: number;
+//   images: string[];
+//   price_per_night: number;
+//   available_rooms: number;
+//   amenities: string[];
+//   description: string;
+// }
+
+// interface RoomDetails {
+//   roomType: string;
+//   mealType: string;
+// }
+
+// interface BookedHotel {
+//   id: string;
+//   hotel: Hotel;
+//   numRooms: number;
+//   checkInDate: string;
+//   checkOutDate: string;
+//   roomDetails: RoomDetails[];
+//   remark: string;
+//   bookedAt: string;
+// }
+
+// const mockHotels: Hotel[] = [
+//   { id: 1, name: "Grand Plaza Hotel", location: { country: "India", city: "Delhi" }, rating: 4, images: ["https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1600&q=80"], price_per_night: 150, available_rooms: 20, amenities: ["WiFi", "Pool", "Gym"], description: "Luxury hotel in the heart of Delhi" },
+//   { id: 2, name: "Ocean View Resort", location: { country: "India", city: "Goa" }, rating: 5, images: ["https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80"], price_per_night: 200, available_rooms: 15, amenities: ["Beach Access", "Spa", "Restaurant"], description: "Beachfront resort with stunning ocean views" },
+//   { id: 3, name: "Mountain View Lodge", location: { country: "India", city: "Manali" }, rating: 4, images: ["https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80"], price_per_night: 120, available_rooms: 25, amenities: ["Mountain Views", "Fireplace", "Hiking"], description: "Cozy lodge with beautiful mountain scenery" },
+//   { id: 4, name: "City Center Hotel", location: { country: "USA", city: "New York" }, rating: 4, images: ["https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?w=1600&q=80"], price_per_night: 300, available_rooms: 50, amenities: ["Business Center", "WiFi", "Restaurant"], description: "Modern hotel in downtown Manhattan" },
+//   { id: 5, name: "Sunset Beach Hotel", location: { country: "Thailand", city: "Phuket" }, rating: 5, images: ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&q=80"], price_per_night: 180, available_rooms: 30, amenities: ["Beach Access", "Pool", "Spa", "Restaurant"], description: "Beautiful beachfront hotel with sunset views" }
+// ];
+
+// const roomTypeOptions = ['Standard', 'Deluxe', 'Suite', 'Family Room', 'Presidential Suite', 'Executive Room'];
+// const mealTypeOptions = ['Room Only', 'Breakfast', 'Half Board', 'Full Board', 'All Inclusive'];
+
+// //-=================================-//
+// //-======[ MAIN COMPONENT ]=========//
+// //-=================================-//
+
+// const AccommodationPage: React.FC = () => {
+//     const [allHotels, setAllHotels] = useState<Hotel[]>(mockHotels);
+//     const [cityFilter, setCityFilter] = useState('');
+//     const [countryFilter, setCountryFilter] = useState('');
+//     const [searchQuery, setSearchQuery] = useState('');
+//     const [filteredHotels, setFilteredHotels] = useState<Hotel[]>([]);
+//     const [availableHotels, setAvailableHotels] = useState<Hotel[]>([]);
+//     const [selectedHotel, setSelectedHotel] = useState<Hotel | null>(null);
+//     const [numRooms, setNumRooms] = useState(1);
+//     const [checkInDate, setCheckInDate] = useState('');
+//     const [checkOutDate, setCheckOutDate] = useState('');
+//     const [roomDetails, setRoomDetails] = useState<RoomDetails[]>([{ roomType: 'Standard', mealType: 'Breakfast' }]);
+//     const [remark, setRemark] = useState('');
+//     const [bookedHotels, setBookedHotels] = useState<BookedHotel[]>([]);
+//     const today = new Date().toISOString().split('T')[0];
+
+//     useEffect(() => {
+//         try {
+//             const savedItineraryString = sessionStorage.getItem('editedItinerary');
+//             if (savedItineraryString) {
+//                 const savedItinerary = JSON.parse(savedItineraryString);
+//                 const dayData = savedItinerary[0];
+
+//                 if (dayData && Array.isArray(dayData.accommodation)) {
+//                     setBookedHotels(dayData.accommodation);
+//                 }
+//             }
+//         } catch (error) {
+//             console.error("Failed to load accommodation data from sessionStorage:", error);
+//         }
+//     }, []);
+
+//     useEffect(() => {
+//         const filtered = allHotels.filter(hotel => {
+//             const countryMatch = !countryFilter || hotel.location.country.toLowerCase().includes(countryFilter.toLowerCase());
+//             const cityMatch = !cityFilter || hotel.location.city.toLowerCase().includes(cityFilter.toLowerCase());
+//             return countryMatch && cityMatch;
+//         });
+//         setAvailableHotels(filtered);
+//     }, [countryFilter, cityFilter, allHotels]);
+
+//     useEffect(() => {
+//         if (searchQuery.trim() === '') {
+//             setFilteredHotels([]);
+//         } else {
+//             const lowercasedQuery = searchQuery.toLowerCase();
+//             const results = availableHotels.filter(hotel => hotel.name.toLowerCase().includes(lowercasedQuery));
+//             setFilteredHotels(results);
+//         }
+//     }, [searchQuery, availableHotels]);
+
+//     useEffect(() => {
+//         setRoomDetails(prevDetails => {
+//             const newDetails = [...prevDetails];
+//             while (newDetails.length < numRooms) {
+//                 newDetails.push({ roomType: 'Standard', mealType: 'Breakfast' });
+//             }
+//             return newDetails.slice(0, numRooms);
+//         });
+//     }, [numRooms]);
+
+//     const handleSelectHotel = (hotel: Hotel) => {
+//         setSelectedHotel(hotel);
+//         setSearchQuery('');
+//         setFilteredHotels([]);
+//     };
+
+//     const addRoom = () => setNumRooms(prev => prev + 1);
+//     const removeRoom = () => { if (numRooms > 1) setNumRooms(prev => prev - 1); };
+
+//     const updateRoomDetail = (index: number, field: keyof RoomDetails, value: string) => {
+//         const newDetails = [...roomDetails];
+//         newDetails[index] = { ...newDetails[index], [field]: value };
+//         setRoomDetails(newDetails);
+//     };
+
+//     const addToBookings = () => {
+//         if (!selectedHotel || !checkInDate || !checkOutDate) {
+//             alert('Please select a hotel and set check-in/check-out dates.');
+//             return;
+//         }
+//         if (new Date(checkInDate) >= new Date(checkOutDate)) {
+//             alert('Check-out date must be after check-in date.');
+//             return;
+//         }
+//         const booking: BookedHotel = {
+//             id: `booking-${Date.now()}-${Math.random()}`,
+//             hotel: selectedHotel,
+//             numRooms, checkInDate, checkOutDate, roomDetails: [...roomDetails], remark,
+//             bookedAt: new Date().toISOString()
+//         };
+//         setBookedHotels(prev => [...prev, booking]);
+//         setSelectedHotel(null);
+//         setSearchQuery('');
+//         setNumRooms(1);
+//         setCheckInDate('');
+//         setCheckOutDate('');
+//         setRoomDetails([{ roomType: 'Standard', mealType: 'Breakfast' }]);
+//         setRemark('');
+//         alert(`Hotel "${selectedHotel.name}" added to bookings!`);
+//     };
+
+//     const removeBooking = (bookingId: string) => {
+//         setBookedHotels(prev => prev.filter(booking => booking.id !== bookingId));
+//     };
+
+//     // *** MODIFIED LOGIC ***
+//     // This function implements the robust "Check, Create, and Update" logic.
+//     const finalSubmit = () => {
+//         if (bookedHotels.length === 0) {
+//             alert('Please add at least one hotel booking before submitting.');
+//             return;
+//         }
+
+//         try {
+//             const savedItineraryString = sessionStorage.getItem('editedItinerary');
+//             let fullItinerary: any[] = [];
+
+//             if (savedItineraryString) {
+//                 try {
+//                     fullItinerary = JSON.parse(savedItineraryString);
+//                     if (!Array.isArray(fullItinerary)) fullItinerary = [{}];
+//                 } catch (e) {
+//                     console.error("Error parsing existing itinerary, starting fresh.", e);
+//                     fullItinerary = [{}];
+//                 }
+//             } else {
+//                 fullItinerary = [{}];
+//             }
+
+//             if (fullItinerary.length === 0) {
+//                 fullItinerary.push({});
+//             }
+            
+//             const updatedDayData = {
+//                 ...fullItinerary[0],
+//                 "accommodation": bookedHotels
+//             };
+
+//             const updatedItinerary = [updatedDayData, ...fullItinerary.slice(1)];
+//             sessionStorage.setItem('editedItinerary', JSON.stringify(updatedItinerary));
+
+//             alert(`Successfully saved ${bookedHotels.length} hotel booking(s)!`);
+//             console.log("Updated Itinerary with Accommodation:", updatedItinerary);
+//         } catch (error) {
+//             console.error("Failed to save accommodation data:", error);
+//             alert("An error occurred while saving the data.");
+//         }
+//     };
+
+//     const handleDelete = () => {
+//         setSelectedHotel(null);
+//         setSearchQuery('');
+//         setNumRooms(1);
+//         setCheckInDate('');
+//         setCheckOutDate('');
+//         setRoomDetails([{ roomType: 'Standard', mealType: 'Breakfast' }]);
+//         setRemark('');
+//         setBookedHotels([]);
+//         alert('All data on this page has been cleared!');
+//     };
+    
+//     const calculateNights = (checkIn: string, checkOut: string) => {
+//         if (!checkIn || !checkOut) return 0;
+//         const start = new Date(checkIn);
+//         const end = new Date(checkOut);
+//         const diffTime = Math.abs(end.getTime() - start.getTime());
+//         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+//         return diffDays > 0 ? diffDays : 0;
+//     };
+
+//     return (
+//         <div className="bg-[#F6F6FA] min-h-screen font-raleway text-sm">
+//             <div className="min-h-screen px-4 md:px-8 lg:p-2">
+//                 <header className="flex items-center justify-between mb-4">
+//                     <h1 className="text-xl font-semibold font- text-[#10A4B0]">Accommodation</h1>
+//                 </header>
+//                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+//                     <div className="lg:col-span-2 space-y-6">
+//                         <div className="bg-white border p-4 border-gray-200 rounded-lg shadow-sm overflow-hidden">
+//                             <div className="w-full h-44 md:h-48 bg-gray-200 rounded overflow-hidden">
+//                                 <img src={selectedHotel?.images?.[0] || 'https://plus.unsplash.com/premium_photo-1661963123153-5471a95b7042?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bHV4dXJ5JTIwaG90ZWwlMjBoZCUyMHF1YWxpdHl8ZW58MHx8MHx8fDA%3D'} alt="banner" className="w-full h-full object-cover"/>
+//                             </div>
+//                             <div className="pt-2 pl-4 pr-4 space-y-6 mt-4 border rounded">
+//                                 <h2 className="text-lg font-medium text-gray-800 p-0">Search Accommodation from database</h2>
+//                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//                                     <div>
+//                                         <label className="text-xs font-medium text-gray-700 block mb-2">Country</label>
+//                                         <input type="text" value={countryFilter} onChange={(e) => setCountryFilter(e.target.value)} placeholder="e.g., India, USA, Thailand" className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/>
+//                                     </div>
+//                                     <div>
+//                                         <label className="text-xs font-medium text-gray-700 block mb-2">City</label>
+//                                         <input type="text" value={cityFilter} onChange={(e) => setCityFilter(e.target.value)} placeholder="e.g., Delhi, New York, Phuket" className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/>
+//                                     </div>
+//                                 </div>
+//                                 {availableHotels.length > 0 && (
+//                                     <div>
+//                                         <h4 className="text-sm font-medium text-gray-700 mb-3">Available Hotels ({availableHotels.length})</h4>
+//                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-44 overflow-y-auto pr-2">
+//                                             {availableHotels.map((hotel) => (
+//                                                 <div key={hotel.id} onClick={() => handleSelectHotel(hotel)} className="p-2 border border-gray-200 rounded-lg hover:shadow-md transition-shadow flex items-center gap-3 cursor-pointer bg-white">
+//                                                     <img src={hotel.images[0]} alt={hotel.name} className="w-14 h-14 object-cover rounded" />
+//                                                     <div className="flex-1 min-w-0">
+//                                                         <p className="font-medium text-sm truncate">{hotel.name}</p>
+//                                                         <p className="text-xs text-gray-500">{hotel.location.city}, {hotel.location.country}</p>
+//                                                         <div className="flex items-center mt-1">{Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} filled={i < hotel.rating} />)}</div>
+//                                                     </div>
+//                                                 </div>
+//                                             ))}
+//                                         </div>
+//                                     </div>
+//                                 )}
+//                                 <div className="relative">
+//                                     <label className="text-xs font-medium text-gray-700 block mb-2">Search by Hotel Name</label>
+//                                     <div className="relative">
+//                                         <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Type hotel name to search..." className="w-full pl-10 pr-4 py-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/>
+//                                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"> <SearchIcon /> </div>
+//                                     </div>
+//                                     {filteredHotels.length > 0 && (
+//                                         <div className="absolute z-20 w-full mt-2 bg-white border border-gray-200 rounded-md shadow-lg max-h-72 overflow-y-auto">
+//                                             {filteredHotels.map((hotel) => (
+//                                                 <div key={hotel.id} onClick={() => handleSelectHotel(hotel)} className="p-3 hover:bg-gray-50 cursor-pointer flex items-center gap-4">
+//                                                     <img src={hotel.images[0]} alt={hotel.name} className="w-16 h-16 object-cover rounded-md"/>
+//                                                     <div>
+//                                                         <p className="font-semibold">{hotel.name}</p>
+//                                                         <p className="text-sm text-gray-500">{hotel.location.city}, {hotel.location.country}</p>
+//                                                         <div className="flex items-center mt-1">{Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} filled={i < hotel.rating} />)}</div>
+//                                                     </div>
+//                                                 </div>
+//                                             ))}
+//                                         </div>
+//                                     )}
+//                                 </div>
+//                                 <hr className="border-gray-200" />
+//                                 {selectedHotel && (
+//                                     <div className="p-4 border border-gray-200 rounded-lg bg-gray-50">
+//                                         <div className="flex items-start gap-4">
+//                                             <img src={selectedHotel.images[0]} alt={selectedHotel.name} className="w-28 h-20 object-cover rounded-md"/>
+//                                             <div className="flex-1">
+//                                                 <p className="font-bold text-lg">{selectedHotel.name}</p>
+//                                                 <p className="text-sm text-gray-600">{selectedHotel.location.city}, {selectedHotel.location.country}</p>
+//                                                 <div className="flex items-center mt-1">{Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} filled={i < selectedHotel.rating} />)}</div>
+//                                             </div>
+//                                         </div>
+//                                     </div>
+//                                 )}
+//                                 <div>
+//                                     <h3 className="text-sm font-medium text-gray-800 mb-3">Booking Details</h3>
+//                                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+//                                         <div>
+//                                             <label className="text-xs font-medium text-gray-700 block mb-2">Number of Rooms</label>
+//                                             <div className="flex items-center gap-2">
+//                                                 <button type="button" onClick={removeRoom} disabled={numRooms <= 1} className="p-2 border border-gray-300 rounded hover:bg-gray-100 disabled:opacity-50"><MinusIcon /></button>
+//                                                 <input type="number" min="1" value={numRooms} onChange={(e) => setNumRooms(Math.max(1, parseInt(e.target.value) || 1))} className="w-16 p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 text-center"/>
+//                                                 <button type="button" onClick={addRoom} className="p-2 border border-gray-300 rounded hover:bg-gray-100"><PlusIcon /></button>
+//                                             </div>
+//                                         </div>
+//                                         <div>
+//                                             <label className="text-xs font-medium text-gray-700 block mb-2">Check In</label>
+//                                             <div className="relative"><input type="date" min={today} value={checkInDate} onChange={e => setCheckInDate(e.target.value)} className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 pr-10"/><div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"><CalendarIcon /></div></div>
+//                                         </div>
+//                                         <div>
+//                                             <label className="text-xs font-medium text-gray-700 block mb-2">Check Out</label>
+//                                             <div className="relative"><input type="date" min={checkInDate || today} value={checkOutDate} onChange={e => setCheckOutDate(e.target.value)} className="w-full p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 pr-10"/><div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"><CalendarIcon /></div></div>
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="space-y-4">
+//                                     <h4 className="text-sm font-medium text-gray-800">Room Configuration</h4>
+//                                     {Array.from({ length: numRooms }).map((_, index) => (
+//                                         <div key={index} className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-gray-50 rounded-lg">
+//                                             <p className="sm:col-span-2 text-xs font-medium text-gray-800">Room {index + 1}</p>
+//                                             <div><label className="text-xs font-medium text-gray-700 block mb-1">Room Type</label><select value={roomDetails[index]?.roomType || 'Standard'} onChange={(e) => updateRoomDetail(index, 'roomType', e.target.value)} className="w-full p-2 bg-white rounded-md text-sm border border-gray-200">{roomTypeOptions.map(type => <option key={type} value={type}>{type}</option>)}</select></div>
+//                                             <div><label className="text-xs font-medium text-gray-700 block mb-1">Meal Type</label><select value={roomDetails[index]?.mealType || 'Breakfast'} onChange={(e) => updateRoomDetail(index, 'mealType', e.target.value)} className="w-full p-2 bg-white rounded-md text-sm border border-gray-200">{mealTypeOptions.map(type => <option key={type} value={type}>{type}</option>)}</select></div>
+//                                         </div>
+//                                     ))}
+//                                 </div>
+//                                 <hr className="border-gray-200" />
+//                                 <div><h3 className="text-sm font-medium text-gray-800 mb-2">Additional Remarks</h3><textarea value={remark} onChange={(e) => setRemark(e.target.value)} placeholder="Enter any special requests or remarks..." className="w-full h-24 p-2 bg-[#F6F6FA] rounded-md text-sm border border-gray-200 focus:ring-2 focus:ring-[#10A4B0] focus:border-transparent"/></div>
+//                                 <hr className="border-gray-200" />
+//                                 <div className="flex flex-wrap justify-center gap-4 py-4">
+//                                     <button type="button" onClick={handleDelete} className="px-6 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-md font-semibold text-sm hover:bg-gray-200">Clear All</button>
+//                                     <button type="button" onClick={addToBookings} disabled={!selectedHotel} className="px-6 py-2 bg-teal-500 text-white rounded-md font-semibold text-sm hover:bg-teal-600 disabled:bg-gray-400">Add to Booking</button>
+//                                     <button type="button" onClick={finalSubmit} disabled={bookedHotels.length === 0} className="px-6 py-2 bg-[#10A4B0] text-white rounded-md font-semibold text-sm hover:bg-teal-600 disabled:bg-gray-400">Save All Bookings ({bookedHotels.length})</button>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <aside className="lg:col-span-1 sticky top-6">
+//                         <div className="bg-white border border-gray-200 rounded-lg shadow-sm">
+//                             <div className="p-4 border-b"><h2 className="text-xl font-raleway font-semibold text-gray-600">Save Details</h2></div>
+//                             <div className="p-4 space-y-4">
+//                                 {bookedHotels.length > 0 ? (
+//                                     <div>
+//                                         <h4 className="text-sm font-medium text-gray-700 mb-3">Booked Hotels ({bookedHotels.length})</h4>
+//                                         <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
+//                                             {bookedHotels.map((booking, index) => (
+//                                                 <div key={booking.id} className="border border-gray-200 rounded-md overflow-hidden">
+//                                                     <div className="bg-[#10A4B0] text-white p-2 flex justify-between items-center">
+//                                                         <h5 className="font-semibold text-sm">Booking #{index + 1}: {booking.hotel.name}</h5>
+//                                                         <button type="button" onClick={() => removeBooking(booking.id)} className="text-white hover:text-red-200"><TrashIcon /></button>
+//                                                     </div>
+//                                                     <div className="p-3 text-xs space-y-2">
+//                                                         <div className="flex justify-between items-center">
+//                                                             <div>
+//                                                                 <p className="text-gray-600">Check In</p>
+//                                                                 <p className="font-medium">{new Date(booking.checkInDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</p>
+//                                                             </div>
+//                                                             <div className="bg-[#10A4B0] text-white text-xs rounded-full h-6 w-8 flex items-center justify-center font-bold">{calculateNights(booking.checkInDate, booking.checkOutDate)}N</div>
+//                                                             <div className="text-right">
+//                                                                 <p className="text-gray-600">Check Out</p>
+//                                                                 <p className="font-medium">{new Date(booking.checkOutDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</p>
+//                                                             </div>
+//                                                         </div>
+//                                                         <p>{booking.numRooms} Room(s)</p>
+//                                                     </div>
+//                                                 </div>
+//                                             ))}
+//                                         </div>
+//                                     </div>
+//                                 ) : (
+//                                     <div className="text-center text-gray-500 py-10"><p>No hotels booked yet.</p><p className="text-xs">Your booked hotels will appear here.</p></div>
+//                                 )}
+//                             </div>
+//                         </div>
+//                     </aside>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default AccommodationPage;
+
+//============================================ better data saving
+
 import React, { useState, useEffect, useCallback, FC } from 'react';
 
 //-=================================-//
@@ -4288,10 +4716,7 @@ const MinusIcon = () => (
 interface Hotel {
   id: number;
   name: string;
-  location: {
-    country: string;
-    city: string;
-  };
+  location: { country: string; city: string; };
   rating: number;
   images: string[];
   price_per_night: number;
@@ -4300,10 +4725,7 @@ interface Hotel {
   description: string;
 }
 
-interface RoomDetails {
-  roomType: string;
-  mealType: string;
-}
+interface RoomDetails { roomType: string; mealType: string; }
 
 interface BookedHotel {
   id: string;
@@ -4332,7 +4754,7 @@ const mealTypeOptions = ['Room Only', 'Breakfast', 'Half Board', 'Full Board', '
 //-=================================-//
 
 const AccommodationPage: React.FC = () => {
-    const [allHotels, setAllHotels] = useState<Hotel[]>(mockHotels);
+    const [allHotels] = useState<Hotel[]>(mockHotels);
     const [cityFilter, setCityFilter] = useState('');
     const [countryFilter, setCountryFilter] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
@@ -4346,16 +4768,19 @@ const AccommodationPage: React.FC = () => {
     const [remark, setRemark] = useState('');
     const [bookedHotels, setBookedHotels] = useState<BookedHotel[]>([]);
     const today = new Date().toISOString().split('T')[0];
+    const [notification, setNotification] = useState<{type: 'success' | 'error', message: string} | null>(null);
 
+    // **IMPROVEMENT**: Load data from the correct top-level 'accommodation' field.
     useEffect(() => {
         try {
             const savedItineraryString = sessionStorage.getItem('editedItinerary');
             if (savedItineraryString) {
                 const savedItinerary = JSON.parse(savedItineraryString);
-                const dayData = savedItinerary[0];
-
-                if (dayData && Array.isArray(dayData.accommodation)) {
-                    setBookedHotels(dayData.accommodation);
+                // Check for new structure first, then fall back to old for compatibility
+                if (savedItinerary && savedItinerary.accommodation) {
+                    setBookedHotels(savedItinerary.accommodation);
+                } else if (Array.isArray(savedItinerary) && savedItinerary[0]?.accommodation) {
+                    setBookedHotels(savedItinerary[0].accommodation);
                 }
             }
         } catch (error) {
@@ -4409,11 +4834,11 @@ const AccommodationPage: React.FC = () => {
 
     const addToBookings = () => {
         if (!selectedHotel || !checkInDate || !checkOutDate) {
-            alert('Please select a hotel and set check-in/check-out dates.');
+            setNotification({type: 'error', message: 'Please select a hotel and set check-in/check-out dates.'});
             return;
         }
         if (new Date(checkInDate) >= new Date(checkOutDate)) {
-            alert('Check-out date must be after check-in date.');
+            setNotification({type: 'error', message: 'Check-out date must be after check-in date.'});
             return;
         }
         const booking: BookedHotel = {
@@ -4423,6 +4848,7 @@ const AccommodationPage: React.FC = () => {
             bookedAt: new Date().toISOString()
         };
         setBookedHotels(prev => [...prev, booking]);
+        // Reset form
         setSelectedHotel(null);
         setSearchQuery('');
         setNumRooms(1);
@@ -4430,56 +4856,49 @@ const AccommodationPage: React.FC = () => {
         setCheckOutDate('');
         setRoomDetails([{ roomType: 'Standard', mealType: 'Breakfast' }]);
         setRemark('');
-        alert(`Hotel "${selectedHotel.name}" added to bookings!`);
+        setNotification({type: 'success', message: `Hotel "${selectedHotel.name}" added to bookings!`});
     };
 
     const removeBooking = (bookingId: string) => {
         setBookedHotels(prev => prev.filter(booking => booking.id !== bookingId));
+        setNotification({type: 'success', message: 'Booking removed.'});
     };
-
-    // *** MODIFIED LOGIC ***
-    // This function implements the robust "Check, Create, and Update" logic.
-    const finalSubmit = () => {
+    
+    // **CRITICAL BUG FIX & IMPROVEMENT**: Updated saving logic to be robust and structured.
+    const finalSubmit = useCallback(() => {
         if (bookedHotels.length === 0) {
-            alert('Please add at least one hotel booking before submitting.');
+            setNotification({type: 'error', message: 'Please add at least one hotel booking before submitting.'});
             return;
         }
-
         try {
             const savedItineraryString = sessionStorage.getItem('editedItinerary');
-            let fullItinerary: any[] = [];
-
+            let currentItinerary: any = {};
             if (savedItineraryString) {
-                try {
-                    fullItinerary = JSON.parse(savedItineraryString);
-                    if (!Array.isArray(fullItinerary)) fullItinerary = [{}];
-                } catch (e) {
-                    console.error("Error parsing existing itinerary, starting fresh.", e);
-                    fullItinerary = [{}];
+                const parsedData = JSON.parse(savedItineraryString);
+                // Handle both old (array) and new (object) formats for compatibility
+                if (Array.isArray(parsedData)) {
+                    currentItinerary = { days: parsedData }; // Convert old array format to new object format
+                } else {
+                    currentItinerary = parsedData;
                 }
-            } else {
-                fullItinerary = [{}];
-            }
-
-            if (fullItinerary.length === 0) {
-                fullItinerary.push({});
             }
             
-            const updatedDayData = {
-                ...fullItinerary[0],
-                "accommodation": bookedHotels
+            // **IMPROVEMENT**: Save accommodations to a separate, top-level field.
+            const updatedItinerary = {
+                ...currentItinerary,
+                accommodation: bookedHotels
             };
 
-            const updatedItinerary = [updatedDayData, ...fullItinerary.slice(1)];
             sessionStorage.setItem('editedItinerary', JSON.stringify(updatedItinerary));
 
-            alert(`Successfully saved ${bookedHotels.length} hotel booking(s)!`);
+            setNotification({type: 'success', message: `Successfully saved ${bookedHotels.length} hotel booking(s)!`});
             console.log("Updated Itinerary with Accommodation:", updatedItinerary);
         } catch (error) {
             console.error("Failed to save accommodation data:", error);
-            alert("An error occurred while saving the data.");
+            setNotification({type: 'error', message: 'An error occurred while saving the data.'});
         }
-    };
+    }, [bookedHotels]);
+
 
     const handleDelete = () => {
         setSelectedHotel(null);
@@ -4490,7 +4909,7 @@ const AccommodationPage: React.FC = () => {
         setRoomDetails([{ roomType: 'Standard', mealType: 'Breakfast' }]);
         setRemark('');
         setBookedHotels([]);
-        alert('All data on this page has been cleared!');
+        setNotification({type: 'success', message: 'All data on this page has been cleared!'});
     };
     
     const calculateNights = (checkIn: string, checkOut: string) => {
@@ -4508,6 +4927,14 @@ const AccommodationPage: React.FC = () => {
                 <header className="flex items-center justify-between mb-4">
                     <h1 className="text-xl font-semibold font- text-[#10A4B0]">Accommodation</h1>
                 </header>
+                {notification && (
+                    <div className="mb-4">
+                        <div className={`p-3 rounded-lg flex items-center gap-3 text-sm ${notification.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                            <span className="flex-grow">{notification.message}</span>
+                            <button onClick={() => setNotification(null)} className="font-bold">X</button>
+                        </div>
+                    </div>
+                )}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <div className="lg:col-span-2 space-y-6">
                         <div className="bg-white border p-4 border-gray-200 rounded-lg shadow-sm overflow-hidden">
@@ -4664,4 +5091,3 @@ const AccommodationPage: React.FC = () => {
 };
 
 export default AccommodationPage;
-
