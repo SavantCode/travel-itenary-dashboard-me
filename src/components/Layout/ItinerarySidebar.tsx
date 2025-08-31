@@ -17,17 +17,29 @@ const ItinerarySidebar: React.FC<ItinerarySidebarProps> = ({
 }) => {
   const navigate = useNavigate();
 
-  const steps = [
-    { id: 1, label: 'Travel Basic', path: '/my-itinerary/create/travel-basic' },
-    { id: 2, label: 'Arrival & Departure', path: '/my-itinerary/create/arrival-departure' },
-    { id: 3, label: 'Accommodation', path: '/my-itinerary/create/accommodation' },
-    { id: 4, label: 'Vehicle', path: '/my-itinerary/create/vehicle' },
-    { id: 5, label: 'Day Wise Itinerary', path: '/my-itinerary/create/day-wise-itinerary' },
-    { id: 6, label: 'Pricing', path: '/my-itinerary/create/pricing' },
-    { id: 7, label: 'Trip Information', path: '/my-itinerary/create/trip-information' },
-    { id: 8, label: 'View Itinerary', path: '/my-itinerary/create/view-itinerary' },
+  // const steps = [
+  //   { id: 1, label: 'Travel Basic', path: '/my-itinerary/create/travel-basic' },
+  //   { id: 2, label: 'Arrival & Departure', path: '/my-itinerary/create/arrival-departure' },
+  //   { id: 3, label: 'Accommodation', path: '/my-itinerary/create/accommodation' },
+  //   { id: 4, label: 'Vehicle', path: '/my-itinerary/create/vehicle' },
+  //   { id: 5, label: 'Day Wise Itinerary', path: '/my-itinerary/create/day-wise-itinerary' },
+  //   { id: 6, label: 'Pricing', path: '/my-itinerary/create/pricing' },
+  //   { id: 7, label: 'Trip Information', path: '/my-itinerary/create/trip-information' },
+  //   { id: 8, label: 'View Itinerary', path: '/my-itinerary/create/view' },
 
-  ];
+  // ];
+
+  const steps = [
+  { id: 1, label: 'Travel Basic', path: '/my-itinerary/create/travel-basic' },
+  { id: 2, label: 'Day Wise Itinerary', path: '/my-itinerary/create/day-wise-itinerary' },
+  { id: 3, label: 'Arrival & Departure', path: '/my-itinerary/create/arrival-departure' },
+  { id: 4, label: 'Accommodation', path: '/my-itinerary/create/accommodation' },
+  { id: 5, label: 'Vehicle', path: '/my-itinerary/create/vehicle' },
+  { id: 6, label: 'Pricing', path: '/my-itinerary/create/pricing' },
+  { id: 7, label: 'Trip Information', path: '/my-itinerary/create/trip-information' },
+  { id: 8, label: 'View Itinerary', path: '/my-itinerary/create/view' },
+];
+
 
   return (
     <div className="bg-white w-[286px] flex flex-col border-r font-raleway border-gray-200">
