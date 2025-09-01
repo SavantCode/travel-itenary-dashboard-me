@@ -59,6 +59,24 @@ const AppRoutes = () => {
           <Route path="/customer-table" element={<CustomerTable />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/crm" element={<CRM />} />
+
+
+
+          <Route path="/agent/dashboard" element={<AgentDashboard />} />
+          <Route path="/agent/create-basic-itinerary" element={<BasicCreateItinerary />} />
+
+          <Route path="/my-itinerary" element={<MyItinerary />} />
+          <Route path="/my-itinerary/create" element={<CreateItinerary />} />
+          <Route path="/my-itinerary/create/travel-basic" element={<TravelBasic />} />
+          <Route path="/my-itinerary/create/arrival-departure" element={<ArrivalDeparture />} />
+          <Route path="/my-itinerary/create/accommodation" element={<Accommodation />} />
+          <Route path="/my-itinerary/create/vehicle" element={<Vehicle />} />
+          <Route path="/my-itinerary/create/day-wise-itinerary" element={<DayWiseItinerary />} />
+          <Route path="/my-itinerary/create/pricing" element={<Pricing />} />
+          <Route path="/my-itinerary/create/trip-information" element={<TripInformation />} />
+
+          <Route path="/my-itinerary/create/view-itinerary" element={<ViewItinerary />} />
+          <Route path="/my-itinerary/create/view" element={<ViewFinal />} />
         </Route>
 
         {/* Agent-only routes */}
