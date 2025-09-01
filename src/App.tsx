@@ -1,4 +1,5 @@
 // src/App.tsx
+// src/App.tsx
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
@@ -36,14 +37,12 @@ import Pricing from './pages/itinerarySteps/Pricing';
 import TripInformation from './pages/itinerarySteps/TripInformation';
 import ViewItinerary from './pages/itinerarySteps/ViewItinerary';
 
-
 import ViewFinal from './components/ViewFInal/ViewFInal';
 
 const AppRoutes = () => {
   return (
     <Routes>
-      {/* Public routes that don't need layout */}
-      {/* <Route path="/" element={<Login />} /> */}
+      {/* Public routes */}
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Navigate to="/login" replace />} />
       <Route path="/unauthorized" element={<Unauthorized />} />
@@ -51,6 +50,7 @@ const AppRoutes = () => {
 
       {/* Layout wrapper */}
       <Route element={<Layout />}>
+
         {/* Admin-only routes */}
         <Route element={<ProtectedRoute allowedRoles={['ADMIN']} />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
@@ -59,24 +59,6 @@ const AppRoutes = () => {
           <Route path="/customer-table" element={<CustomerTable />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/crm" element={<CRM />} />
-
-
-
-          <Route path="/agent/dashboard" element={<AgentDashboard />} />
-          <Route path="/agent/create-basic-itinerary" element={<BasicCreateItinerary />} />
-
-          <Route path="/my-itinerary" element={<MyItinerary />} />
-          <Route path="/my-itinerary/create" element={<CreateItinerary />} />
-          <Route path="/my-itinerary/create/travel-basic" element={<TravelBasic />} />
-          <Route path="/my-itinerary/create/arrival-departure" element={<ArrivalDeparture />} />
-          <Route path="/my-itinerary/create/accommodation" element={<Accommodation />} />
-          <Route path="/my-itinerary/create/vehicle" element={<Vehicle />} />
-          <Route path="/my-itinerary/create/day-wise-itinerary" element={<DayWiseItinerary />} />
-          <Route path="/my-itinerary/create/pricing" element={<Pricing />} />
-          <Route path="/my-itinerary/create/trip-information" element={<TripInformation />} />
-
-          <Route path="/my-itinerary/create/view-itinerary" element={<ViewItinerary />} />
-          <Route path="/my-itinerary/create/view" element={<ViewFinal />} />
         </Route>
 
         {/* Agent-only routes */}
@@ -93,27 +75,20 @@ const AppRoutes = () => {
           <Route path="/my-itinerary/create/day-wise-itinerary" element={<DayWiseItinerary />} />
           <Route path="/my-itinerary/create/pricing" element={<Pricing />} />
           <Route path="/my-itinerary/create/trip-information" element={<TripInformation />} />
-
           <Route path="/my-itinerary/create/view-itinerary" element={<ViewItinerary />} />
-
           <Route path="/my-itinerary/create/view" element={<ViewFinal />} />
-                
 
-
-              
-
-          
           <Route path="/follow-ups" element={<FollowUps />} />
           <Route path="/my-leads" element={<MyLeads />} />
         </Route>
+
       </Route>
 
-      {/* Catch-all route */}
+      {/* Catch-all */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 };
-
 
 const App = () => {
   return (
